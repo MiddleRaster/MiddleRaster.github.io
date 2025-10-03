@@ -1,6 +1,7 @@
 ---
 layout: home
-title: "Home"
+title: "MiddleRaster's Blog"
 ---
 
-Welcome to my blog. Here I’ll share my original process ideas and essays.
+Hi, I'm MiddleRaster, a slightly dyslexic, retired software engineer.
+Welcome to my blog.
