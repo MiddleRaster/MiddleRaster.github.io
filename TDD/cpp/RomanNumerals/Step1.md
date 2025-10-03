@@ -4039,4 +4039,31 @@ namespace ToRomanTests
 
 That ought to do it:  it allows us to verify that the function works for all values from 1 to 3999.  
 
-Now we need just a little source code
+Now we need just a little source code, just enough to fail the test.
+
+```
+#ifndef _TO_ROMAN_H
+#define _TO_ROMAN_H
+
+#include <string>
+
+namespace RomanNumerals
+{
+	struct Convert
+	{
+		static const std::string ToRoman(int /*n*/)
+		{
+			return "";
+		}
+	};
+}
+#endif
+```
+
+That should do it.  Note that the integer parameter (n) is commented out. This is to silence the warning that "Warning C4100 'n': unreferenced formal parameter".  You are using warning level 4 and are treating all warnings as errors, right?  If not, turn those on now.  I'll wait.
+
+Ok, now that we're in the red state, we have some decisions to make.  In TDD, we want to see the red/green/refactor states. We could easily do that by commenting out all the test data that we're not dealing with right now (recommended). Or alternatively, we could just stay in the red state until the whole thing is done (not recommended). The latter is less typing, but you'll have to look very carefully that the red state is caused by the error we expect, which is a higher mental burden than seeing red, then green, and refactoring.  We have to do all those refactoring steps in any case, so I'll let you decide how you want to proceed (I've given you my recommendation).
+
+So, let's assume we've commented out all the test data, except for ```{1   , "I" },``` which can easily be done with a C-style comment, the idea being that we'll move the ```/*``` farther and farther down as we go along. Ok, so write the code to make this test pass.  Then refactor to make it clean and clear (and maybe fast).
+
+Only then, click [Next](Step2).
