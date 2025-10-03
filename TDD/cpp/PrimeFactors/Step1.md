@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Prime:Factors Step 1"
+title: "Prime Factors: Step 1"
 permalink: /TDD/cpp/PrimeFactors/Step1.html
 ---
 
