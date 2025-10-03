@@ -4,7 +4,7 @@ title: "Roman Numerals: Step 15"
 permalink: /TDD/cpp/RomanNumerals/Step15.html
 ---
 
-We're continuing to refactore the code to pass all cases up to 20. 
+We're continuing to refactor the code to pass all cases up to 20. 
 
 Here's the refactored source:
 ```
