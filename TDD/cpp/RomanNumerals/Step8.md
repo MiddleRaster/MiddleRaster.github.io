@@ -34,4 +34,4 @@ We merely handle "IX" specially. Now we've got two special handling cases, which
 
 Go ahead and move the ```/*``` down below the 10. Build and test.  It should fail with this: ```Assert failed. Expected:<X> Actual:<VIIIII>```. 
 
-Write just enough code to pass the 9 case. Then click [Next](Step9.html).
+Write just enough code to pass the 10 case. Then click [Next](Step9.html).
