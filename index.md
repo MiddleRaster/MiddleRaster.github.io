@@ -4,7 +4,7 @@ title: "MiddleRaster's Pages"
 permalink: /
 ---
 
-Hi, I'm MiddleRaster, a slightly dyslexic, retired software engineer.
+Hi, I'm MiddleRaster, an evidently dyslexic, retired software engineer.
 Welcome to my pages.
 
 I'll be discussing things I've learned in my 35-year career, 
