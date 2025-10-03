@@ -24,6 +24,8 @@ namespace RomanNumerals
 
 Nothing to refactor that I can see.
 
-Go ahead and move the ```/*``` down below the 4 and get all 4 test cases to pass. 
+Go ahead and move the ```/*``` down below the 4. Build and test; it should fail with ```Assert failed. Expected:<IV> Actual:<IIII>```.
+
+Write just enough source to  get all 4 test cases to pass. 
 
 Then click [Next](Step5.html).
