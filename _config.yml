@@ -3,22 +3,4 @@ description: "My thoughts on software, etc."
 url: "https://middleraster.github.io"
 baseurl: "/blog"
 
-# Build settings
-# markdown: kramdown
-# highlighter: rouge
-# permalink: pretty
-
-# Theme
-remote_theme: poole/hyde
-
-# Hyde theme options
-# (these are optional; tweak to taste)
-# hyde:
-#   theme: "theme-base-08"   # color scheme (08, 09, 0a, 0b, etc.)
-#   sidebar: left            # sidebar position: left or right
-#   show_excerpts: true      # show post excerpts on homepage
-
-# Plugins (GitHub Pages supports these)
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo-tag
+theme: jekyll-theme-cayman
