@@ -41,6 +41,6 @@ static const std::string ToRoman(int n)
 The special handling for "IV" and "IX" is gone. We have a bunch of ```if``` blocks and a ```for``` loop. 
 It seems a little odd that they are two categories like that, but I'll bet it'll become clear quite soon what the whole pattern is.
 
-20 fails with '''Assert failed. Expected:<XX> Actual:<XVIIIII>'''.
+20 fails with ```Assert failed. Expected:<XX> Actual:<XVIIIII>```.
 
 Write just enough code to pass the 20 case. Then click [Next](Step12.html).
