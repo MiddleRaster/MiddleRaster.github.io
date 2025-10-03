@@ -35,6 +35,6 @@ Go ahead and move the ```/*``` down below the 7. Build and test.
 
 It passes. So does 8.
 
-But 9 fails, with this: ```Assert failed. Expected:<IX> Actual:<IV>```. 
+But 9 fails, with this: ```Assert failed. Expected:<IX> Actual:<IV>```, which is the first time that it's failed in a particularly unreasonable way. All the other failures sort of added up to the right number, but that early return for "IV" is messing things up. Another hint that I should be on the lookout for a way to refactor this.
 
 Write just enough code to pass the 9 case. Then click [Next](Step8.html).
