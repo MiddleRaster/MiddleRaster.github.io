@@ -1,6 +1,6 @@
-title: "MiddleRaster's Blog"
+title: "MiddleRaster's Pages"
 description: "My thoughts on software, etc."
 url: "https://middleraster.github.io"
-baseurl: "/blog"
+baseurl: "/"
 
 theme: minima
