@@ -31,6 +31,10 @@ We handle both 5 and 6 by appending a "V" to the empty string s, subtracting 5 f
 
 The specially handling for "IV" looks a little odd, but I can't think of a way to clean that up yet.  It'll probably become obvious eventually and I'll do it then.
 
-Go ahead and move the ```/*``` down below the 7. Build and test. It passes. So does 8. But 9 fails, like this: ```Assert failed. Expected:<IX> Actual:<IV>```. 
+Go ahead and move the ```/*``` down below the 7. Build and test.
+
+It passes. So does 8.
+
+But 9 fails, with this: ```Assert failed. Expected:<IX> Actual:<IV>```. 
 
 Write just enough code to pass the 9 case. Then click [Next](Step8.html).
