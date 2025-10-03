@@ -8,23 +8,23 @@ We're working on passing all cases up to 6.
 
 This ought to do it:
 ```
-	static const std::string ToRoman(int n)
-	{
-		std::string s;
+static const std::string ToRoman(int n)
+{
+	std::string s;
 
-		if (n >= 5) {
-			n -= 5;
-			s += "V";
-		}
-
-		if (n == 4)
-			return "IV";
-
-		for (int i=0; i<n; ++i)
-			s += "I";
-
-		return s;
+	if (n >= 5) {
+		n -= 5;
+		s += "V";
 	}
+
+	if (n == 4)
+		return "IV";
+
+	for (int i=0; i<n; ++i)
+		s += "I";
+
+	return s;
+}
 ```
 
 We handle both 5 and 6 by appending a "V" to the empty string s, subtracting 5 from n, falling through to the loop, which appends another "I" for the 6 case.
