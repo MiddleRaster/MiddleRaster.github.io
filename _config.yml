@@ -3,4 +3,4 @@ description: "My thoughts on software, etc."
 url: "https://middleraster.github.io"
 baseurl: "/blog"
 
-theme: jekyll-theme-cayman
+theme: minima
