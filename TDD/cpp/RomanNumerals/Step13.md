@@ -10,33 +10,33 @@ Here's the refactored source:
 ```
 static const std::string ToRoman(int n)
 {
-	std::string s;
+    std::string s;
 
-	while (n >= 10) {
-		n -= 10;
-		s += "X";
-	}
+    while (n >= 10) {
+        n -= 10;
+        s += "X";
+    }
 
-	if (n == 9) {
-		n -= 9;
-		s += "IX";
-	}
+    if (n == 9) {
+        n -= 9;
+        s += "IX";
+    }
 
-	if (n >= 5) {
-		n -= 5;
-		s += "V";
-	}
+    if (n >= 5) {
+        n -= 5;
+        s += "V";
+    }
 
-	if (n == 4) {
-		n -= 4;
-		s += "IV";
-	}
+    if (n == 4) {
+        n -= 4;
+        s += "IV";
+    }
 
-	while (n >= 1) {
-		n -= 1;
-		s += "I";
-	}
-	return s;
+    while (n >= 1) {
+        n -= 1;
+        s += "I";
+    }
+    return s;
 }
 ```
 
