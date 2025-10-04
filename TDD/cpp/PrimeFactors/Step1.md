@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_with_comments
 title: "Prime Factors: Step 1"
 permalink: /TDD/cpp/PrimeFactors/Step1.html
 ---
