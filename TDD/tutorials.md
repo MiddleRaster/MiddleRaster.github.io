@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_with_comments
 title: "TDD Tutorial"
 permalink: /TDD/tutorials.html
 ---
