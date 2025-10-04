@@ -30,11 +30,10 @@ namespace RomanNumerals
             };
 
             std::string s;
-            for (int i=0; i<sizeof(nd)/sizeof(numeralData); ++i)
-            {
-                while (n >= nd[i].n) {
-                    n -= nd[i].n;
-                    s += nd[i].s;
+            for (const auto& e : nd) {
+                while (n >= e.n) {
+                    n -= e.n;
+                    s += e.s;
                 }
             }
             return s;
