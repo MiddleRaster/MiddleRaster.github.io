@@ -5,6 +5,5 @@ baseurl: ""
 
 theme: minima
 header_pages:
-  - index.md
   - TDD/tutorials.md
   
