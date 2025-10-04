@@ -10,27 +10,27 @@ This ought to do it:
 ```
 static const std::string ToRoman(int n)
 {
-	std::string s;
+    std::string s;
 
-	if (n >= 10) {
-		n -= 10;
-		s += "X";
-	}
+    if (n >= 10) {
+        n -= 10;
+        s += "X";
+    }
 
-	if (n == 9)
-		return "IX";
+    if (n == 9)
+        return "IX";
 
-	if (n >= 5) {
-		n -= 5;
-		s += "V";
-	}
+    if (n >= 5) {
+        n -= 5;
+        s += "V";
+    }
 
-	if (n == 4)
-		return "IV";
+    if (n == 4)
+        return "IV";
 
-	for (int i=0; i<n; ++i)
-		s += "I";
-	return s;
+    for (int i=0; i<n; ++i)
+        s += "I";
+    return s;
 }
 ```
 
