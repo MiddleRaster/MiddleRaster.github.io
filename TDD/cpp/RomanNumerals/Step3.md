@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_with_comments
 title: "Roman Numerals: Step 3"
 permalink: /TDD/cpp/RomanNumerals/Step3.html
 ---
