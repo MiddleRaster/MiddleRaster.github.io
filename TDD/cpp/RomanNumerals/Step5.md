@@ -10,16 +10,16 @@ If we do it after, we'd be doing some work for nothing and throwing it away, whi
 ```
 struct Convert
 {
-	static const std::string ToRoman(int n)
-	{
-		if (n == 4)
-			return "IV";
+    static const std::string ToRoman(int n)
+    {
+        if (n == 4)
+            return "IV";
 
-		std::string s;
-		for (int i=0; i<n; ++i)
-			s += "I";
-		return s;
-	}
+        std::string s;
+        for (int i=0; i<n; ++i)
+            s += "I";
+        return s;
+    }
 };
 ```
 
