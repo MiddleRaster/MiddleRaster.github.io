@@ -55,6 +55,7 @@ namespace RomanNumerals
 
 I'm pretty happy with how it turned out.  It's tight, clear, easy to understand.
 
+
 But it's not the only way.  Here's another one:
 ```
 static const std::string ToRoman(int n)
@@ -66,7 +67,7 @@ static const std::string ToRoman(int n)
     return M[n/1000] + C[(n%1000)/100] + X[(n%100)/10] + I[(n%10)];
 }
 ```
-I like this one, too. Surprisingly, it runs several times slower than the ```while``` loop version, probably from copying all the ```std::string``` objects around.
+I like this one, too (well, mostly:  there's an out-of-bounds error if n is too big). Surprisingly, it runs several times slower than the ```while``` loop version, probably from copying all the ```std::string``` objects around.
 
 When I get around to it, maybe I'll work up the steps of a Kata that ends up with that implementation.
 
