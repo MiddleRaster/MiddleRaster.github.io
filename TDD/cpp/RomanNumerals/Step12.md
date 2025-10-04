@@ -10,31 +10,31 @@ Here's the source:
 ```
 static const std::string ToRoman(int n)
 {
-	std::string s;
+    std::string s;
 
-	while (n >= 10) {
-		n -= 10;
-		s += "X";
-	}
+    while (n >= 10) {
+        n -= 10;
+        s += "X";
+    }
 
-	if (n == 9) {
-		n -= 9;
-		s += "IX";
-	}
+    if (n == 9) {
+        n -= 9;
+        s += "IX";
+    }
 
-	if (n >= 5) {
-		n -= 5;
-		s += "V";
-	}
+    if (n >= 5) {
+        n -= 5;
+        s += "V";
+    }
 
-	if (n == 4) {
-		n -= 4;
-		s += "IV";
-	}
+    if (n == 4) {
+        n -= 4;
+        s += "IV";
+    }
 
-	for (int i=0; i<n; ++i)
-		s += "I";
-	return s;
+    for (int i=0; i<n; ++i)
+        s += "I";
+    return s;
 }
 ```
 
