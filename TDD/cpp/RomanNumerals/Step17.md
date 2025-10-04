@@ -1,6 +1,6 @@
 ---
-layout: page
 title: "Roman Numerals: Step 17"
+layout: page_with_comments
 permalink: /TDD/cpp/RomanNumerals/Step17.html
 ---
 
