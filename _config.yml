@@ -4,3 +4,7 @@ url: "https://middleraster.github.io"
 baseurl: ""
 
 theme: minima
+header_pages:
+  - index.md
+  - tutorials.md
+  
