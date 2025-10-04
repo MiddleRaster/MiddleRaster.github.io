@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "TDD Tutorials"
+title: "TDD Tutorial"
 permalink: /TDD/tutorials.html
 ---
 
