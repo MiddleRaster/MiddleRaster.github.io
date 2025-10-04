@@ -10,28 +10,28 @@ Here's the latest refactoring:
 ```
 static const std::string ToRoman(int n)
 {
-	struct numeralData
-	{
-		int n;
-		const char* s;
-	} nd[] =
-	{
-		{10,  "X" },
-		{ 9, "IX" },
-		{ 5,  "V" },
-		{ 4, "IV" },
-		{ 1,  "I" },
-	};
+    struct numeralData
+    {
+        int n;
+        const char* s;
+    } nd[] =
+    {
+        {10,  "X" },
+        { 9, "IX" },
+        { 5,  "V" },
+        { 4, "IV" },
+        { 1,  "I" },
+    };
 
-	std::string s;
-	for (int i=0; i<sizeof(nd)/sizeof(numeralData); ++i)
-	{
-		while (n >= nd[i].n) {
-			n -= nd[i].n;
-			s += nd[i].s;
-		}
-	}
-	return s;
+    std::string s;
+    for (int i=0; i<sizeof(nd)/sizeof(numeralData); ++i)
+    {
+        while (n >= nd[i].n) {
+            n -= nd[i].n;
+            s += nd[i].s;
+        }
+    }
+    return s;
 }
 ```
 
