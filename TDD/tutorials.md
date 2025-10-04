@@ -28,4 +28,4 @@ You quickly accumulate a large test suite, so they must be **blazingly** fast: h
 
 To practice TDD, people have come up with exercises or "Katas." I'll walk you through mine below.
 
-You can do my Katas in either [c++](cpp/katas.html) or [c#](csharp/katas.html).
+You can do my Katas in either [C++](cpp/katas.html) or [C#](csharp/katas.html).
