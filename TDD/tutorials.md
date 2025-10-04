@@ -24,7 +24,7 @@ Once you've seen the code go from red to green, it's your job to keep it green w
 
 You know you're doing it right if you never fire up the debugger. Debugging is seen as a sign of failure, because you don't understand the code you just wrote.
 
-You quickly accumulate a large test suite, so they must be blazingly fast: hundreds of tests per second. Mock out slow dependencies. This large test suite is also a regression suite, so you should never regress functionality while fixing a bug or adding a new feature.
+You quickly accumulate a large test suite, so they must be **blazingly** fast: hundreds of tests per second. Mock out slow dependencies. This large test suite is also a regression suite, so you should never regress functionality while fixing a bug or adding a new feature.
 
 To practice TDD, people have come up with exercises or "Katas." I'll walk you through mine below.
 
