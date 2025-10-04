@@ -4026,13 +4026,13 @@ namespace ToRomanTests
                 {3997  , "MMMCMXCVII" },
                 {3998  , "MMMCMXCVIII" },
                 {3999  , "MMMCMXCIX" },
-          };
+            };
 
-			for(int i=0; i<sizeof(td)/sizeof(testData); ++i)
-			{
-				Assert::AreEqual(td[i].numeral, RomanNumerals::Convert::ToRoman(td[i].number).c_str());
-			}
-		}
+            for(int i=0; i<sizeof(td)/sizeof(testData); ++i)
+            {
+                Assert::AreEqual(td[i].numeral, RomanNumerals::Convert::ToRoman(td[i].number).c_str());
+            }
+        }
 	};
 }
 ```
