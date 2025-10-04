@@ -10,45 +10,45 @@ Here's the refactored source:
 ```
 static const std::string ToRoman(int n)
 {
-	struct numeralData
-	{
-		int n;
-		const char* s;
-	} nd[] =
-	{
-		{10   , "X" },
-	};
+    struct numeralData
+    {
+        int n;
+        const char* s;
+    } nd[] =
+    {
+        {10   , "X" },
+    };
 
-	std::string s;
+    std::string s;
 
-	for (int i=0; i<sizeof(nd)/sizeof(numeralData); ++i)
-	{
-		while (n >= nd[i].n) {
-			n -= nd[i].n;
-			s += nd[i].s;
-		}
-	}
+    for (int i=0; i<sizeof(nd)/sizeof(numeralData); ++i)
+    {
+        while (n >= nd[i].n) {
+            n -= nd[i].n;
+            s += nd[i].s;
+        }
+    }
 
-	while (n == 9) {
-		n -= 9;
-		s += "IX";
-	}
+    while (n == 9) {
+        n -= 9;
+        s += "IX";
+    }
 
-	while (n >= 5) {
-		n -= 5;
-		s += "V";
-	}
+    while (n >= 5) {
+        n -= 5;
+        s += "V";
+    }
 
-	while (n == 4) {
-		n -= 4;
-		s += "IV";
-	}
+    while (n == 4) {
+        n -= 4;
+        s += "IV";
+    }
 
-	while (n >= 1) {
-		n -= 1;
-		s += "I";
-	}
-	return s;
+    while (n >= 1) {
+        n -= 1;
+        s += "I";
+    }
+    return s;
 }
 ```
 
