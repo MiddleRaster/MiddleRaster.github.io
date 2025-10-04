@@ -9,13 +9,13 @@ Here's the source:
 ```
 namespace RomanNumerals
 {
-	struct Convert
-	{
-		static const std::string ToRoman(int /*n*/)
-		{
-			return "I";
-		}
-	};
+    struct Convert
+    {
+        static const std::string ToRoman(int /*n*/)
+        {
+            return "I";
+        }
+    };
 }
 ```
 
