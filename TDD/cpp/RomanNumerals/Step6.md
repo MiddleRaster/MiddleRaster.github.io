@@ -10,17 +10,17 @@ The simplest code that will work is this:
 ```
 static const std::string ToRoman(int n)
 {
-	if (n == 5)
-		return "V";
+    if (n == 5)
+        return "V";
 
-	if (n == 4)
-		return "IV";
+    if (n == 4)
+        return "IV";
 
-	std::string s;
-	for (int i=0; i<n; ++i)
-		s += "I";
+    std::string s;
+    for (int i=0; i<n; ++i)
+        s += "I";
 
-	return s;
+    return s;
 }
 ```
 
