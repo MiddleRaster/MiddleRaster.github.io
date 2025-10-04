@@ -9,16 +9,16 @@ Here's the current source, just enough to pass the first 3 test cases:
 ```
 namespace RomanNumerals
 {
-	struct Convert
-	{
-		static const std::string ToRoman(int n)
-		{
-			std::string s;
-			for (int i=0; i<n; ++i)
-				s += "I";
-			return s;
-		}
-	};
+    struct Convert
+    {
+        static const std::string ToRoman(int n)
+        {
+            std::string s;
+            for (int i=0; i<n; ++i)
+                s += "I";
+            return s;
+        }
+    };
 }
 ```
 
