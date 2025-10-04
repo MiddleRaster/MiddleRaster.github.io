@@ -4033,7 +4033,7 @@ namespace ToRomanTests
                 Assert::AreEqual(td[i].numeral, RomanNumerals::Convert::ToRoman(td[i].number).c_str());
             }
         }
-	};
+    };
 }
 ```
 
@@ -4049,13 +4049,13 @@ Now we need just a little source code, just enough to fail the test.
 
 namespace RomanNumerals
 {
-	struct Convert
-	{
-		static const std::string ToRoman(int /*n*/)
-		{
-			return "";
-		}
-	};
+    struct Convert
+    {
+        static const std::string ToRoman(int /*n*/)
+        {
+            return "";
+        }
+    };
 }
 #endif
 ```
