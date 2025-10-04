@@ -6,13 +6,12 @@ permalink: /TDD/tutorials.html
 
 # Test-Driven Development (TDD)
 
-#### Red
-<h4 style="color:red;">Red Header</h4>
+<h4 style="color:red;">Red</h4>
 TDD means writing a single fine-grained test before writing the code. 
 Then you write just enough source code to make the test **fail**. Why do we make it fail first? 
 Because sometimes the test may pass by accident. Seeing it in the failing state and then after writing just enough code to make it pass, that proves that the code is what made the test go green.
 
-#### Green
+<h4 style="color:green;">Green</h4>
 When making the test go green, don't be clever, don't make the code pretty (yet), don't optimize it. Just get it to pass.
 
 #### Refactor
