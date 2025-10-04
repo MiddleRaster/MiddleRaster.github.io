@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_with_comments
 title: "MiddleRaster's Pages"
 permalink: /
 ---
