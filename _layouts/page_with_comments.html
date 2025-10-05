@@ -4,6 +4,8 @@ layout: page
 
 {{ content }}
 
+{% include counter.html %}
+
 {% if page.comments != false %}
   {% include comments.html %}
 {% endif %}
