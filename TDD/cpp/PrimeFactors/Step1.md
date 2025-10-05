@@ -8,7 +8,6 @@ This is the first, shortest and easiest Kata.  The task is to write a function t
 To make it absolutely clear what the requirements are, we can encode them in tests.  I'll do that for you here:
 
 ```
-
 #include "CppUnitTest.h"
 #include "PrimeFactors.h"
 #include <string>
@@ -51,7 +50,7 @@ that is used in the ```Assert::AreEqual``` function.
 
 Now, I've written all the tests for you, which is not how you typically do TDD, but it works as an exercise for beginners. The idea is that you can uncomment more and more of the tests as we go along.
 
-Your first task is to write just enough source to **fail** this first test.  Because a test might be buggy in the sense that it passes by accident, we want to see a failing test first (red state).
-Tthen write enough code to make it pass (green state). Seeing the states go from red to green proves that the test is correct and our code is correct.
+Your first task is to write just enough source to **fail** this first test.  Because a test might be buggy in the sense that it passes by accident, we want to see a failing test first (red state);
+then write enough code to make it pass (green state). Seeing the states go from red to green proves that the test is correct and our code is correct.
 
 When you've written just enough code to fail this test, click [Next](Step2.html).
