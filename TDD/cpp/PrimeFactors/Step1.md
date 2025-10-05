@@ -8,6 +8,7 @@ This is the first, shortest and easiest Kata.  The task is to write a function t
 To make it absolutely clear what the requirements are, we can encode them in tests.  I'll do that for you here:
 
 ```
+
 #include "CppUnitTest.h"
 #include "PrimeFactors.h"
 #include <string>
@@ -42,7 +43,8 @@ namespace PrimeFactorsKata
       //              FindPrime::Factor::Of(2*2*3*3*5*5*7*11*13));
       //}
     };
-}```
+}
+```
 
 Note that we're using Visual Studio's native C++ unit testing harness (or my replacement). To aid in that, I've written a specialization of a function template
 that is used in the ```Assert::AreEqual``` function.
