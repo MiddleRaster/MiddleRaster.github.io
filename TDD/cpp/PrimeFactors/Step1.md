@@ -13,37 +13,36 @@ To make it absolutely clear what the requirements are, we can encode them in tes
 #include <string>
 
 namespace Microsoft::VisualStudio::CppUnitTestFramework { // custom ToString specialization for Assert::AreEqual
-	template<> inline std::wstring ToString<std::vector<int>>(const std::vector<int>& v)
-	{
-		std::wstringstream ss;
-		for (const auto& e : v)
-			ss << e << L" ";
-		return ss.str();
-	}
+    template<> inline std::wstring ToString<std::vector<int>>(const std::vector<int>& v)
+    {
+        std::wstringstream ss;
+        for (const auto& e : v)
+            ss << e << L" ";
+        return ss.str();
+    }
 }
 
 namespace PrimeFactorsKata
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+    using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-	TEST_CLASS(PrimeFactorsTests)
-	{
-		  TEST_METHOD(NoFactorsOf1)         { Assert::AreEqual(std::vector<int>{       }, FindPrime::Factor::Of(1)); }
-		//TEST_METHOD(FactorOf2Is2)         { Assert::AreEqual(std::vector<int>{2      }, FindPrime::Factor::Of(2)); }
-		//TEST_METHOD(FactorOf3Is3)         { Assert::AreEqual(std::vector<int>{3      }, FindPrime::Factor::Of(3)); }
-		//TEST_METHOD(FactorsOf4Are2And2)   { Assert::AreEqual(std::vector<int>{2, 2   }, FindPrime::Factor::Of(4)); }
-		//TEST_METHOD(FactorsOf6Are2And3)   { Assert::AreEqual(std::vector<int>{2, 3   }, FindPrime::Factor::Of(6)); }
-		//TEST_METHOD(FactorsOf8Are3Twos)   { Assert::AreEqual(std::vector<int>{2, 2, 2}, FindPrime::Factor::Of(8)); }
-		//TEST_METHOD(FactorsOf9Are2Threes) { Assert::AreEqual(std::vector<int>{3, 3   }, FindPrime::Factor::Of(9)); }
+    TEST_CLASS(PrimeFactorsTests)
+    {
+        TEST_METHOD(NoFactorsOf1) { Assert::AreEqual(std::vector<int>{       }, FindPrime::Factor::Of(1)); }
+      //TEST_METHOD(FactorOf2Is2)         { Assert::AreEqual(std::vector<int>{2      }, FindPrime::Factor::Of(2)); }
+      //TEST_METHOD(FactorOf3Is3)         { Assert::AreEqual(std::vector<int>{3      }, FindPrime::Factor::Of(3)); }
+      //TEST_METHOD(FactorsOf4Are2And2)   { Assert::AreEqual(std::vector<int>{2, 2   }, FindPrime::Factor::Of(4)); }
+      //TEST_METHOD(FactorsOf6Are2And3)   { Assert::AreEqual(std::vector<int>{2, 3   }, FindPrime::Factor::Of(6)); }
+      //TEST_METHOD(FactorsOf8Are3Twos)   { Assert::AreEqual(std::vector<int>{2, 2, 2}, FindPrime::Factor::Of(8)); }
+      //TEST_METHOD(FactorsOf9Are2Threes) { Assert::AreEqual(std::vector<int>{3, 3   }, FindPrime::Factor::Of(9)); }
 
-		//TEST_METHOD(LargeComposite)
-		//{
-		//	Assert::AreEqual(std::vector<int>{2,2,3,3,5,5,7,11,13}, 
-		//              FindPrime::Factor::Of(2*2*3*3*5*5*7*11*13));
-		//}
-	};
-}
-```
+      //TEST_METHOD(LargeComposite)
+      //{
+      //	Assert::AreEqual(std::vector<int>{2,2,3,3,5,5,7,11,13}, 
+      //              FindPrime::Factor::Of(2*2*3*3*5*5*7*11*13));
+      //}
+    };
+}```
 
 Note that we're using Visual Studio's native C++ unit testing harness (or my replacement). To aid in that, I've written a specialization of a function template
 that is used in the ```Assert::AreEqual``` function.
