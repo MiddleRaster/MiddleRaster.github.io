@@ -7,7 +7,6 @@ permalink: /TDD/cpp/PrimeFactors/Step2.html
 You probably wrote something like this:
 
 ```
-
 #ifndef _PRIMEFACTORS_H_
 #define _PRIMEFACTORS_H_
 
