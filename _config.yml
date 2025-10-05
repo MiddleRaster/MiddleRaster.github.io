@@ -6,4 +6,7 @@ baseurl: ""
 theme: minima
 header_pages:
   - TDD/tutorials.md
-  
+
+minima:
+  custom_css:
+    - /assets/css/custom.css
