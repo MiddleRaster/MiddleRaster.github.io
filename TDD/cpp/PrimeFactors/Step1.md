@@ -53,4 +53,4 @@ Now, I've written all the tests for you, which is not how you typically do TDD, 
 Your first task is to write just enough source to **fail** this first test.  Because a test might be buggy in the sense that it passes by accident, we want to see a failing test first (red state);
 then write enough code to make it pass (green state). Seeing the states go from red to green proves that the test is correct and our code is correct.
 
-When you've written just enough code to fail this test, click [Next](Step2.html).
+When you've written just enough code to **fail** this test, click [Next](Step2.html).
