@@ -18,7 +18,7 @@ struct Factor
 };
 ```
 
-That'll do it. Your code make look slightly different: e.g., you may have checked for 2 rather than 1 or similar, or even used a ternary operator.  All good.
+That'll do it. Your code may look slightly different: e.g., you may have checked for 2 rather than 1 or similar, or even used a ternary operator.  All good.
 
 Nothing worth refactoring, so let's uncomment the next test. It should fail with ```Assert failed. Expected:<3 > Actual:<2 >```.
 
