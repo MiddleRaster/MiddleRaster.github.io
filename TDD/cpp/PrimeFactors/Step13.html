@@ -4,20 +4,22 @@ title: "Prime Factors: Step 13"
 permalink: /TDD/cpp/PrimeFactors/Step13.html
 ---
 
-blah
+No, we're not. We're writing just enough code to make all test cases up to 9 to pass.
+
+No, we're not. The easiest, simplest thing that could possibly work is just duplicating the ```while``` loop. 
 
 ```
 static std::vector<int> Of(int n)
 {
     std::vector<int> v;
 
-    int candidate = 2;
-    while (n > 1) {
-        while (n % candidate == 0) {
-            v.push_back(candidate);
-            n /= candidate;
-        }
-        ++candidate;
+    while (n%2 == 0) {
+        v.push_back(2);
+        n /= 2;
+    }
+    while (n%3 == 0) {
+        v.push_back(3);
+        n /= 3;
     }
 
     if (n != 1)
@@ -25,5 +27,20 @@ static std::vector<int> Of(int n)
     return v;
 }
 ```
-Now, look what we have:  we initialize a variable, loop until done, and increment. That's not a ```while``` loop:  that's a ```for``` loop.
+
+No, we're not. Now, let's refactor heavily. First, let's use a variable, ```candidate```, in the place of the 2 and 3, thus allowing us to combine the two ```while``` loops into one.
+
+Let's do that and then click [Next](Step13.html).
+
+
+
+
+
+
+
+
+
+
+
+
 Let's change that and then click [Next](Step14.html).
