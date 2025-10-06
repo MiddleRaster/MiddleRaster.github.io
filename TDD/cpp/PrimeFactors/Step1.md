@@ -39,7 +39,7 @@ namespace PrimeFactorsKata
       //TEST_METHOD(LargeComposite)
       //{
       //	Assert::AreEqual(std::vector<int>{2,2,3,3,5,5,7,11,13}, 
-      //              FindPrime::Factor::Of(2*2*3*3*5*5*7*11*13));
+      //                FindPrime::Factor::Of(2*2*3*3*5*5*7*11*13));
       //}
     };
 }
