@@ -28,7 +28,7 @@ namespace PrimeFactorsKata
 
     TEST_CLASS(PrimeFactorsTests)
     {
-        TEST_METHOD(NoFactorsOf1) { Assert::AreEqual(std::vector<int>{       }, FindPrime::Factor::Of(1)); }
+        TEST_METHOD(NoFactorsOf1)         { Assert::AreEqual(std::vector<int>{       }, FindPrime::Factor::Of(1)); }
       //TEST_METHOD(FactorOf2Is2)         { Assert::AreEqual(std::vector<int>{2      }, FindPrime::Factor::Of(2)); }
       //TEST_METHOD(FactorOf3Is3)         { Assert::AreEqual(std::vector<int>{3      }, FindPrime::Factor::Of(3)); }
       //TEST_METHOD(FactorsOf4Are2And2)   { Assert::AreEqual(std::vector<int>{2, 2   }, FindPrime::Factor::Of(4)); }
