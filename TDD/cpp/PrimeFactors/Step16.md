@@ -1,7 +1,7 @@
 ---
 layout: page_with_comments
-title: "Prime Factors: Step 15"
-permalink: /TDD/cpp/PrimeFactors/Step15.html
+title: "Prime Factors: Step 16"
+permalink: /TDD/cpp/PrimeFactors/Step16.html
 ---
 
 And all the tests pass, so we're done. If you're not convinced that it's done, feel free to write some more test cases to prove it to yourself.
