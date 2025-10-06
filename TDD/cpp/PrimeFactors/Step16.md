@@ -6,7 +6,7 @@ permalink: /TDD/cpp/PrimeFactors/Step16.html
 
 And all the tests pass, so we're done. If you're not convinced that it's done, feel free to write some more test cases to prove it to yourself.
 
-The entire final codelooks like this:
+The entire, completed code looks like this:
 
 ```
 #ifndef _PRIMEFACTORS_H_
