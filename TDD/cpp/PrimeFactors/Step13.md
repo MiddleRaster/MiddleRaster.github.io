@@ -9,6 +9,7 @@ We're refactoring while making sure all test cases up to 9 pass.
 We've used a ```candidate``` variable to take the values of 2 and 3. As ```candidate``` gets bigger, ```n``` gets smaller and the terminating condition is when ```n``` is 1.  Like so:
 
 ```
+
 static std::vector<int> Of(int n)
 {
     std::vector<int> v;
