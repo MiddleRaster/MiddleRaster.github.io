@@ -20,6 +20,6 @@ static std::vector<int> Of(int n)
 }
 ```
 
-We're using the vector in the case of all number other than 4.  Let's refactor some more and use it for 4, too.
+We're using the vector in the case of all numbers other than 4.  Let's refactor some more and use it for 4, too.
 
 Let's add that and click [Next](Step8.html).
