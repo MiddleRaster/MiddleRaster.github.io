@@ -6,7 +6,7 @@ permalink: /TDD/cpp/PrimeFactors/Step12.html
 
 We're writing just enough code to make all test cases up to 9 to pass.
 
-The easiest, simplest thing that could possibly work is just duplicating the ```while```. 
+The easiest, simplest thing that could possibly work is just duplicating the ```while``` loop. 
 
 ```
 static std::vector<int> Of(int n)
