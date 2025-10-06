@@ -1,4 +1,0 @@
-css: |
-  .giscus .octicon {
-      display: none;
-  }
