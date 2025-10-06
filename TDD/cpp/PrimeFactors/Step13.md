@@ -25,7 +25,8 @@ static std::vector<int> Of(int n)
     if (n != 1)
         v.push_back(n);
     return v;
-}```
+}
+```
 
 Now, we're initializing a variable, checking for a terminating condition and incrementing that variable.  That's a ```for``` loop, not a ```while``` loop.
 Let's change that and then click [Next](Step14.html).
