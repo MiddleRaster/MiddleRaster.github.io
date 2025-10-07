@@ -4,7 +4,7 @@ title: "Bowling Game: Array of Ints: Step 4"
 permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step4.html
 ---
 
-Here's the second test that checks that rolling 20 ones gives a score of 20:
+Here's the second test that checks that rolling 20 ones in a row gives a score of 20:
 
 ```
 TEST_METHOD(AllOnesMeansScoreIs20)
