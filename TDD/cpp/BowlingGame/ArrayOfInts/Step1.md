@@ -4,7 +4,7 @@ title: "Bowling Game: Array of Ints: Step 1"
 permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step1.html
 ---
 
-So, as always in TDD, we want to write a single test first. The simplest thing to test in bowling is to roll all "gutter balls," that is, missing every pin ever single time. At two tries per frame and 10 frames per games, that means rolling 0 all 20 times.  So, let's write that first test:
+So, as always in TDD, we want to write a single test first. The simplest thing to test in bowling is to roll all "gutter balls," that is, missing every pin every single time. At two tries per frame and 10 frames per games, that means rolling 0 all 20 times.  So, let's write that first test:
 
 ```
 #include "CppUnitTest.h"
