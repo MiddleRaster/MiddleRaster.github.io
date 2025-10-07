@@ -4,7 +4,7 @@ title: "Bowling Game: Array of Ints: Step 2"
 permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step2.html
 ---
 
-There are several ways of failing that firts test, but here's particularly simple one:
+There are several ways of failing that first test, but here's particularly simple one:
 
 ```
 #ifndef BOWLING_H
