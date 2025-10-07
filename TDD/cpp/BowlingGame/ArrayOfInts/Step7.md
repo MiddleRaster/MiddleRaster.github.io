@@ -16,8 +16,8 @@ TEST_METHOD(PinsArgumentIsInRange)
 
 Two Asserts in one test:  some TDDers feel inordinately strongly that this shouldn't be done. I'm not one of those, though I usually follow that advice.
 
-When we build and test, the first ```Assert``` file with ```Assert failed. 'pins' cannot be negative'''.
+When we build and test, the first ```Assert``` fires with ```Assert failed. 'pins' cannot be negative'''.
 
-Now, let's add just enough code to pass all the tests so far.
+Now let's add just enough code to pass all the tests so far.
 
 When you've done that, click [Next](Step8.html)
