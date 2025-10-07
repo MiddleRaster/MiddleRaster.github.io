@@ -1,7 +1,7 @@
 ---
 layout: page_with_comments
 title: "Bowling Game Kata"
-permalink: /TDD/cpp/BowlingGame/BowlingGameKata.html
+permalink: /TDD/cpp/BowlingGame/BowlingGame.html
 ---
 
 Explain how bowling works.
