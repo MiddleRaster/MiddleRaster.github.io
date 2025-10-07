@@ -7,14 +7,14 @@ permalink: /TDD/cpp/BowlingGame/BowlingGame.html
 This is the venerable Bowling Game Kata which is all about scoring bowling.
 
 In case, you're unfamiliar with bowling, here's how it works:
-1. 10 bowling pins are set up by machine at the start of what is called a frame.
-2. The player bowls the bowling ball, attempting to knock down as many pins as possible.
-3. If he (or she (we'll use 'he' since it's less typing)) knocks down all 10 pins, it's called a strike and he gets 10 points, plus whatever number of pins he knocks down on his next two rolls.
-4. If he doesn't knock them all down on the first try, he gets another roll. If he knocks down all the remaining pins, it's called a spare and he gets 10 points, plus whatever number of pins he knocks down on his next roll.
-5. If he doesn't knock them all down by his second roll, he gets 1 point per pin that he did knock down.
-6. That constitutes a frame. And there are 10 of them in a game.
-7. However, if he rolled a strike in the **last** frame, he gets to roll 2 more times.
-8. Similarly, if he rolled a spare in the **last** frame, he gets to roll 1 more time.
+- 10 bowling pins are set up by machine at the start of what is called a frame.
+- The player bowls the bowling ball, attempting to knock down as many pins as possible.
+- If he (or she (we'll use 'he' since it's less typing)) knocks down all 10 pins, it's called a strike and he gets 10 points, plus whatever number of pins he knocks down on his next two rolls.
+- If he doesn't knock them all down on the first try, he gets another roll. If he knocks down all the remaining pins, it's called a spare and he gets 10 points, plus whatever number of pins he knocks down on his next roll.
+- If he doesn't knock them all down by his second roll, he gets 1 point per pin that he did knock down.
+- That constitutes a frame. And there are 10 of them in a game.
+- However, if he rolled a strike in the **last** frame, he gets to roll 2 more times.
+- Similarly, if he rolled a spare in the **last** frame, he gets to roll 1 more time.
 
 
 Now, there are many ways to implement this scoring algorithm cleanly. When I usually do it, my sensibilities lead me to use an array of Frame objects.
