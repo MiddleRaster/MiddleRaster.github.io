@@ -6,3 +6,6 @@ baseurl: ""
 theme: minima
 header_pages:
   - TDD/tutorials.md
+
+plugins:
+  - jekyll-sitemap
