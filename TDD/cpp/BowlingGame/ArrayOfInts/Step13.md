@@ -83,6 +83,8 @@ public:
 };
 ```
 
-Now, I see that if the spare and regular case, we've got a little duplication. I wonder if I can refactor that cleanly, turning each ```if``` clause into a one-liner.
+Now, I see that if the spare and regular case, we've got a little duplication, that ```frameIndex += 2;```.
+
+I wonder if I can refactor that cleanly, turning each ```if``` clause into a one-liner.
 
 Let's give that a try, and click [Next](Step14.html)
