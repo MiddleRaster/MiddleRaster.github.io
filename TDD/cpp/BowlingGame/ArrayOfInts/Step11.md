@@ -23,6 +23,6 @@ The problem is that my ```for``` loop has the wrong terminating condition, and t
 All better. 
 
 Still holding off on the refactoring until we have a strike test, so let's write that. 
-A strike, followed by two bonus rolls (say, 1 and 2), and the rest 0 implies a score of 16 = 10 (for the strike) + 3 (for the two bonus rolls) + the next frame.
+A strike, followed by two bonus rolls (say, 1 and 2), and the rest 0 implies a score of 16 = 10 (for the strike) + 3 (for the two bonus rolls) + 3 (the next frame).
 
 Let's write that test and then click [Next](Step12.html)
