@@ -83,7 +83,7 @@ public:
 };
 ```
 
-Now, I see that if the spare and regular case, we've got a little duplication, that ```frameIndex += 2;```.
+Now, I see that in the spare and regular case, we've got a little duplication, that ```frameIndex += 2;```.
 
 I wonder if I can refactor that cleanly, turning each ```if``` clause into a one-liner.
 
