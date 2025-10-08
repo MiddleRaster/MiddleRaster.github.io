@@ -4,7 +4,7 @@ title: "Bowling Game: Array of Ints: Step 13"
 permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step13.html
 ---
 
-We had to remove that ```if (i%2 == 1)``` and end up with something like this:
+We had to remove that ```if (i%2 == 1)``` and ended up with something like this:
 
 ```
         int Score() const
