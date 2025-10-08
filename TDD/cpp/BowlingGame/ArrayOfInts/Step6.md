@@ -31,7 +31,7 @@ public:
 
 ```
 
-Nothing further to refactor.  All pairs of combinations of numbers that don't add up to 10 will work. Time for another test. 
+Nothing further to refactor.  All combinations of pairs of numbers that don't add up to 10 will work. Time for another test. 
 
 Maybe now would be a good time to validate that ```pins``` argument is not out of range.  Let's write such a test now.
 
