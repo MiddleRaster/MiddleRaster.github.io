@@ -65,6 +65,6 @@ and all that work was being done in the (former) ```Score``` method. The only ca
 That case now calls a method called ```SumValidFrame``` which sums up the rolls *and* throws an exception if the sum is too large. Since all the work to calculate the score is done now each time ```Roll``` is called,
 the implementation of ```Score``` now just returns the last value of ```validScore```.
 
-Now, have three mutable data-members violates a personal rule of mine, so I'm going to remove the data-member and call ```ValidateScore``` from the ```Score``` method.
+Now, having three mutable data-members violates a personal rule of mine, so I'm going to remove the data-member and call ```ValidateScore``` from the ```Score``` method.
 
 To see the final code and tests (which is refactored a tiny bit for clarity), click [Next](Step20.html)
