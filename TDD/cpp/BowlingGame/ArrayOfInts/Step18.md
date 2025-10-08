@@ -9,7 +9,7 @@ That test is easy:
 ```
     TEST_METHOD(FrameSumTooLargeThrowsException)
     {
-        Assert::ExpectException<std::out_of_range>([this] { RollMany(2, 6);  }, L"sum of rolls in a frame too large");
+        Assert::ExpectException<std::out_of_range>([this] { RollMany(2, 6); }, L"when sum of rolls in a frame too large an std::out_of_range exception is thrown");
     }
 ```
 
