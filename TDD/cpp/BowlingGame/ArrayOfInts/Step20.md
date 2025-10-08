@@ -151,7 +151,7 @@ namespace Bowling
 #endif
 ```
 
-Overall, I'm a tiny bit disappointed. It's a bit more code than I expected and it could be clearer. See the other Bowling Game kata steps, [here](../BowlingGame.html).
+Overall, I'm a tiny bit disappointed. It's a bit more code than I expected and it could be clearer. For alternative implementations, see the other Bowling Game kata steps, [here](../BowlingGame.html).
 
 Are we done? If you don't think so, feel free to add more tests and run them.
 
