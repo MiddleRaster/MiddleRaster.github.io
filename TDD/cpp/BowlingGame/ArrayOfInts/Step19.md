@@ -30,7 +30,7 @@ class Game
     {
         if (IsStrike(index)) return FrameType::Strike;
         if (IsSpare (index)) return FrameType::Spare;
-                                return FrameType::Open;
+                             return FrameType::Open;
     }
     int ValidateScore() const
     {
