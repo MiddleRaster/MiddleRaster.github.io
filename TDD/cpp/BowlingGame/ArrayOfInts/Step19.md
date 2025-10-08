@@ -62,7 +62,7 @@ public:
 ```
 I added a data-member, ```validScore```, to hold onto the score, which is now calculated in the ```Roll``` method. The reason for that is that we need to figure out all the frame boundaries,
 and all that work was being done in the (former) ```Score``` method. The only case where the frame's sum might be too big is the ```FrameType::Open``` type.
-That case now calls a method called ```SumValidFrame``` which sums up the rolls *and* throws an exception if the sum is too large. Since all the work to calculate the score is done now each time ```Roll``` os called,
+That case now calls a method called ```SumValidFrame``` which sums up the rolls *and* throws an exception if the sum is too large. Since all the work to calculate the score is done now each time ```Roll``` is called,
 the implementation of ```Score``` now just returns the last value of ```validScore```.
 
 Now, have three mutable data-members violates a personal rule of mine, so I'm going to remove the data-member and call ```ValidateScore``` from the ```Score``` method.
