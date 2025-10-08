@@ -4,7 +4,7 @@ title: "Bowling Game: Array of Ints: Step 14"
 permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step14.html
 ---
 
-Hmmm, it came out like this:
+Hmm, it came out like this:
 ```
     int Score() const
     {
@@ -24,6 +24,6 @@ Hmmm, it came out like this:
     }
 ```
 
-I don't like it. But before I revert it, that ```continue``` gives me an idea:  what if we change this into a ```switch``` statement, swithing on an ```enum```?
+I don't like it. But before I revert it, that ```continue``` gives me an idea:  what if we change this into a ```switch``` statement, switching on an ```enum```?
 
 Let's give that a try, and click [Next](Step15.html)
