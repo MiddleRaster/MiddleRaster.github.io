@@ -26,4 +26,4 @@ The problem with the code is that we're not counting frames and the perfect game
 
 Now, all the tests pass.  Are we done? Well, we mentioned ealier that a non-strike and non-spare frame is never checking for the two rolls summing up to a number bigger than 10.
 
-Let's wrote such a test, and when you've done that, click [Next](Step18.html)
+Let's write such a test, and when you've done that, click [Next](Step18.html)
