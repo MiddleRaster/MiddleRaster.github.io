@@ -43,9 +43,9 @@ namespace Bowling
 ```
 
 So, we hang onto all the rolls in an ```std::array``` (of the maximum size, where we have a spare in the last frame), populated in the ```Roll``` method, but do all the scoring in the ```Score``` method.
-It works, but could use some refactoring. Whenver I see a comment, I take it as a hint that maybe I should extract an expressively named method. On the other hand, I don't always extract a method if there isn't duplication. Let's hold off on that for a bit.
+It works, but could use some refactoring. Whenever I see a comment, I take it as a hint that maybe I should extract an expressively named method. On the other hand, I don't always extract a method if there isn't duplication. Let's hold off on that for a bit.
 
-Now that line, ```if (i%2 == 1)``` will be wrong if we have a strike, but we don't have a test for that yet. Even though the code is a little ugly, I'm going to hold off refactoring for a bit.
+Now that line, ```if (i%2 == 1)``` will be wrong if we have a strike, but we don't have a test for that yet. Even though the code is a little ugly, I'm going to hold off refactoring.
 
 Let's write some more spare tests, like nothing but spares.  If you rolls 21 fives in a row, they're all spares and the score will be 150.
 
