@@ -35,7 +35,7 @@ We had to remove that ```if (i%2 == 1)``` and end up with something like this:
 The idea is that ```i``` always points to the beginning of a new frame. And all the tests so far pass.
 
 Let's refactor.  
-1. First, let's rename ```i''' to ```frameIndex```.  Build and test.
+1. First, let's rename ```i``` to ```frameIndex```.  Build and test.
 2. Then, extract a method, ```SumTwoRolls(int index)``` and use it throughout.  Build and test.
 3. Let's also extract an ```IsStrike``` method and an ```IsSpare``` method and remove the corresponding comments. Build and test.
 
