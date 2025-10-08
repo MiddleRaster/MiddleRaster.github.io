@@ -1,7 +1,7 @@
 ---
 layout: page_with_comments
-title: "Bowling Game: Array of Ints: Step 19"
-permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step19.html
+title: "Bowling Game: Array of Ints: Step 20"
+permalink: /TDD/cpp/BowlingGame/ArrayOfInts/Step20.html
 ---
 
 The final tests:
