@@ -11,5 +11,6 @@ TEST_METHOD(FrameSumTooLargeThrowsException)
     Assert::ExpectException<std::out_of_range>([this] { RollMany(2, 6); }, L"when sum of rolls in a frame too large an std::out_of_range exception is thrown");
 }
 ```
+It fails as expected.
 
 Let's write just enough code to pass all the test, and then click [Next](Step19.html)
