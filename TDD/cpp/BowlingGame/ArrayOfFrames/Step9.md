@@ -21,6 +21,6 @@ And it fails properly:  ```Assert failed. Expected:<26> Actual:<18>```.
 
 At this point, I want to introduce a ```Frame``` class, but we're in the red state. We can't refactor now, because we should always refactor when we're green to ensure our refactorings haven't inadvertantly broken anything.
 
-So instead, let's comment out this latest test and instead refactor by introducing and using a ```Frame``` class.
+So, let's comment out this latest test and instead refactor by introducing and using a ```Frame``` class.
 
 When you've done that, click [Next](Step10.html)
