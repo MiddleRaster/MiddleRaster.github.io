@@ -15,4 +15,4 @@ TEST_METHOD(AllSparesTest)
 
 And, as expected, we get a crash, runtime assert or similar, depending on the OS.
 
-Let's write just enough code to pass all the test and then click [Next](Step16.html)
+Let's write just enough code to pass all the tests and then click [Next](Step16.html)
