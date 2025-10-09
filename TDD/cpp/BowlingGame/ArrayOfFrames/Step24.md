@@ -1,0 +1,24 @@
+---
+layout: page_with_comments
+title: "Bowling Game: Array of Frames: Step 24"
+permalink: /TDD/cpp/BowlingGame/ArrayOfFrames/Step24.html
+---
+
+Here's the perfect game test:
+```
+    TEST_METHOD(PerfectGame)
+    {
+        RollMany(12, 10);
+        Assert::AreEqual(300, game.Score());
+    }
+```
+
+When we run the perfect game test, it throws an exception, because we're running off the end of the array.
+
+Seems like a simple fix:  we need **two** extra frames at the end to hold the **second** bonus roll, in the case the first bonus roll was also a strike.
+Just this should do it:
+```
+    Frame frames[10 + 2]; // plus two double-secret frames
+```
+
+Let's run that test, and then click [Next](Step25.html).
