@@ -32,7 +32,7 @@ And the ```Frame::Score``` method looks like this:
     }
 ```
 
-That should do it. Are we done?  I think so, but if you don't feel free to add more tests.
+That should do it; all the tests pass. 
 
 I want do some minor refactoring in the tests, to add ```RollStrike``` and ```RollSpare``` methods.
 
