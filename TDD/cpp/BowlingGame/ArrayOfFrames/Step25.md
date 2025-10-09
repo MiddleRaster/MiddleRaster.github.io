@@ -1,7 +1,7 @@
 ---
 layout: page_with_comments
-title: "Bowling Game: Array of Frames: Step 26"
-permalink: /TDD/cpp/BowlingGame/ArrayOfFrames/Step26.html
+title: "Bowling Game: Array of Frames: Step 25"
+permalink: /TDD/cpp/BowlingGame/ArrayOfFrames/Step25.html
 ---
 
 The problem is that if the bonus roll is a strike, we need to reach into the next frame after that to get the next bonus. And that means passing **2** frames into the ```Frame::Score``` method.
@@ -36,4 +36,4 @@ That should do it; all the tests pass.
 
 I want do some minor refactoring in the tests, to add ```RollStrike``` and ```RollSpare``` methods.
 
-Then click [Next](Step27.html).
+Then click [Next](Step26.html).
