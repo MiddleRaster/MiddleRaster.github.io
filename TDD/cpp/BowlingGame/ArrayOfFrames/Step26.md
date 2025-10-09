@@ -114,7 +114,7 @@ namespace Bowling
                 if (IsStrike() && next.IsStrike()) return 20 + afterNext.rollOne;
                 if (IsStrike())                    return 10 +      next.Sum();
                 if (IsSpare ())                    return 10 +      next.rollOne;
-                                                   return Sum();
+                                                   return                Sum();
             }
         private:
             bool IsStrike() const { return rollOne == 10; }
