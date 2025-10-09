@@ -15,7 +15,7 @@ class Game
     public:
         bool Roll(int pins)
         {
-            if (rollOne != -1) {
+            if (rollOne == -1) {
                 rollOne = pins;
                 return false;
             } else {
