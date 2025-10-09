@@ -17,6 +17,6 @@ private:
     
 ```
 
-All the tests pass. It occurs to me that we're missing a precondition test:  it's possible that a single frame's two rolls each is less than 10 but the sum is greater than 10, which is illegal.
+All the tests pass. It occurs to me that we're missing a precondition test:  it's possible that a single frame's two rolls each are less than 10 but the sum is greater than 10, which is illegal.
 
 Let's write a test for that and then click [Next](Step18.html)
