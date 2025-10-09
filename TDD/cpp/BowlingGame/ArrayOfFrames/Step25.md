@@ -20,19 +20,14 @@ And the ```Frame::Score``` method looks like this:
 ```
     int Score(const Frame& next, const Frame& afterNext) const
     {
-        if (IsStrike())
-        {
-            if (next.IsStrike())
-                return 20 + afterNext.rollOne;
-            return 10 + next.Sum();
-        }
-        if (IsSpare())
-            return 10 + next.rollOne;
-        return Sum();
+        if (IsStrike() && next.IsStrike()) return 20 + afterNext.rollOne;
+        if (IsStrike())                    return 10 + next.Sum();
+        if (IsSpare())                     return 10 + next.rollOne;
+                                           return Sum();
     }
 ```
 
-That should do it; all the tests pass. 
+That should do it; all the tests pass. Now, before you say anything, I know I'm calling '''IsStrike''' twice on the current frame, which looks like it might be a perf issue, but in reality, modern optimizing compilers will elide the second and just hang onto the return from the first one.
 
 I want do some minor refactoring in the tests, to add ```RollStrike``` and ```RollSpare``` methods.
 
