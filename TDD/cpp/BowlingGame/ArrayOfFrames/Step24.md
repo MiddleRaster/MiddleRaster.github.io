@@ -21,4 +21,6 @@ Just this should do it:
     Frame frames[10 + 2]; // plus two double-secret frames
 ```
 
-Let's run that test, and then click [Next](Step25.html).
+But that fails, with ```Assert failed. Expected:<300> Actual:<200>```.  Pretty good stuff, this TDD, huh?
+
+What's wrong? I'll let you figure that out and fix it. Then click [Next](Step25.html).
