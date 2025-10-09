@@ -133,7 +133,7 @@ namespace Bowling
         {
             int score = 0;
             for(int i=0; i<10; ++i)
-                score += frames[i].Score(frames[i+1], frames[i+1]);
+                score += frames[i].Score(frames[i+1], frames[i+2]);
             return score;
         }
     };
