@@ -16,7 +16,7 @@ I guess that ```std::accumulate``` idea didn't pan out so well. Here's the refac
 ```
 
 So, we don't need the ```#include <numeric>``` anymore.
-And I also renamed the ```Frame```'s ```Sum``` method to ```Score'''.
+And I also renamed the ```Frame```'s ```Sum``` method to ```Score```.
 
 Now, that raw loop looks dangerous to me, as we might run right off the end.  
 
