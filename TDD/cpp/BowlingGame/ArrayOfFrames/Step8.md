@@ -21,4 +21,4 @@ Now, we still have a precondition that may not be met:  if two rolls in a single
 
 For now, let's go right into rolling a single spare, followed by the bonus roll.  So, for example, if we roll 4, 6, 8 and the rest 0, the score will be 26 = 10 (for the spare) + 8 (for the spare bonus) + 8 (for the first roll of the next frame).
 
-Let's write that test. and then click [Next](Step9.html)
+Let's write that test, and then click [Next](Step9.html)
