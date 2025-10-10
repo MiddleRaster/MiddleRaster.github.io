@@ -50,7 +50,7 @@ public:
 I added the ```Frame``` class, which holds onto two pieces of data, ```rollOne``` and ```rollTwo```. To distinguish when ```pins``` refers to the first roll or second, I initialize ```rollOne``` to -1.
 And there's a ```Sum``` method to return the sum of the two rolls.
 
-Now using it, we need to know when we've had two rolls and are past a frame boundary. The ```Frame``` class returns true when the frame is complete, and we can just increment the ```currentFrame```.
+Now using it, we need to know when we've had two rolls and are past a frame boundary. The ```Frame::Roll``` method returns true when the frame is complete, and we can just increment the ```currentFrame```.
 
 All the tests pass. But maybe we can refactor some more. Writing raw loops, rather than using an appropriate ```<numeric>``` algorithm, is considered poor form. 
 
