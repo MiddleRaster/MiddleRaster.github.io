@@ -22,6 +22,6 @@ And the ```Game::Score``` method looks like this:
     }
 ```
 
-We need to reach into the next ```Frame``` instance to grab the spare bonus roll, and I did this by passing it by reference into the Sum method. That ```frame.Sum((&frame)[1])``` implementation is hideous. 
+We need to reach into the **next** ```Frame``` instance to grab the spare bonus roll, and I did this by passing it by reference into the Sum method. That ```frame.Sum((&frame)[1])``` implementation is hideous. 
 
 Let's refactor and when that's done, click [Next](Step14.html)
