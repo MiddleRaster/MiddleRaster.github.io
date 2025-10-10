@@ -13,4 +13,4 @@ TEST_METHOD(FrameSumTooLargeThrowsException)
 ```
 It fails as expected.
 
-Let's write just enough code to pass all the test, and then click [Next](Step19.html)
+Let's write just enough code to pass all the tests, and then click [Next](Step19.html)
