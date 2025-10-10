@@ -16,6 +16,6 @@ Here's the single strike plus bonus rolls test:
     }    
 ```
 
-When we run that test, it throws an exception, because we fail that precondition that we just put in, in the last step.
+When we run that test, it throws an exception, because we fail that precondition that we just put in, in the previous step.
 
 Let's write just enough code to pass all the tests, and then click [Next](Step22.html).
