@@ -17,4 +17,4 @@ TEST_METHOD(AllOnesMeansScoreIs20)
 
 We can fail this test in my favorite way:  by doing nothing. It fails with ```Assert failed. Expected:<20> Actual:<0>```.
 
-Next, write just enough code to pass both of these test, and click [Next](Step5.html)
+Next, write just enough code to pass both of these tests, and click [Next](Step5.html)
