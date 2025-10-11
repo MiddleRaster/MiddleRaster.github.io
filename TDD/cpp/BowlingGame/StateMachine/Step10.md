@@ -4,9 +4,9 @@ title: "Bowling Game: State Machine: Step 10"
 permalink: /TDD/cpp/BowlingGame/StateMachine/Step10.html
 ---
 
-Now, some people are under the misimpression that you turn your brain off when doing TDD and never do any design. But that would be foolish.  Let's think hard about the states, the transition, the data-flow.
+Now, some people are under the misimpression that you turn your brain off when doing TDD and never do any design. But that would be foolish.  Let's think hard about the states, the transitions, the data-flow.
 
-Here's what I think:  there are really only two state.  Either we're waiting for the bowler to roll his first throw or (if it's not a strike) we're waiting for his second throw.
+Here's what I think:  there are really only two states.  Either we're waiting for the bowler to roll his first throw or (if it's not a strike) we're waiting for his second throw.
 
 We could call it something like
 - WaitingForFirstRoll, WaitingForSecondRoll
