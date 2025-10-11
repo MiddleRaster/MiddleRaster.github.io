@@ -43,6 +43,6 @@ To handle the bonus incurred by rolling a spare means we need code something lik
             }
         };
 ```
-We added a flag to ```WaitingForFirstRoll``` such that if true, the ```pins``` value is added in twice, once for the roll and once for the bonus roll because it was a spare in the previous frame.
+We added a flag to ```WaitingForFirstRoll``` such that if true, the ```pins``` value is added in twice, once for the roll and once for the bonus roll because there was a spare in the previous frame.
 
 Plenty of refactoring opportunities; let's clean this up, and then click [next](Step16.html).
