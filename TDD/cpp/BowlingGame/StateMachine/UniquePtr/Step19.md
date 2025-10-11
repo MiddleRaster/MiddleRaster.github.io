@@ -21,7 +21,7 @@ Moving the ```frame``` data-member inside the ```ScoreUpdater``` class results i
 We use the ```ScoreUpdater``` as a data-member in the ```Game``` class:
 ```
     class Game
-    {   /* nested classes removed for clarityy */
+    {   /* nested classes removed for clarity */
         ScoreUpdater scorer;
         std::unique_ptr<State> state = std::make_unique<WaitingForFirstRoll>(scorer, false);
     public:
