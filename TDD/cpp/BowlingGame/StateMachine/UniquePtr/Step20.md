@@ -40,7 +40,7 @@ Ok, we removed the problematic ```if``` like this:
 
 So, we added a ```WaitingForBonusRollsAfterLastFrame``` state, whose ```Update``` method only sums in the bonus pins.
 
-That's great, but what about the case where the last frame is not a spare? We'll keep right on going; instead, let's add a state whose ```Update``` method throws an exception.
+That's great, but what about the case where the last frame is not a spare? We'll keep right on going; instead, let's add a state for when the game is over and whose ```Update``` method throws an exception.
 As usual, we'll need a test first.  Let's roll 21 2s.
 
 After you've written that test, click [next](Step21.html).
