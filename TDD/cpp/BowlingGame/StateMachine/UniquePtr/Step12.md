@@ -35,9 +35,9 @@ Here's the refactored version:
     };    
 ```
 
-The ```State``` class now holds onto the reference to ```score``` and that reference is update in the ```AddToScore``` method.
+The ```State``` class now holds onto the reference to ```score``` and that reference is updated in the ```AddToScore``` method.
 
-I don't like it:  the ```State``` class is doing double-duty:  it's reason for being is to provide an interface for the state machine **and** it's updating the score.
+I don't like it:  the ```State``` class is doing double-duty:  its reason for being is to provide an interface for the state machine **and** it's updating the score.
 That's two things and violates the Single-class/Single-responsibility principle.
 
 Let's refactor some more to fix that, and then click [next](Step13.html).
