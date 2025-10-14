@@ -55,7 +55,8 @@ Changing to an enum is straightforward:
     };
 ```
 
-Looking at the ```Addroll``` method shows that we have to do lots of handling for the bonus rolls and it's missing from the ```AddSpare``` and ```AddStrike()``` methods. That means that we're missing a few tests.
+Looking at the ```AddRoll``` method shows that we have to do lots of handling for the bonus rolls and it's missing from the ```AddSpare``` and ```AddStrike``` methods. That means that we're missing a few tests.
+In particular, those methods should have 3 cases for each of the bonus roll cases.
 
 Let's fix that immediately, by adding a test for a spare followed by a strike and then a 1 and a 2, which should equal 36.
 
