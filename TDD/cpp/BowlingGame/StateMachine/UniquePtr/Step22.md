@@ -36,6 +36,6 @@ To pass the "two strikes in a row" test, we need to modify these two methods in 
 ```
 
 We added a special case in the ```AddStrike``` method for when the previous roll was a strike, in which case we add 20 (equals the strike for this roll and again for the first bonus from the previous strike).
-Now, I'm really uncomfortable with setting ```bonusRolls``` equal to 3, because it's misleading. It's not a count anymore (i.e., it's not that the next three rolls are all bonuses). Instead the next roll counts as a bonus twice, and the one after that as another bonus.  
+Now, I'm really uncomfortable with setting ```bonusRolls``` equal to 3, because it's misleading. It's not a count anymore (i.e., it's not that the next three rolls are all bonuses). Instead the next roll counts as a bonus twice, and the one after that as one more bonus.  
 
 This tells me I should switch to an enum. So, let's do that refactoring first, and then click [next](Step23.html).
