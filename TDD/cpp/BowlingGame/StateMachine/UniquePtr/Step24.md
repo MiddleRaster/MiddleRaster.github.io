@@ -4,14 +4,20 @@ title: "Bowling Game: State Machine: Unique_Ptr: Step 24"
 permalink: /TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step24.html
 ---
 
-The test might look something like this:
+The "spare, then strike, then bonuses" test looks like this:
 ```
-    TEST_METHOD(SumOfTwoRollsTooLargeThrowsException)
+    TEST_METHOD(SpareStrikeAndTwoRollsWorks)
     {
-        Assert::ExpectException<std::out_of_range>([this] { RollMany(2, 6); }, L"the sum of rolls in a frame must be <= 10");
+        game.Roll(5);
+        game.Roll(5);  // spare!
+        game.Roll(10); // strike!
+        game.Roll(1);
+        game.Roll(2);
+        RollMany(14, 0);
+        Assert::AreEqual(36, game.Score());
     }
 ```
 
-Build and test:  it fails properly, with: ```Assert failed. the sum of rolls in a frame must be <= 10```.
+Build and test:  it fails properly, with: ```Assert failed. Expected:<36> Actual:<26>""".
 
-Let's write just enough code to pass this test too, and then click [next](Step25.html).
+Go ahead and write just enough code to pass this test too, and then click [next](Step25.html).
