@@ -11,13 +11,12 @@ So, as always in TDD, we want to write a single test first. The simplest thing t
 #include "Bowling.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace Bowling;
 
 namespace BowlingTests
 {
     TEST_CLASS(BowlingGameTests)
     {
-        Game game;
+        Bowling::Game game;
     public:
         TEST_METHOD(AllGutterBallsMeansScoreIs0)
         {
