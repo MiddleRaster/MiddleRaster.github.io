@@ -81,7 +81,7 @@ while the ```Scorer::AddRoll``` method comes out like this:
 ```
         void AddRoll(int pins)
         {
-            if ((frame > 10) || ((frame == 10) && (bonusRolls == 0))) // Bonus::NoBonusRolls)))
+            if ((frame > 10) || ((frame == 10) && (bonusRolls == 0)))
                 throw std::out_of_range("can't roll after game has ended");
             if (frame < 10)
                 score += pins;
