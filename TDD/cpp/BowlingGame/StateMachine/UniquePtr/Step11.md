@@ -6,6 +6,8 @@ permalink: /TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step11.html
 
 Here's the std::unique_ptr state machine way:
 ```
+#pragma once
+
 #ifndef BOWLING_H
 #define BOWLING_H
 
@@ -15,55 +17,55 @@ namespace Bowling
 {
     class Game
     {
+        class Scorer
+        {
+            int score = 0;
+        public:
+            void AddRoll(int pins) { score += pins; }
+            int Score() const { return score; }
+        };
+
         struct State
         {
-            virtual std::unique_ptr<State> Update(int /*pins*/) = 0;
+            virtual std::unique_ptr<State> Update(Scorer& /*scorer*/, int /*pins*/) const = 0;
             virtual ~State() {}
         };
-        class WaitingForFirstRoll : public State
+        struct WaitingForFirstRoll : public State
         {
-            int& score;
-        public:
-            WaitingForFirstRoll(int& refToScore) : score(refToScore) {}
-            std::unique_ptr<State> Update(int pins) override
+            std::unique_ptr<State> Update(Scorer& scorer, int pins) const override
             {
-                score += pins;
-                return std::make_unique<WaitingForSecondRoll>(score);
+                scorer.AddRoll(pins);
+                return std::make_unique<WaitingForSecondRoll>();
             }
         };
-        class WaitingForSecondRoll : public State
+        struct WaitingForSecondRoll : public State
         {
-            int& score;
-        public:
-            WaitingForSecondRoll(int& refToScore) : score(refToScore) {}
-            std::unique_ptr<State> Update(int pins) override
+            std::unique_ptr<State> Update(Scorer& scorer, int pins) const override
             {
-                score += pins;
-                return std::make_unique<WaitingForFirstRoll>(score);
+                scorer.AddRoll(pins);
+                return std::make_unique<WaitingForFirstRoll>();
             }
         };
-
-        int score = 0;
-        std::unique_ptr<State> state = std::make_unique<WaitingForFirstRoll>(score);
-
+        Scorer scorer;
+        std::unique_ptr<State> state = std::make_unique<WaitingForFirstRoll>();
     public:
         void Roll(int pins)
         {
             if (pins < 0 || pins > 10)
                 throw std::out_of_range("'pins' is out of range");
-
-            state = state->Update(pins);
+            state = state->Update(scorer, pins);
         }
-        int Score() const { return score; }
+        int Score() const { return scorer.Score(); }
     };
 }
 #endif
 ```
 
 There's an abstract base class, ```State```, which has the basic machinery for a state machine:  an ```Update``` method that returns a ```std::unique_ptr<State>```.
+Now, notice that the ```Update``` method is virtual *and const*. Having mutable states in a state machine would be very wrong, so I'm marking it as const.
 
-There are two concrete implementations of that abstract base class, each of which holds on to a reference to ```score``` and updates it in the ```Update``` method, before returning a unique pointer to the other concrete class instance.
+There are two concrete implementations of that abstract base class and a reference to the ```Scorer``` is passed to the ```Update``` method along with the number of pins knocked down. It then returns a unique pointer to the other concrete class instance.
 
-Plenty of refactoring opportunities:  there's much duplication between the two concrete classes. Let's push a bunch of that into their base class.
+Looks clean to me; nothing further to refactor. Let's comment in the spares test. It still fails as before.
 
-When you've done that refactoring, click [next](Step12.html).
+Write just enough code to pass that and all the other test, and then click  [next](Step12.html).
