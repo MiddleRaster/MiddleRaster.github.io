@@ -4,38 +4,38 @@ title: "Bowling Game: State Machine: Unique_Ptr: Step 22"
 permalink: /TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step22.html
 ---
 
-Adding a state for when the bowler is continuing to bowl after the game is over looks like this:
+To pass the "two strikes in a row" test, we need to modify these two methods in the ```Scorer``` class:
 ```
-    class WaitingForSecondRoll : public State
-    {
-        ScoreUpdater& scorer;
-        int firstRoll;
-    public:
-        WaitingForSecondRoll(ScoreUpdater& scorerRef, int firstRoll)
-            : scorer(scorerRef)
-            , firstRoll(firstRoll)
-        {}
-        std::unique_ptr<State> Update(int pins) override
+        void AddStrike()
         {
-            scorer.AddToScore(pins);
-            scorer.FrameComplete();
-            if (scorer.InLastFrame())
-                if (firstRoll + pins == 10)
-                    return std::make_unique<WaitingForBonusRollsAfterLastFrame>(scorer);
-                else
-                    return std::make_unique<GameOver>();
-            return std::make_unique<WaitingForFirstRoll>(scorer, firstRoll + pins == 10);
+            if (bonusRolls == 2)
+            {
+                score += 20;
+                bonusRolls = 3;
+                ++frame;
+                return;
+            }
+
+            score += 10;
+            bonusRolls = 2;
+            ++frame;
         }
-    };
-    class GameOver : public State
-    {
-        std::unique_ptr<State> Update(int /*pins*/) override
+
+        void AddRoll(int pins)
         {
-            throw std::logic_error("attempting to roll after game is over.");
+            if ((frame > 10) || ((frame == 10) && (bonusRolls == 0))) // Bonus::NoBonusRolls)))
+                throw std::out_of_range("can't roll after game has ended");
+
+            if (frame < 10)
+                score += pins;
+
+            if (bonusRolls == 1) { score += pins;   bonusRolls = 0; }
+            if (bonusRolls == 2) { score += pins;   bonusRolls = 1; }
+            if (bonusRolls == 3) { score += pins*2; bonusRolls = 2; }
         }
-    };
 ```
 
-And all the tests pass. However, I spy a little duplication:  ```firstRoll + pins == 10``` is used twice. Let's extract a method for that.
+We added a special case in the ```AddStrike``` method for when the previous roll was a strike, in which case we add 20 (equals the strike for this roll and again for the first bonus from the previous strike).
+Now, I'm really uncomfortable with setting ```bonusRolls``` equal to 3, because it's misleading. It's not a count anymore (i.e., it's not that the next three rolls are all bonuses). Instead the next roll counts as a bonus twice, and the one after that as another bonus.  
 
-When you've done that, click [next](Step23.html).
+This tells me I should switch to an enum. So, let's do that refactoring first, and then click [next](Step23.html).
