@@ -4,11 +4,16 @@ title: "Bowling Game: State Machine: Unique_Ptr: Step 21"
 permalink: /TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step21.html
 ---
 
-Here's the test for continuing to bowl after the game is over:
+The two strikes in a row test looks like this:
 ```
-    TEST_METHOD(BowlingAfterGameIsOverThrowsException)
+    TEST_METHOD(TwoStrikesInARowPlusBonusesWork)
     {
-        Assert::ExpectException<std::logic_error>([this] { RollMany(21, 2); }, L"Game over, man!");
+        game.Roll(10); // strike!
+        game.Roll(10); // strike!
+        game.Roll(1);
+        game.Roll(2);
+        RollMany(14, 0);
+        Assert::AreEqual(37, game.Score());
     }
 ```
 
