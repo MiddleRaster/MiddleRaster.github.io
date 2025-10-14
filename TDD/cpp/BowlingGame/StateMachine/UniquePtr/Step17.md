@@ -4,17 +4,41 @@ title: "Bowling Game: State Machine: Unique_Ptr: Step 17"
 permalink: /TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step17.html
 ---
 
-The all 5s test should look like this:
+The refactored ```Scorer``` class now looks like this:
 ```
-        TEST_METHOD(AllSparesMeansScoreis150)
+    class Scorer
+    {
+        bool bonusRoll = false;
+        int score = 0;
+        int frame = 0;
+    public:
+        void AddFirstRoll            (int pins) { AddRoll(pins);          }
+        void AddSecondRollOfOpenFrame(int pins) { AddRoll(pins); ++frame; }
+        void AddSpare(int pins)
         {
-            RollMany(21, 5);
-            Assert::AreEqual(150, game.Score());
+            score += pins;
+            bonusRoll = true;
+            ++frame;
         }
+        int Score() const { return score; }
+    private:
+        void AddRoll(int pins)
+        {
+            if ((frame > 10) || ((frame == 10) && (bonusRoll == false)))
+                throw std::out_of_range("can't roll after game has ended");
+
+            if (frame < 10)
+                score += pins;
+            if (bonusRoll) {
+                score += pins;
+                bonusRoll = false;
+            }
+        }
+    };
 ```
 
-And when we run it, we get an assertion:  ```Assert failed. Expected:<150> Actual:<155>```.
+Note how I lined up the first two methods:  I love tabular-looking code, because it makes many kinds of errors just leap off the page.
 
-The problem here is that we're not counting frames anywhere; we just keep going, one too far in this case.
+Now might be a good time to add that other precondition we mentioned earlier, about each roll being within range, but the sum might be bigger than 10.
 
-Write just enough code to fix this up, and then click [next](Step18.html).
+Let's write that test, and then click [next](Step18.html).
