@@ -18,6 +18,6 @@ The "spare, then strike, then bonuses" test looks like this:
     }
 ```
 
-Build and test:  it fails properly, with: ```Assert failed. Expected:<36> Actual:<26>""".
+Build and test:  it fails properly, with: ```Assert failed. Expected:<36> Actual:<26>```.
 
 Go ahead and write just enough code to pass this test too, and then click [next](Step25.html).
