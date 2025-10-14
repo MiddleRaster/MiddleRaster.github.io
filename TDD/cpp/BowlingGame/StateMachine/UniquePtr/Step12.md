@@ -4,40 +4,63 @@ title: "Bowling Game: State Machine: Unique_Ptr: Step 12"
 permalink: /TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step12.html
 ---
 
-Here's the refactored version:
+Ok, to pass the spare test, we need to make a few changes. First, to the ```Scorer``` class:
 ```
-    struct State
+    class Scorer
     {
-        int& score;
-        State(int& refToScore) : score(refToScore) {}
-        void AddToScore(int pins) { score += pins; }
-
-        virtual std::unique_ptr<State> Update(int /*pins*/) = 0;
-        virtual ~State() {}
+        bool bonusRoll = false;
+        int score = 0;
+    public:
+        void AddRoll(int pins)
+        {
+            score += pins;
+            if (bonusRoll) {
+                score += pins;
+                bonusRoll = false;
+            }
+        }
+        void AddSpare(int pins)
+        {
+            score += pins;
+            bonusRoll = true;
+        }
+        int Score() const { return score; }
     };
+```
+
+And to the two concrete ```State``` classes:
+```
     struct WaitingForFirstRoll : public State
     {
-        WaitingForFirstRoll(int& refToScore) : State(refToScore) {}
-        std::unique_ptr<State> Update(int pins) override
+        std::unique_ptr<State> Update(Scorer& scorer, int pins) const override
         {
-            AddToScore(pins);
-            return std::make_unique<WaitingForSecondRoll>(score);
+            scorer.AddRoll(pins);
+            return std::make_unique<WaitingForSecondRoll>(pins);
         }
     };
-    struct WaitingForSecondRoll : public State
+    class WaitingForSecondRoll : public State
     {
-        WaitingForSecondRoll(int& refToScore) : State(refToScore) {}
-        std::unique_ptr<State> Update(int pins) override
+        int firstRoll;
+    public:
+        WaitingForSecondRoll(int firstRoll) : firstRoll(firstRoll) {}
+        std::unique_ptr<State> Update(Scorer& scorer, int pins) const override
         {
-            AddToScore(pins);
-            return std::make_unique<WaitingForFirstRoll>(score);
+            if (firstRoll + pins == 10) // spare!
+                scorer.AddSpare(pins);
+            else
+                scorer.AddRoll(pins);
+            return std::make_unique<WaitingForFirstRoll>();
         }
-    };    
+    };
 ```
 
-The ```State``` class now holds onto the reference to ```score``` and that reference is updated in the ```AddToScore``` method.
+We hold onto the ```firstRoll``` so that we can check if it's a spare, in the ```WaitingForSecondRoll``` class. And that class must be constructed right in the ```WaitingForFirstRoll``` class.
 
-I don't like it:  the ```State``` class is doing double-duty:  its reason for being is to provide an interface for the state machine **and** it's updating the score.
-That's two things and violates the Single-class/Single-responsibility principle.
+In addition, we added an ```AddSpare``` method to the ```Scorer``` class, which sets a ```bool``` to true to tell us to add the bonus in on whatever the next roll is.
 
-Let's refactor some more to fix that, and then click [next](Step13.html).
+The comment ```// spare!``` is a hint that maybe we should refactor the code to make it clearer, but I'd hate to make this class bigger just to hold an explanatory method that's only called once.
+Maybe we should add that later, if it ever gets called again from somewhere else; or maybe it should go on the ```Game``` class, so that other class can call it, too. But in any case, let's wait on that.
+
+Instead, let's write another test, an "all spares" test.
+
+When you've written that, click [next](Step13.html).
