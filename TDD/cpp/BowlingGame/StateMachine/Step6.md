@@ -9,7 +9,7 @@ After extracting a method called ```RollMany```, the test code looks like this:
 ```
 TEST_CLASS(BowlingGameTests)
 {
-    Game game;
+    Bowling::Game game;
 
     void RollMany(int rolls, int pins)
     {
