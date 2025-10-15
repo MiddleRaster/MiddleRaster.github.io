@@ -42,7 +42,7 @@ Changing to an enum is straightforward:
     private:
         void AddRoll(int pins)
         {
-            if ((frame > 10) || ((frame == 10) && (bonusRolls == 0))) // Bonus::NoBonusRolls)))
+            if ((frame > 10) || ((frame == 10) && (bonusRolls == Bonus::NoBonusRolls)))
                 throw std::out_of_range("can't roll after game has ended");
 
             if (frame < 10)
