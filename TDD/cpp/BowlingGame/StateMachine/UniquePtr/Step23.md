@@ -9,13 +9,13 @@ Changing to an enum is straightforward:
     // only showing those methods affected by chnage to enum
     class Scorer
     {
-        enum Bonus
+        enum class Bonus
         {
             NoBonusRolls  = 0,
             OneBonusRoll  = 1,
             TwoBonusRolls = 2,
             TwoStrikesBonusRolls = 3
-        } bonusRolls = NoBonusRolls;
+        } bonusRolls = Bonus::NoBonusRolls;
         int score = 0;
         int frame = 0;
     public:
