@@ -23,7 +23,7 @@ To pass the "two strikes in a row" test, we need to modify these two methods in 
 
         void AddRoll(int pins)
         {
-            if ((frame > 10) || ((frame == 10) && (bonusRolls == 0))) // Bonus::NoBonusRolls)))
+            if ((frame > 10) || ((frame == 10) && (bonusRolls == 0)))
                 throw std::out_of_range("can't roll after game has ended");
 
             if (frame < 10)
