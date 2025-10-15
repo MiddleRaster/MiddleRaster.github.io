@@ -29,7 +29,7 @@ Adding an ```if``` to the ```Scorer::AddStrike``` method that checks for having 
         }
 ```
 Now there's lots of duplication here that I want to refactor, but I'm worried about those yet missing tests more. Let's add another one first. 
-We're missing the ```TwoStrikesBonusRolls``` state in the ```AddStrike``` method.
+We're missing the ```TwoStrikesBonusRolls``` state in the ```AddStrike``` method:  3 strikes in a row, followed by a 1 and a 2 should do it.
 
 Please write that test, and then click [next](Step26.html).
 
