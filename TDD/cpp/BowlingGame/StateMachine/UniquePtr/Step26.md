@@ -16,6 +16,6 @@ Here's the final missing test for code we need to add to the ```AddStrike``` met
     }
 ```
 
-And when run, it fails with ```Assert failed. Expected:<66> Actual:<46>```. 
+And when run, it fails with ```Assert failed. Expected:<67> Actual:<46>```. 
 
 Go ahead and write just enough code to fix that problem, and then click [next](Step27.html).
