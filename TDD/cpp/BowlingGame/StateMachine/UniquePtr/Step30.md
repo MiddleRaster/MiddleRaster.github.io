@@ -22,6 +22,6 @@ The simplest code to pass that last strike then spare test looks like this:
         }
 ```
 
-It's refactorable into a switch statement, but do we need those other case statements? Let's think about that as we refactor.
+It's refactorable into a ```switch``` statement, but do we need those other ```case``` statements? Let's think about that as we refactor.
 
 When you've done that, click [next](Step31.html).
