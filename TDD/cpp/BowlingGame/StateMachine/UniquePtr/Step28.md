@@ -38,4 +38,4 @@ The tests all still pass.  But this code now makes clear two things: I'm missing
 
 Looking very carefully at the ```AddRoll``` method, I see we can extract the ```switch``` case into its own method and call it from ```AddStrike``` (and in the near future, ```AddSpare```).
 
-Let's do that refactoring, and then click [next](Step29.html).
+Let's do that refactoring, and then click [next](notreadyyetStep29.html).
