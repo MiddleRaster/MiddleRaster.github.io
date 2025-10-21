@@ -234,7 +234,7 @@ namespace Bowling
 #endif
 ```
 
-Overall, I'm somehwat disappointed. It's way more code than I'd hoped and the ```Scorer``` class could be clearer. For alternative implementations, see the other Bowling Game kata steps, [here](/TDD/cpp/BowlingGame/BowlingGame.html).
+Overall, I'm somehwat disappointed. It's way more code than I'd hoped and the ```Scorer``` class could be cleaner. For alternative implementations, see the other Bowling Game kata steps, [here](/TDD/cpp/BowlingGame/BowlingGame.html).
 
 Are we done? If you don't think so, feel free to add more tests and run them.
 
