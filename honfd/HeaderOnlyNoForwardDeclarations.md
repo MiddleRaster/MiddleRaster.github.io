@@ -47,7 +47,7 @@ My rules make the code way easier to understand and that's a very Good Thing (tm
 
 #### Objections / FAQs
 
-We're down to the "Frequently Asked Questions" part of our show, also known as "objections"
+We're down to the "Frequently Asked Questions" part of our show, also known as "objections".
 
 Q. You've just reinvented Java (or C#).
 
@@ -57,6 +57,14 @@ Q. B-b-but John Lakos in his book, "Large-Scale C++ Software Design" says never 
 
 A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their book, "C++ Coding Standards: 101 Rules, Guidelines, and Best Practices". They're wrong. Lakos's advice was correct at the time, because back when he wrote it (1996), computers and
 compilers were much slower than they are today; nowadays compilers are really good at templates  and they're header-only. Lakos has changed his tune and instead now says, "Strive for header-only code".
+<br><br><br>
+Q. I like seeing my prototypes and interfaces in one file and the implementations in another.
+
+A. This is only because that's what yiy're used to. C# and Java people are used to not having separate files.
+In fact, I would argue that if you can't see all your code at a glance in one screenful, your classes are too big.
+Most people react badly when they first hear my rules. One exception was Bob Jervis of Turbo C fame. He was at Google
+when I told him of my idea and he immediately said, "You are making good use of a quirk of ANSI C to enforce very
+fine layering." Exactly right.
 <br><br><br>
 Q. Won't rule number 1 implicitly inline every method?
 
