@@ -79,4 +79,4 @@ as it's like changing your string class:  hopefully not something you do very of
 <br>
 
 #### Conclusion
-Go ahead and give it a try, maybe on a small project first. You'll see cleaner architecture almost immediately, but probably won't the new simplicity of your code until you have about 50k lines of code. But by all means, give it a try.
+Go ahead and give it a try, maybe on a small project first. You'll see cleaner architecture almost immediately, but probably won't see how much easier the code is to understand until you have about 50k lines of code. But by all means, give it a try.
