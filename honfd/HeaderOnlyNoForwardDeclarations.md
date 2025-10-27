@@ -77,7 +77,7 @@ Note that my intent is to protect against introducing **accidental** cycles. If 
 <br><br><br>
 Q. I'm shipping a .dll. If I put all code in my headers, I'll have to ship them.
 
-A. This is the "(well, hardly ever)" part, above. In this case, you pull all your header code into a single .cpp file, with a DllMain function, as well as any exported functions, and wrap the calls to your headers using the PImpl idiom.
+A. This is the "(well, hardly ever)" part, above. In this case, you pull all your header code into a single .cpp file, with a DllMain function, as well as any exported functions, and wrap the calls to your headers using the PImpl idiom. C++23's modules might help here, too (though I haven't tried it yet).
 <br><br><br>
 Q. Do you never use .cpp files?
 
