@@ -27,7 +27,7 @@ Here are the rules:
  - never, ever (well, hardly ever) use a forward declaration.
 
 If you follow both of these rules any attempt however inadvertent to put in a cycle will result in a compiler error. And that's huge. Have you ever seen a dependency diagram of a large-ish codebase?  It's almost invariably a huge ball of spaghetti.
-But if you follow my two rules, the code must by definition be completely dendritic, no cycles at all.
+But if you follow my two rules, the code must by definition be completely dendritic, all DAGs, no cycles at all.
 
 So, I started doing this on all my work. Fixing bugs became much easier, no unexpected failures over there when making changes over here, and the code was simple to understand. All good things, so when I became a lead at *StupendousCorp*, I forced all my reports
 to do the same. Interestingly, every single one of them came to me and said, "Hey, you know that crazy all-code-in-headers idea of yours? It doesn't work." But when we went over their code together, I would invariably find that they were trying to put in a dependency
