@@ -22,9 +22,10 @@ Now #1 is great, but you can't write much software that way, I don't think. #3 i
 Now, you can get fully coupled code only if there is a forward declaration somewhere (to make it compile). So, I thought to myself, "I wonder what would happen if I disallowed that in my code." 
 I was working on v2 or 3 of my [TDD harness](https://github.com/MiddleRaster/tdd4cpp) at the time, and following my new rules forced me to clean up my design a bit, which was quite interesting to me.
 
+#### The Rules
 Here are the rules:
- - put all the code in headers, all the methods fully defined inside the class, between the opening ```{``` and the closing ```};```.
- - never, ever (well, hardly ever) use a forward declaration.
+1. put all the code in headers, all the methods fully defined inside the class, between the opening ```{``` and the closing ```};```.
+2. never, ever (well, hardly ever) use a forward declaration.
 
 If you follow both of these rules any attempt however inadvertent to put in a cycle will result in a compiler error. And that's huge. Have you ever seen a dependency diagram of a large-ish codebase?  It's almost invariably a huge ball of spaghetti.
 But if you follow my two rules, the code must by definition be completely dendritic, all DAGs, no cycles at all.
@@ -45,7 +46,7 @@ When I ran my tool against the TDDing team, I found 10 cycles; when I ran it aga
 and that makes sense: it would feel very odd to have to create a whole slew of objects, just to unit test one. Guess which team had all the bugs? Bugs come about through carelessness or more often misunderstanding your own code.
 My rules make the code way easier to understand and that's a very Good Thing (tm).
 
-#### Objections / FAQs
+#### Objections / FAQ
 
 We're down to the "Frequently Asked Questions" part of our show, also known as "objections".
 
@@ -77,7 +78,7 @@ Note that my intent is to protect against introducing **accidental** cycles. If 
 <br><br><br>
 Q. I'm shipping a .dll. If I put all code in my headers, I'll have to ship them.
 
-A. This is the "(well, hardly ever)" part, above. In this case, you pull all your header code into a single .cpp file, with a DllMain function, as well as any exported functions, and wrap the calls to your headers using the PImpl idiom. C++20's modules might help here, too (though I haven't tried it yet).
+A. This is the "(well, hardly ever)" part from rule 2. In this case, you pull all your header code into a single .cpp file, with a DllMain function, as well as any exported functions, and wrap the calls to your headers using the PImpl idiom. C++20's modules might help here, too (though I haven't tried it yet).
 <br><br><br>
 Q. Do you never use .cpp files?
 
