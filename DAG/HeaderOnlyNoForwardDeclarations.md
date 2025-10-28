@@ -62,9 +62,9 @@ Q. I like seeing my prototypes and interfaces in one file and the implementation
 
 A. This is only because that's what you're used to. C# and Java people are used to not having separate files.
 In fact, I would argue that if you can't see all your code at a glance in one screenful, your classes are too big.
-Most people react badly when they first hear my rules. One exception was Bob Jervis of Turbo C fame. He was at Google
-when I told him of my idea and he immediately said, "You are making good use of a quirk of ANSI C to enforce very
-fine layering." Exactly right.
+The vast majority of people react badly when they first hear my rules. One exception was Bob Jervis of Turbo C fame.
+He was at Google when I told him of my idea and he immediately said, 
+"You are making good use of a quirk of ANSI C to enforce very fine layering." Exactly right.
 <br><br><br>
 Q. Won't rule number 1 implicitly inline every method?
 
