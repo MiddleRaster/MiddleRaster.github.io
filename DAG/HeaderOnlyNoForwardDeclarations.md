@@ -81,9 +81,11 @@ A. This is the "(well, hardly ever)" part, above. In this case, you pull all you
 <br><br><br>
 Q. Do you never use .cpp files?
 
-A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that #includes the headers I use.  Ditto for a .dll. However, since I TDD all my code, I have lots of unit tests and they all live in .cpp files. Build times are usually blazingly fast,
-since I usually only have to build a single .cpp file, the one that corresponds to the change I'm making in the header. Very occasionally, I'll change a leaf-most node and many .cpp file will have to be rebuilt, but it happens quite rarely,
-as it's like changing your string class:  hopefully not something you do very often.
+A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that #includes the headers I use.
+Ditto for a .dll. However, since I TDD all my code, I have lots of unit tests and they all live in .cpp files. 
+Build times are usually blazingly fast, since I usually only have to build a single .cpp file, the one that
+corresponds to the change I'm making in the header. Very occasionally, I'll change a leaf-most node and
+many .cpp files will have to be rebuilt, but it happens quite rarely, as it's like changing your string class:  hopefully not something you do very often.
 <br>
 
 #### Conclusion
