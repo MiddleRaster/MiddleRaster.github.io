@@ -1,6 +1,20 @@
 {% comment %}
-  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
+  Placeholder to allow defining custom head. In principle, you can add anything here, e.g. favicons:
 
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+
+<!-- CUSTOM HEAD OVERRIDE ACTIVE -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css"
+      crossorigin="anonymous">
+
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.js"
+        crossorigin="anonymous"></script>
+
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/auto-render.min.js"
+        crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
