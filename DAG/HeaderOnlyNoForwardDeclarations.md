@@ -1,7 +1,7 @@
 ---
 layout: page_with_comments
 title: "Header-Only, No Forward Declarations"
-permalink: /honfd/HeaderOnlyNoForwardDeclarations.html
+permalink: /DAG/HeaderOnlyNoForwardDeclarations.html
 ---
 
 Once upon a time, back when I was an IC at *StupendousCorp*, I was reading a book recommended to me by Corey Ladas, one of the co-co-co-inventors of Kanban.
