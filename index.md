@@ -18,3 +18,5 @@ including 4 completely original ideas.
 Stay tuned for the rest.
 
 Without further ado, here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
+
+I have s thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
