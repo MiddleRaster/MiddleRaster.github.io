@@ -19,4 +19,4 @@ Stay tuned for the rest.
 
 Without further ado, here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
 
-I have s thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
+I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
