@@ -67,5 +67,5 @@ I'll leave it up to you, as to which way you'd like to go. But I'll implement th
 - std::variant and states including bonus states.
 
 Select either
-[std::unique_ptr and additional bonus logic class](UniquePtr/Step12.html) or
-[std::variant way and states including bonus states](Variant/Step12.html).
+[std::unique_ptr and additional bonus logic class](UniquePtr/Step11.html) or
+[std::variant way and states including bonus states](Variant/Step11.html).
