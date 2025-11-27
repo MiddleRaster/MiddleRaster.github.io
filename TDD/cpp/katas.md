@@ -20,5 +20,7 @@ There are also some refactoring katas, to be added later:
 4. Refactor an 8 Queens solution
 
 
-Finally, here's a link to my header-only, completely portable, drop-in replacement for Visual Studio's native C++ unit testing framework:
+Finally, some links to TDD test harnesses, which I evidently write as a hobby:
+1. my header-only, completely portable, drop-in replacement for Visual Studio's native C++ unit testing framework:
 [tdd4cpp](https://github.com/MiddleRaster/tdd4cpp)
+2. Alternatively, if you can use C++20 modules, here's an [extremely small, macro-free, module-only](https://github.com/MiddleRaster/tdd20) test harness, with [VS integration](https://github.com/MiddleRaster/Tdd20.TestAdapter).
