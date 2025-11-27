@@ -23,4 +23,4 @@ There are also some refactoring katas, to be added later:
 Finally, some links to TDD test harnesses, which I evidently write as a hobby:
 1. my header-only, completely portable, drop-in replacement for Visual Studio's native C++ unit testing framework:
 [tdd4cpp](https://github.com/MiddleRaster/tdd4cpp)
-2. Alternatively, if you can use C++20 modules, here's an [extremely small, macro-free, module-only](https://github.com/MiddleRaster/tdd20) test harness, with [VS integration](https://github.com/MiddleRaster/Tdd20.TestAdapter).
+2. Alternatively, if you can use C++20 modules, here's an [*extremely* small, macro-free, module-only](https://github.com/MiddleRaster/tdd20) test harness, with [VS test adapter](https://github.com/MiddleRaster/Tdd20.TestAdapter), if you really want to go that route (VS's Test Explorer is a bit slow for my taste).
