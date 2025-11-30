@@ -68,7 +68,7 @@ Looks good.
 
 However, I notice that the ```WaitingForFirstRollWith1Bonus``` class does ***not*** derive from ```FirstRollUtils```, and it doesn't in fact check for a strike anywhere. Maybe we're missing a test? Let's try it by writing:
 ```cpp
-	{"a spare followed by a strike and a two bonus rolls of 1 and 2 means score is ", []() {
+	{"a spare followed by a strike and a two bonus rolls of 1 and 2 means score is 36", []() {
 		Game game;
 		game.Roll(5);
 		game.Roll(5); // spare
