@@ -36,9 +36,10 @@ That looks fine to me. But we're missing a few more precondition tests:  if the 
 Let's write the next precondition test, the one that checks that the sum of two rolls in a frame isn't over 10:
 
 ```cpp
-	{"a frame must be <= 10", []() {
-		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(5); game.Roll(6); });
-	}},
+{"a frame must be <= 10", []() {
+  Assert::ExpectingException<std::invalid_argument>([]()
+    { Game game; game.Roll(5); game.Roll(6); });
+}},
 ```
 
 Write just enough code to pass that and all the other tests, and then click  [next](Step15.html).
