@@ -40,11 +40,13 @@ VsTest tests[] = {
 	}},
 	{"a roll must be positive", []()
 	{
-		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(-1); });
+		Assert::ExpectingException<std::invalid_argument>([]() {
+			Game game; game.Roll(-1); });
 	}},
 	{"a roll must be <= 10", []()
 	{
-		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(11); });
+		Assert::ExpectingException<std::invalid_argument>([]() {
+			Game game; game.Roll(11); });
 	}},
 	//{"a spare plus two bonus rolls of 1 and 2 and then all gutterballs means score is 16", []() {
 	//	Game game;
