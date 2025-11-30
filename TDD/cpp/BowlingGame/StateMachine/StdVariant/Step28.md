@@ -52,4 +52,4 @@ Overall, I'm happy with the direction we're going in.  What's left? I think we'r
 	}},
 ```
 
-Let's write just enough code to pass this last test and all the rest, andthen click [next](Step29.html).
+Let's write just enough code to pass this last test and all the rest, and then click [next](Step29.html).
