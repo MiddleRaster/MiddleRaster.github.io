@@ -67,8 +67,4 @@ It needs to be incremented when a frame is complete, that is, in our ```WaitingF
     };
 ```
 
-// TODO:  add new test idea here.
-
-
-
-Write just enough code to pass that and all the other tests, and then click  [next](Step17.html).
+Ok, that works, but we said earlier that we'd use a ```GameOver``` state. Let's do that instead, and then click  [next](Step17.html).
