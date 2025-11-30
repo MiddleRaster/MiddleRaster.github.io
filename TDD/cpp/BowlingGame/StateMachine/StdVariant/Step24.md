@@ -43,7 +43,6 @@ After refactoring that precondition into an extracted method, ```validateRolls(i
                 validateRolls(pins);
                 score += pins*2;
                 ++frame;
-                if (frame >= 10)    return GameOver{};
                 if (isSpare(pins))  return WaitingForFirstRollWith1Bonus{};
                                     return WaitingForFirstRollWith0Bonuses{};
             }
