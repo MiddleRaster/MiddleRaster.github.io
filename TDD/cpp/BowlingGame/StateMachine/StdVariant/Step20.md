@@ -22,7 +22,7 @@ For rolling a strike, we need to modify the ```WaitingForFirstRollWith0Bonuses``
         };
 ```
 
-And since we now have 2 bonus rolls spending, we need a new state for ```WaitingForFirstRollWith2Bonuses```:
+And since we now have 2 bonus rolls pending, we need a new state for ```WaitingForFirstRollWith2Bonuses```:
 ```cpp
         class WaitingForSecondRollWith1Bonus
         {
