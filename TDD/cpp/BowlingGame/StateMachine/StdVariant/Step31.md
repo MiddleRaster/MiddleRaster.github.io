@@ -87,4 +87,4 @@ Let's add a test for a strike in the last frame and then for the two bonus rolls
 		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
 ```
 
-Let's do that and then click [next](Step32.html).
+Get all the tests to pass and then click [next](Step32.html).
