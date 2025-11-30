@@ -17,7 +17,7 @@ import VsTdd20;
 import std;
 using namespace TDD20;
 
-#include "BowlingGame.h"
+import BowlingGame.ixx;
 using namespace Bowling;
 
 void RollMany(Game& game, int rolls, int pins)
