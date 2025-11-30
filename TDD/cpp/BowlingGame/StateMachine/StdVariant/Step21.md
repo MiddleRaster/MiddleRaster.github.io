@@ -17,9 +17,9 @@ To make the "single strike, single spare and a bonus roll of 1" test work, we ne
             {
                 score += pins*2;
                 ++frame;
-                if (frame >= 10)    return GameOver{};
                 if (isSpare(pins))  return WaitingForFirstRollWith1Bonus{};
-                                    return WaitingForFirstRollWith0Bonuses{};            }
+                                    return WaitingForFirstRollWith0Bonuses{};
+            }
         };
 ```
 I added the check for ```isSpare(pins)``` and if it's true, we return to ```WaitingForFirstRollWith1Bonus```. 
