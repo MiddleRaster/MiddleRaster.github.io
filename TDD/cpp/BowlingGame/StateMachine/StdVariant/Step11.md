@@ -38,13 +38,11 @@ VsTest tests[] = {
 		RollMany(game, 20, 1);
 		Assert::AreEqual(20, game.Score());
 	}},
-	{"a roll must be positive", []()
-	{
+	{"a roll must be positive", []() {
 		Assert::ExpectingException<std::invalid_argument>([]() {
 			Game game; game.Roll(-1); });
 	}},
-	{"a roll must be <= 10", []()
-	{
+	{"a roll must be <= 10", []() {
 		Assert::ExpectingException<std::invalid_argument>([]() {
 			Game game; game.Roll(11); });
 	}},
