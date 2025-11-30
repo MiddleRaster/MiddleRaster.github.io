@@ -31,17 +31,14 @@ To pass the first Spare test, we need to add a new state, ```WaitingForFirstRoll
 ```
 So we have to hang onto the first roll's value so that we can add in the current roll and see if it's a spare. If so, put us into the ```WaitingForFirstRollWith1Bonus``` state, else back to ```WaitingForFirstRollWith0Bonuses```.
 
-That looks fine to me. But we're missing a few precondition tests:  for example, what if the user rolls a negative number of pins, or more than 10, or if the sum of the two rolls is bigger than 10.  Or if they roll more than 10 frames.
-Wow, that's a lot. Let's get on it, by writing a test that checks that an exception is thrown if the user rolls a negative number of pins. Like this:
+That looks fine to me. But we're missing a few more precondition tests:  if the sum of the two rolls is bigger than 10; or if they roll more than 10 frames.
+
+Let's write the next precondition test, the one that checks that the sum of two rolls in a frame isn't over 10:
 
 ```cpp
-VsTest tests[] = {
-  ...
-	{"a roll must be positive", []() { 
-		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(-1); });
+	{"a frame must be <= 10", []() {
+		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(5); game.Roll(6); });
 	}},
-  ...
-};
 ```
 
-Write just enough code to pass that and all the other tests, and then click  [next](Step13.html).
+Write just enough code to pass that and all the other tests, and then click  [next](Step15.html).
