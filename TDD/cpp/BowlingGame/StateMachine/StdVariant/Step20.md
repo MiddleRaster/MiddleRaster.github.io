@@ -24,16 +24,12 @@ For rolling a strike, we need to modify the ```WaitingForFirstRollWith0Bonuses``
 
 And since we now have 2 bonus rolls pending, we need a new state for ```WaitingForFirstRollWith2Bonuses```:
 ```cpp
-        class WaitingForSecondRollWith1Bonus
+        struct WaitingForFirstRollWith2Bonuses
         {
-            int first;
-        public:
-            WaitingForSecondRollWith1Bonus(int first) : first(first) {}
-            State Update(int pins, int& score, int& frame) const
+            State Update(int pins, int& score, int& /*frame*/) const
             {
                 score += pins*2;
-                ++frame;
-                return WaitingForFirstRollWith0Bonuses{};
+                return WaitingForSecondRollWith1Bonus{pins};
             }
         };
 ```
