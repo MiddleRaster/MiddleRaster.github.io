@@ -41,7 +41,6 @@ And then use it in our two ```WaitingForSecondRollWith...``` classes:
             {
                 score += pins*2;
                 ++frame;
-                if (frame >= 10)    return GameOver{};
                 if (isSpare(pins))  return WaitingForFirstRollWith1Bonus{};
                                     return WaitingForFirstRollWith0Bonuses{};
             }
