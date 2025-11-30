@@ -27,19 +27,24 @@ void RollMany(Game& game, int rolls, int pins)
 }
 
 VsTest tests[] = {
-	{"score is 0 before any rolls", []() {
-		Game game;
+	{"score is 0 before any rolls", []() { Game game;
 		Assert::AreEqual(0, game.Score());
 	}},
-	{"all gutterballs means score is 0", []() {
-		Game game;
+	{"all gutterballs means score is 0", []() { Game game;
 		RollMany(game, 20, 0);
 		Assert::AreEqual(0, game.Score());
 	}},
-	{"all rolls knocking down 1 pin each time means score is 20", []() {
-		Game game;
+	{"all rolls knocking down 1 pin each time means score is 20", []() { Game game;
 		RollMany(game, 20, 1);
 		Assert::AreEqual(20, game.Score());
+	}},
+	{"a roll must be positive", []()
+	{
+		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(-1); });
+	}},
+	{"a roll must be <= 10", []()
+	{
+		Assert::ExpectingException<std::invalid_argument>([]() { Game game; game.Roll(11); });
 	}},
 	//{"a spare plus two bonus rolls of 1 and 2 and then all gutterballs means score is 16", []() {
 	//	Game game;
@@ -81,6 +86,8 @@ export namespace Bowling
     public:
         void Roll(int pins)
         {
+            if ((pins < 0) || (pins > 10))
+                throw std::invalid_argument("'pins' must be between 0 and 10 inclusive");
             state = std::visit([this, pins](const auto& state) { return state.Update(pins, score); }, state);
         }
         int Score() const { return score; }
