@@ -13,7 +13,9 @@ It needs to be incremented when a frame is complete, that is, in our ```WaitingF
         struct WaitingForFirstRollWith0Bonuses;
         class  WaitingForSecondRollWith0Bonuses;
         struct WaitingForFirstRollWith1Bonus;
-        using State = std::variant<WaitingForFirstRollWith0Bonuses, WaitingForSecondRollWith0Bonuses, WaitingForFirstRollWith1Bonus>;
+        using State = std::variant< WaitingForFirstRollWith0Bonuses, 
+                                    WaitingForSecondRollWith0Bonuses, 
+                                    WaitingForFirstRollWith1Bonus>;
         struct WaitingForFirstRollWith0Bonuses
         {
             State Update(int pins, int& score, int& frame) const
