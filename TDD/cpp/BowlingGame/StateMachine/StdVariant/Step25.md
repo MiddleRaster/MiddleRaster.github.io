@@ -31,7 +31,7 @@ And to make the ```WaitingForSecondRollWith1Bonus``` class look exactly like ```
 		game.Roll(5);
 		game.Roll(5); // spare
 		game.Roll(1); // single bonus
-		Assert::AreEqual(32, game.Score()); // game is over here
+		Assert::AreEqual(31, game.Score()); // game is over here
 		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
 	}},
 ```
