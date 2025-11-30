@@ -15,11 +15,10 @@ Checking that the rolls in a frame sum up to within range looks like this:
                     throw std::invalid_argument("sum of rolls in a frame must be <= 10");
                 score += pins*2;
                 ++frame;
-                if (frame >= 10)    return GameOver{};
                 if (isSpare(pins))  return WaitingForFirstRollWith1Bonus{};
                                     return WaitingForFirstRollWith0Bonuses{};
             }
         };
 ```
 
-That precondition is used twice, so let's extract that precondition into its own method and put it on the ```SecondRollUtils``` class, and then click [next](Step24/.html).
+That precondition is used twice though, so let's extract that precondition into its own method and put it on the ```SecondRollUtils``` class, and then click [next](Step24.html).
