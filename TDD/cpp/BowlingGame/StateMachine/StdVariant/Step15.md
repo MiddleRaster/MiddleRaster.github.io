@@ -50,9 +50,10 @@ Ok, onto the final precondition test, that we don't allow the bowler to keep bow
 ```cpp
 VsTest tests[] = {
   ...
-	{"a bowler cannot keep bowling after the game is over", []() {
-		Assert::ExpectingException<std::invalid_argument>([]() { Game game; RollMany(game, 21, 0); });
-	}},
+  {"a bowler cannot keep bowling after the game is over", []() {
+    Assert::ExpectingException<std::invalid_argument>([]()
+      { Game game; RollMany(game, 21, 0); });
+  }},
   ...
 ```
 
