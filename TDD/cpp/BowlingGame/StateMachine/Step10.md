@@ -68,4 +68,4 @@ I'll leave it up to you, as to which way you'd like to go. But I'll implement th
 
 Select either
 [std::unique_ptr and additional bonus logic class](UniquePtr/Step11.html) or
-[std::variant way and states including bonus states](Variant/Step11.html).
+[std::variant way and states including bonus states](StdVariant/Step11.html).
