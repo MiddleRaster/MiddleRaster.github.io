@@ -76,6 +76,15 @@ Now, looking at all the first rolls states, something doesn't look right to me:
 ```
 Only the last one is checking to see if we're in the last frame, which needs to be handled specially. And that means that we're missing (at least) 3 tests.
 
-TODO:  sigh. I'll add them tomorrow.
+Let's add a test for a strike in the last frame and then for the two bonus rolls, a strike and a 1:
+```cpp
+		Game game;
+		RollMany(game, 18, 0);
+		game.Roll(10); // strike
+		game.Roll(10); // strike
+		game.Roll(1);
+		Assert::AreEqual(21, game.Score()); // game is over here
+		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
+```
 
 Let's do that and then click [next](Step32.html).
