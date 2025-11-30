@@ -49,8 +49,18 @@ After refactoring that precondition into an extracted method, ```validateRolls(i
         };
 ```
 
-// TODO:  maybe move all the state returning logic into base class?  For now, I'm going back and putting in the precondition tests earlier, to keep in sync with UniquePtr.
+I wonder if I can move all the state returning logic into base class, which would certainly clean these two classes up. To make them exactly similar, let's write a test for when it's not a spare in the ```WaitingForSecondRollWith1Bonus``` class but it is the last frame.
+That means something like this:
+```cpp
+	{"a strike in the penultimate frame, followed by 2 rolls whose sum < 10", []() {
+		Game game;
+		RollMany(game, 18, 0);
+		game.Roll(10); // strike
+		game.Roll(1);
+		game.Roll(2);
+		Assert::AreEqual(16, game.Score()); // game over here.
+		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
+	}},
+```
 
-
-
-and then click [next](Step25/.html).
+Write just enough code to pass this and all the other tests, and then click [next](Step25.html).
