@@ -46,14 +46,14 @@ Ok, that passes, but a couple of points:
 Lots of things to do. Let's write a test for that last case first:  a strike, followed by a spare, followed by a bonus roll, say 1, and the rest gutterballs.
 
 ```cpp
-	{"1 strike, 1 spare, a one and the rest gutterballs means score is 33", []() {
+	{"1 strike, 1 spare, a one and the rest gutterballs means score is 32", []() {
 		Game game;
 		game.Roll(10); // strike!
 		game.Roll(5);
 		game.Roll(5); // spare
 		game.Roll(1);
 		RollMany(game, 15, 0);
-		Assert::AreEqual(33, game.Score());
+		Assert::AreEqual(32, game.Score());
 	}},
 ```
 
