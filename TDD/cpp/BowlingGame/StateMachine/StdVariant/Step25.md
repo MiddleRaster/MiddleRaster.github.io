@@ -5,7 +5,6 @@ permalink: /TDD/cpp/BowlingGame/StateMachine/StdVariant/Step25.html
 ---
 
 A non-Spare in the final frame of ```WaitingForSecondRollWith1Bonus``` means the game is over:
-:
 ```cpp
         struct WaitingForSecondRollWith1Bonus : SecondRollUtils
         {
