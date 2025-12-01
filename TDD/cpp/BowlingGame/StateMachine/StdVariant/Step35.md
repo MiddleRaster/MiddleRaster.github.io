@@ -250,7 +250,11 @@ export namespace Bowling
 }
 ```
 
-Comments:  I rather like this implementation. All the state classes are just one-liners, with all the logic extracted into their base classes, with each state class clearly belonging to its group.
+
+Comments:  
+
+I rather like this implementation. All the state classes are just one-liners, with all the logic extracted into their base classes, with each state class clearly belonging to its group.
+Is it as simple and easy to understand as the array of frames way? Probably not. But it was great practice for thinking about state machines and I love all the refactoring I could do, where the derived classes turned into one-liners.
 
 [Return to the homepage](/)  
 [TDD Tutorials](/TDD/tutorials.html)
