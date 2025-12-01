@@ -58,7 +58,7 @@ That means something like this:
 		game.Roll(10); // strike
 		game.Roll(1);
 		game.Roll(2);
-		Assert::AreEqual(16, game.Score()); // game over here.
+		Assert::AreEqual(13, game.Score()); // game over here.
 		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
 	}},
 ```
