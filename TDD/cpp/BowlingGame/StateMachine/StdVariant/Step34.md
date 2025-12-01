@@ -4,7 +4,7 @@ title: "Bowling Game: State Machine: Std::Variant: Step 34"
 permalink: /TDD/cpp/BowlingGame/StateMachine/StdVariant/Step34.html
 ---
 
-We can extract the entire contents of the ```WaitingForFirstRollWithXBonuses``` classes into a single templated method:
+We can extract the entire contents of the ```WaitingForFirstRollWithXBonuses``` classes into a single method template:
 ```cpp
   template<typename T0, typename T1, typename T2> State update(int pins, int& score, int& frame, int bonusMultiplier) const
   {
