@@ -78,6 +78,7 @@ Only the last one is checking to see if we're in the last frame, which needs to 
 
 Let's add a test for a strike in the last frame and then for the two bonus rolls, a strike and a 1:
 ```cpp
+	{"18 gutterballs, then two strikes and a bonus roll of 1 means score is 21", []() {
 		Game game;
 		RollMany(game, 18, 0);
 		game.Roll(10); // strike
@@ -85,6 +86,7 @@ Let's add a test for a strike in the last frame and then for the two bonus rolls
 		game.Roll(1);
 		Assert::AreEqual(21, game.Score()); // game is over here
 		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
+	}},
 ```
 
 Get all the tests to pass and then click [next](Step32.html).
