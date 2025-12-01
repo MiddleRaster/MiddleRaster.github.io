@@ -17,7 +17,7 @@ We can move all the Update logic into the base class if we do the following:
             {
                 if (sumOfRolls(pins) > 10)
                     throw std::invalid_argument("sum of rolls in a frame must be <= 10");
-                score += pins*(1+bonusMultiplier);
+                score += pins*bonusMultiplier;
                 ++frame;
                 if ((frame >= 10) && isSpare(pins)) return LastFrameWith1Bonus{};
                 if (frame >= 10)                    return GameOver{};
@@ -32,12 +32,12 @@ And then the two derived classes look like this:
         struct WaitingForSecondRollWith0Bonuses : private SecondRollUtils
         {
             WaitingForSecondRollWith0Bonuses(int first) : SecondRollUtils(first) {}
-            State Update(int pins, int& score, int& frame) const { return update(pins, score, frame, 0); }
+            State Update(int pins, int& score, int& frame) const { return update(pins, score, frame, 1); }
         };
         struct WaitingForSecondRollWith1Bonus : SecondRollUtils
         {
             WaitingForSecondRollWith1Bonus(int first) : SecondRollUtils(first) {}
-            State Update(int pins, int& score, int& frame) const { return update(pins, score, frame, 1); }
+            State Update(int pins, int& score, int& frame) const { return update(pins, score, frame, 2); }
         };
 ```
 The only difference is the multiplier, the last parameter on the ```update``` method. You'll note that I removed the ```validateRolls``` and ```nextState``` methods and put their bodies inside ```update```, as they were only called once.
