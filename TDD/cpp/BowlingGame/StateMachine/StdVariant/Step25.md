@@ -23,14 +23,13 @@ A non-Spare in the final frame of ```WaitingForSecondRollWith1Bonus``` means the
 
 And to make the ```WaitingForSecondRollWith1Bonus``` class look exactly like ```WaitingForSecondRollWith0Bonuses``` so we can extract the bonus logic to the base class, we need a test for a spare in the 10th frame, like so:
 ```cpp
-	{"a strike in the penultimate frame, followed by a spare mean we go on to the bonus frame", []() {
+	{"a strike in the penultimate frame, followed by a spare mean we get no more rolls", []() {
 		Game game;
 		RollMany(game, 18, 0);
 		game.Roll(10); // strike
 		game.Roll(5);
 		game.Roll(5); // spare
-		game.Roll(1); // single bonus
-		Assert::AreEqual(31, game.Score()); // game is over here
+		Assert::AreEqual(20, game.Score()); // game is over here
 		Assert::ExpectingException<std::invalid_argument>([&game]() { game.Roll(0); });
 	}},
 ```
