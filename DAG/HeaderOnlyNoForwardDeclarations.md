@@ -37,7 +37,7 @@ cycle, but it was caught by the compiler.
 So, does this work? (Yes.) Can you write all code like this? (No.) Will it take longer or will it be faster? It turns out to be much faster. Here's a story from my experience in those early days. I was working in an area where I didn't have much expertise,
 but my manager did. We were doing 1-week iterations (my favorite length), and at a demo meeting, she asked, "How are you going to handle blah?" I didn't get it, so I ignored the problem. At the next week's demo meeting, she said the same thing, so I started
 thinking about it, but the lights didn't go on until the next morning in the shower (I know, too much information). On Monday, I came in and said to my guys, "I get it; I know what she wants" and the architectural change required was a "large", what we called a "3".
-A "3" was 3 weeks for us back then (I hadn't figured out #NoEstimates yet). I took on the work myself and got on it. And I was done in 2.5 *days*. I spend a whole 'nother day just staring at the code, wondering why this large change was done so quickly.
+A "3" was 3 weeks for us back then (I hadn't figured out #NoEstimates yet). I took on the work myself and got on it. And I was done in 2.5 *days*. I spent a whole 'nother day just staring at the code, wondering why this large change was done so quickly.
 That's more than a 5x improvement. I attribute it to following the two rules because it made the code dendritic and simple to understand and modify.
 
 C++ is the only language I know that has "declare before use" semantics (there are probably others, but I don't know them). For other languages, like C#, you'd have to write a tool, using reflection, to run through the code looking for cycles. So I did this, too,
