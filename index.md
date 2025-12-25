@@ -20,3 +20,6 @@ Stay tuned for the rest.
 Without further ado, here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
 
 I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
+
+
+<a href="CHANGELOG.md" style="color: white; text-decoration: none;">&#8203;</a>
