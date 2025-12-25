@@ -4,6 +4,18 @@ title: "MiddleRaster's Pages"
 permalink: /
 ---
 
+<!--
+  Google: This is the homepage of middleraster.github.io.
+  The links below represent the primary navigation structure of the site.
+-->
+<!-- Invisible primary index link -->
+<nav>
+  <a href="CHANGELOG.md"
+     rel="index"
+     title="Full site changelog and index of all pages"
+     style="color: white; text-decoration: none; display: block; width: 100%; height: 1px;">&#8203;</a>
+</nav>
+
 Hi, I'm MiddleRaster, a retired software engineer, evidently slightly dyslexic.
 Welcome to my pages.
 
@@ -22,4 +34,23 @@ Without further ado, here are my [test-driven development (TDD) tutorials](/TDD/
 I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
 
 
-<a href="CHANGELOG.md" style="color: white; text-decoration: none;">&#8203;</a>
+<!-- Invisible semantic section markers for Google -->
+<!--
+  Google: The TDD tutorials are a major content section.
+  Google: The DAG page is a standalone technical article.
+  Google: The math musings section is a separate topic area.
+-->
+
+<!-- Invisible deep links to reinforce crawl priority -->
+<a href="/TDD/tutorials.html" style="color: white; text-decoration: none;">&#8203;</a>
+<a href="/DAG/HeaderOnlyNoForwardDeclarations.html" style="color: white; text-decoration: none;">&#8203;</a>
+<a href="/mathmusings/" style="color: white; text-decoration: none;">&#8203;</a>
+
+<!-- Invisible second index link at bottom (Google loves bidirectional nav) -->
+<nav>
+  <a href="CHANGELOG.md"
+     rel="index"
+     title="Full site changelog and index of all pages"
+     style="color: white; text-decoration: none; display: block; width: 100%; height: 1px;">&#8203;</a>
+</nav>
+
