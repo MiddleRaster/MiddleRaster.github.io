@@ -25,16 +25,22 @@ The rest of this post will be about what to do about 2nd Order Ignorance. In the
 
 ## 2. How to Measure 2nd Order Ignorance
 
-Now, you can't measure how many "unknown unknowns" there are (becauses they're invisible to us), but what you can do is measure the **_rate_** at which these new items are being discovered. 
-I do it with a simple spreadsheet that uses a stacked bar chart, something like this:
+Now, you can't measure how many "unknown unknowns" there are (because they're invisible to us), but what you can do is measure the **_rate_** at which these new items are being discovered. 
+I do it with a simple spreadsheet that generates a stacked bar chart, something like this:
 
 ![Alt text](./BurnUpChart.png)
 
-The red bars' height represents how much work it yet to be done, while the height of the green bars represent work that has been fully completed. 
-A line through the tops of the red bars is your team's **_velocity_** while the line through the tops of the green bars is the **_rate of discovery_** of the "unknown unknowns".
+There's a bar for each iteration, a week in my case. The red bars' height represents how much work it yet to be done, while the height of the green bars represent work that has been fully completed. 
+A line through the tops of the red bars is your team's **_velocity_** while the line through the tops of the green bars is the **_rate of discovery_** of the "unknown unknowns."
 A couple of things should be immediately obvious:
-- If these two lines are parallel or worse diverge, then you'll never be done. You probably can't do much about the rate of discovery, but you can increase the team's velocity. **_Don't_** hire more people: that'll just slow you down even more. What to do is another future post.
-- If you don't track like this, it's kind of like saying that the rate of discovery line is horizontal.  Look at where the horizontal line from top of the left-most red bar intersects with the team velocity line, and compare that to the intesection points of the velocity and rate of discovery lines:  they're way off. **_The ship date is heavily dependent on the slope of the rate of discovery line_**.
+- If these two lines are parallel or, worse, diverge, then you'll never be done. You probably can't do much about the rate of discovery, but you can increase the team's velocity. **_Don't_** hire more people: that'll just slow you down even more. What to do is another future post.
+- If you don't track like this, it's kind of like saying that the rate of discovery line is horizontal.  Look at where the horizontal line from top of the left-most red bar intersects with the team velocity line, and compare that to the intesection point of the velocity and rate of discovery lines:  they're way off. **_The completion date is heavily dependent on the slope of the rate of discovery line_**.
 
 ## 3. How to Create the Burn-up Chart
+
+## 4. How to Use the Burn-up Chart
+how to stay on track, how to remove items
+when will story X be done. Cross-team dependencies.
+
+## 5. #NoEstimates
 
