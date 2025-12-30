@@ -30,11 +30,11 @@ I do it with a simple spreadsheet that generates a stacked bar chart, something 
 
 ![Alt text](./BurnUpChart.png)
 
-There's a bar for each iteration, a week in my case. The red bars' height represents how much work it yet to be done, while the height of the green bars represent work that has been fully completed. 
-A (regression) line through the tops of the green bars is your team's **_velocity_** while the line through the tops of the red bars is the **_rate of discovery_** of the "unknown unknowns."
+There's a stacked bar for each week. The green bars' height represents work that has been fully completed, while the height of the red bars represents how much work is yet to be done.
+Any newly discovered work raises the height of the red bar. A regression line through the tops of the red bars is the **_rate of discovery_** of the "unknown unknowns," while a line through the tops of the green bars is your team's **_velocity_**.
 A couple of things should be immediately obvious:
-- If these two lines are parallel or, worse, diverge, then you'll never be done. You probably can't do much about the rate of discovery, but you can increase the team's velocity. **_Don't_** hire more people: that'll just slow you down even more. What to do is another future post.
-- If you don't track like this, it's kind of like saying that the rate of discovery line is horizontal.  Look at where the horizontal line from top of the left-most red bar intersects with the team velocity line, and compare that to the intesection point of the velocity and rate of discovery lines:  they're way off. **_The completion date is heavily dependent on the slope of the rate of discovery line_**.
+- If these two lines are parallel or, worse, diverge, then you'll never be done. You probably can't do much about the rate of discovery, but you can increase the team's velocity. **_Don't_** just hire more people: that'll slow you down even more. What to do is another future post.
+- If you don't track like this, it's kind of like saying that the rate of discovery line is horizontal.  Look at where the horizontal line from top of the left-most red bar intersects with the team velocity line (at about 4/22), and compare that to the intesection point of the velocity and rate of discovery lines (slightly past 6/17):  they're way off. **_The completion date is heavily dependent on the slope of the rate of discovery line_**. In fact, in my experience, the slope of the discovery line completely swamps how bad your estimates are, but more on this below.
 
 ## 3. How to Create the Burn-up Chart
 
