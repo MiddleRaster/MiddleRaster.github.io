@@ -19,7 +19,7 @@ Here we go:
 
 -  **3rd Order Ignorance - "Lack of Process":**  in 2nd Order Ignorance, when you start building the software you start discovering all those things you didn't even know existed, but in 3rd Order Ignorance, that process fails. Typically you'll build software that no customer wants. But then they'll tell you, so you do find out eventually, assuming you're still in business.
 
--  **4th Order Ignorance - "Meta-Ignorance":**  How much worse can it get?  You have 4th Order Ignorance when you don't know about the Five Order of Ignorance. Now you do. I used to think this was a joke on Armour's part, but it's not: it makes it clear that you have an opportunity.  
+-  **4th Order Ignorance - "Meta-Ignorance":**  How much worse can it get?  You have 4th Order Ignorance when you don't know about the Five Orders of Ignorance. Now you do. I used to think this was a joke on Armour's part, but it's not: you have been presented with an opportunity. The question now is, how can you make use of this opportunity?
 
 The rest of this post will be about what to do about 2nd Order Ignorance. In the future, I'll have another post on how to fix 3rd Order Ignorance.
 
