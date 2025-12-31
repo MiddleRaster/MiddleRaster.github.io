@@ -33,7 +33,7 @@ I do it with a simple spreadsheet that generates a stacked bar chart, something 
 There's a stacked bar for each week. The green bars' height represents work that has been fully completed, while the height of the red bars represents how much work is yet to be done.
 Any newly discovered work raises the height of the red bar. A regression line through the tops of the red bars is the **_rate of discovery_** of the "unknown unknowns," while a line through the tops of the green bars is your team's **_velocity_**.
 A couple of things should be immediately obvious:
-- If these two lines are parallel or, worse, diverge, then you'll never be done. You probably can't do much about the rate of discovery, but you can increase the team's velocity. **_Don't_** just hire more people: that'll slow you down even more. What to do is another future post.
+- If these two lines are parallel or, worse, diverge, then you'll never be done. You probably can't do much about the rate of discovery, but you can increase the team's velocity. **_Don't_** just hire more people: that'll slow you down even more. What to do is yet another future post.
 
 - If you don't track like this, it's like saying that the rate of discovery line is absolutely flat. Look at where the horizontal line from top of the left-most red bar intersects with the team velocity line (at about 4/22), and compare that to the intersection point of the velocity and rate of discovery lines (slightly past 6/17), which is our best prediction:  the former is way off. **_The completion date is heavily dependent on the slope of the rate of discovery line_**. In fact, in my experience, the slope of the discovery line completely swamps how bad your estimates are, but more on this below.
 
