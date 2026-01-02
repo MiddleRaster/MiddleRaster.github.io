@@ -39,6 +39,40 @@ A couple of things should be immediately obvious:
 
 ## 3. How to Create the Burn-up Chart
 
+I'll link a couple of spreadsheets at the very end of this note, but for now, take a look at this table/spreadsheet:
+
+|        |      |                 week ending    | 1/21 | 1/28 | 2/4 | 2/11 | 2/18 | 2/25  | 3/3  | 3/10  | 3/17 |
+|--------|------|-------------------------------:|:----:|:----:|:---:|:----:|:----:|:-----:|:----:|:-----:|:----:|
+|        |      |               done(cumulative)​​​​​ | 0    | 3    | 8   | 12   | 23     | 26      | 28      |       |
+|        |      |         work remaining         | 116  | 113  | 114 | 110  | 100    | 102     | 104     |       |
+|        |      |         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
+|        |      |         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
+|        |      |         estimated ship date    |      | #DIV/0! | 1/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
+| **ID** | **Rank** | **Title**                  | | | |  |  |  |  | | | | | | | | |
+| 12345  |  10  | story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | | | | | | | |
+| 12346  |  20  | another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | | | | | | | |
+| 12347  |  30  | yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | | | | | | | |
+| 12348  |  40  | whole new story                | 1 | 1 | 1 | 1 | 1 | 0 | 0 | | | | | | | | |
+| 12351  |  50  | user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | | | | | | | |
+| 12355  |  60  | user story there               |   |   |   | 1 | 1 | 1 | 1 | | | | | | | | |
+
+The first 3 rows are what will be used to create the stacked bar chart. 
+
+The first two columns are optional, but useful if you keep your data in TFS/VSTS/AzureDevOps/Jira/etc., and only use the spreadsheet to predict a ship date. If you only use a spreadsheet, you probably won't need ID or Rank.
+
+The important bit is exactly 1 bit:  0 == item is completely done; 1 == item is not done. You can think of it as "work remaining."
+You'll note that there are no estimates anywhere, just 0s and 1s. I'll talk about that more in section 5, below.
+
+The work remaining at the end of the current week is easy:  the formula is `=SUM(F9:F99)` (or wherever your last row is). It just sums up everything, 0s and 1s. We really only want the 1s, but the 0s don't hurt anything.
+
+The formula for newly discovered work/requirements is tricky:  `=SUMIF(E9:E99,"=",F9:F99)` which means, "add the cell in column F only if the cell in column E is **empty**.
+
+Given those two things, it's easy to calculate the rest of what's needed for the chart.
+
+Finally, though the chart itself has two regression lines, I also calculate an estimated ship date another way:  using average velocities.  A little algebra for the intersection of two lines gives `=(($D$3*(COLUMN()-COLUMN($D$3))/($D$3-F3))*7+$D$1)`.
+You'll note that the first entry is `#DIV/0!` because at that point the two lines are parallel.
+
+
 ## 4. How to Use the Burn-up Chart
 how to stay on track, how to remove items
 when will story X be done. Cross-team dependencies.
