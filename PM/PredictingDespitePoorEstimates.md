@@ -41,20 +41,20 @@ A couple of things should be immediately obvious:
 
 I'll link a couple of spreadsheets at the very end of this note, but for now, take a look at this table/spreadsheet:
 
-|        |      |                 week ending    | 1/21 | 1/28 | 2/4 | 2/11 | 2/18 | 2/25  | 3/3  | 3/10  | 3/17 |
-|--------|------|-------------------------------:|:----:|:----:|:---:|:----:|:----:|:-----:|:----:|:-----:|:----:|
-|        |      |               done(cumulative)​​​​​ | 0    | 3    | 8   | 12   | 23     | 26      | 28      |       |
-|        |      |         work remaining         | 116  | 113  | 114 | 110  | 100    | 102     | 104     |       |
-|        |      |         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
-|        |      |         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
-|        |      |         estimated ship date    |      | #DIV/0! | 12/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
-| **ID** | **Rank** | **Title**                  | 
-| 12345  |  10  | story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
-| 12346  |  20  | another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | 
-| 12347  |  30  | yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | 
-| 12348  |  40  | whole new story                | 1 | 1 | 1 | 1 | 1 | 0 | 0 | | 
-| 12351  |  50  | user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | 
-| 12355  |  60  | user story there               |   |   |   | 1 | 1 | 1 | 1 | | 
+|||                 week ending    | 1/21 | 1/28 | 2/4 | 2/11 | 2/18 | 2/25  | 3/3  | 3/10  | 3/17 |
+|-|-|-------------------------------:|:----:|:----:|:---:|:----:|:----:|:-----:|:----:|:-----:|:----:|
+|||               done(cumulative)​​​​​ | 0    | 3    | 8   | 12   | 23     | 26      | 28      |       |
+|||         work remaining         | 116  | 113  | 114 | 110  | 100    | 102     | 104     |       |
+|||         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
+|||         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
+|||         estimated ship date    |      | #DIV/0! | 12/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
+||| **Title**                  | 
+||| story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
+||| another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | 
+||| yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | 
+||| whole new story                | 1 | 1 | 1 | 1 | 1 | 0 | 0 | | 
+||| user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | 
+||| user story there               |   |   |   | 1 | 1 | 1 | 1 | | 
 
 The first 3 rows are what will be used to create the stacked bar chart. 
 
@@ -74,8 +74,40 @@ You'll note that the first entry is `#DIV/0!` because at that point the two line
 
 
 ## 4. How to Use the Burn-up Chart
+
+To use the spreadsheet, we need to distinguish two different scenarios. Pick the one appropriate for you:
+
+ #### A. Your project data is held somewhere else
+  - initial setup
+    If your project is held in TFS/VSTS/AzureDevOps/Jira/etc. or similar, use your database's export facility to export a .xls/.csv file containing:  ID, stack rank, title, and whether the item is done or not (open/closed).
+    The ID is immutable, so we can sort all the data by ID, if necessary.
+    I typically temporarily import all that data to a different sheet so that I can massage it until it looks just right (e.g., I search-n-replace all the "opens" with a "1" and "closed" with a "0"; whatever's appropriate for your database).
+    Once it's all in the just right form, move it to the bar chart spreadsheet.
+
+ - ongoing
+   I'm going to assume that your team updates that other database. Each week (even if your iterations are longer than that), export the same data as above and pull it into a separate sheet and massage it as necessary.
+   Then in the spreadsheet, sort all the data by ID (ascending). Any new work will have higher IDs than the last one on the list. Look on the other sheet to see if there are any. If so, copy the rows containing their IDs, stack rank and titles to the final spreadsheet.
+   Next, copy just the formulas from last week into a **new** column for this week, just to the right of last week.  Then copy the 1s and 0s from the temporary sheet and paste them in the new column.
+   Since both sheets are sorted by ID, everything will line up perfectly.
+
+ #### B. Your project data is held only in the spreadsheet
+  - initial setup
+    When you (either the product owner, scrum master, project lead, team lead, whatever) create your product backlog list, for each story, add the story/synopsis/user-story/title and a "1".
+   
+  - ongoing
+    Each week (even if your iterations are longer than that), copy the entire column of last week's data, including formulas and 1s and 0s to a new column, just to the right of last week's column.
+    Then, for each story that is complete, change the 1 to a 0.
+    Next, for new stories, add a row in the appropriate place so that all the rows are sorted by importance (the newly discovered stories are often the next most important things to do).
+
+
+At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's velocity and the current rate of discovery of new work. There are two more things to discuss:
+#### 1. How to tell when story X will be done
+Cross-team dependencies
+
+#### 2. How to stay on track when the ship date **cannot** move
 how to stay on track, how to remove items
-when will story X be done. Cross-team dependencies.
+
+
 
 ## 5. #NoEstimates
 
