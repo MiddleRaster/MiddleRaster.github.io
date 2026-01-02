@@ -61,7 +61,7 @@ The first 3 rows are what will be used to create the stacked bar chart.
 The first two columns are optional, but useful if you keep your data in TFS/VSTS/AzureDevOps/Jira/etc., and only use the spreadsheet to predict a ship date. If you only use a spreadsheet, you probably won't need ID or Rank.
 
 The important bit is exactly 1 bit:  0 == item is completely done; 1 == item is not done. You can think of it as "work remaining."
-You'll note that there are no estimates anywhere, just 0s and 1s. I'll talk about that more in section [5. #NoEstimates](5-noestimates).
+You'll note that there are no estimates anywhere, just 0s and 1s. I'll talk about that more in section [5. #NoEstimates](PredictingDespitePoorEstimates.md#5-noestimates).
 
 The work remaining at the end of the current week is easy:  the formula is `=SUM(F9:F99)` (or wherever your last row is). It just sums up everything, 0s and 1s. We really only want the 1s, but the 0s don't hurt anything.
 
