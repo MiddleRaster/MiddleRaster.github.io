@@ -103,23 +103,25 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
 
 At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's velocity and the current rate of discovery of new work. 
 
-There are two more things to discuss:
+- There are two more things to discuss:
+   1. How to tell when story X will be done
+      So far, we know how to use the bar chart to predict when the last story will be done. But sometimes we want to know when a particular story will be done, for example for cross-team dependencies.
+      
+      First, ensure that the data is sorted by stack rank, if it isn't already. Then **temporarily** delete all the rows below story X (that is, those stories of lower priority than story X).
+      
+      The formula and regression lines' intersection will now show you when story X will be done. Once you have your answer, undo.
+      
+   2. How to stay on track when the ship date *cannot* move
+      There are times when the ship date absolutely, positively, definitely cannot move; e.g., marketing has promised a date, you have a booth at a conference whose date cannot move, etc. What to do when the ship date is coming in too late?
 
-#### 1. How to tell when story X will be done
-So far, we know how to use the bar chart to predict when the last story will be done. But sometimes we want to know when a particular story will be done, for example for cross-team dependencies.
-First, ensure that the data is sorted by stack rank, if it isn't already. Then **temporarily** delete all the rows below story X (that is, those stories of lower priority than story X). The formula and regression lines' intersection will now show you when story X will be done. Once you have your answer, undo.
+      The Agile way is to delete the lowest priority items. In the past, I was never entirely sure if we had removed enough or not. Now, with the spreadsheet, I can tell exactly how much we need to remove.
 
-#### 2. How to stay on track when the ship date *cannot* move
-There are times when the ship date absolutely, positively, definitely cannot move; e.g., marketing has promised a date, you have a booth at a conference whose date cannot move, etc. What to do when the ship date is coming in too late?
+      To remove a story, I cut the entire row (ID, stack rank, title, and 1s) and paste it in some other spreadsheet or below the "cut" line, which is where the formulas stop, but it's for items I don't want to forget.
 
-The Agile way is to delete the lowest priority items. In the past, I was never entirely sure if we had removed enough or not. Now, with the spreadsheet, I can tell exactly how much we need to remove.
+      Once the row is removed, the bars shorten a bit, which pulls in the ship date. It's as though that story never existed. Repeat until the ship date is where you need it to be.
 
-To remove a story, I cut the entire row (ID, stack rank, title, and 1s) and paste it in some other spreadsheet or below the "cut" line, which is where the formulas stop, but it's for items I don't want to forget.
-
-Once the row is removed, the bars shorten a bit, which pulls in the ship date. It's as though that story never existed. Repeat until the ship date is where you need it to be.
-
-Note that once the date is where it needs to be, that doesn't mean you won't discover new (and more important) work, which will push out the ship date again. In this case, for every story you take in, something's got to go out. 
-And the spreadsheet tells you exactly how much.
+      Note that once the date is where it needs to be, that doesn't mean you won't discover new (and more important) work, which will push out the ship date again. In this case, for every story you take in, something's got to go out.
+      And the spreadsheet tells you exactly how much.
 
 ## 5. #NoEstimates
 
