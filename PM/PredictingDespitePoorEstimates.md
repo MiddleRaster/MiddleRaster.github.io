@@ -47,8 +47,8 @@ I'll link a couple of spreadsheets at the very end of this note, but for now, ta
 |        |      |         work remaining         | 116  | 113  | 114 | 110  | 100    | 102     | 104     |       |
 |        |      |         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
 |        |      |         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
-|        |      |         estimated ship date    |      | #DIV/0! | 1/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
-| **ID** | **Rank** | **Title**                  | | | |  |  |  |  | | | | | | | 
+|        |      |         estimated ship date    |      | #DIV/0! | 12/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
+| **ID** | **Rank** | **Title**                  | 
 | 12345  |  10  | story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
 | 12346  |  20  | another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | 
 | 12347  |  30  | yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | 
