@@ -48,13 +48,13 @@ I'll link a couple of spreadsheets at the very end of this note, but for now, ta
 |        |      |         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
 |        |      |         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
 |        |      |         estimated ship date    |      | #DIV/0! | 1/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
-| **ID** | **Rank** | **Title**                  | | | |  |  |  |  | | | | | | | | |
-| 12345  |  10  | story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | | | | | | | |
-| 12346  |  20  | another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | | | | | | | |
-| 12347  |  30  | yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | | | | | | | |
-| 12348  |  40  | whole new story                | 1 | 1 | 1 | 1 | 1 | 0 | 0 | | | | | | | | |
-| 12351  |  50  | user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | | | | | | | |
-| 12355  |  60  | user story there               |   |   |   | 1 | 1 | 1 | 1 | | | | | | | | |
+| **ID** | **Rank** | **Title**                  | | | |  |  |  |  | | | | | | | 
+| 12345  |  10  | story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
+| 12346  |  20  | another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | 
+| 12347  |  30  | yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | 
+| 12348  |  40  | whole new story                | 1 | 1 | 1 | 1 | 1 | 0 | 0 | | 
+| 12351  |  50  | user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | 
+| 12355  |  60  | user story there               |   |   |   | 1 | 1 | 1 | 1 | | 
 
 The first 3 rows are what will be used to create the stacked bar chart. 
 
