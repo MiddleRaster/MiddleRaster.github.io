@@ -69,7 +69,7 @@ The formula for newly discovered work/requirements is tricky:  `=SUMIF(E9:E99,"=
 
 Given those two things, it's easy to calculate the rest of what's needed for the chart.
 
-Finally, though the chart itself has two regression lines, I also calculate an estimated ship date another way:  using average velocities.  A little algebra for the intersection of two lines gives `=(($D$3*(COLUMN()-COLUMN($D$3))/($D$3-F3))*7+$D$1)`.
+Finally, though the chart itself has two regression lines, I also calculate an estimated ship date another way:  using *average* velocities.  A little algebra for the intersection of two lines gives `=(($D$3*(COLUMN()-COLUMN($D$3))/($D$3-F3))*7+$D$1)`.
 You'll note that the first entry is `#DIV/0!` because at that point the two lines are parallel.
 
 
