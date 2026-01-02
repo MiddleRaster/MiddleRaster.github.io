@@ -77,8 +77,6 @@ You'll note that the first entry is `#DIV/0!` because at that point the two line
 
 To use the spreadsheet, we need to distinguish two different scenarios. Pick the one appropriate for you:
 
-
-<ul>
   
 #### A. Your project data is held somewhere else
  - initial setup
@@ -101,24 +99,17 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
    Each week (even if your iterations are longer than that), copy the entire column of last week's data, including formulas and 1s and 0s to a new column, just to the right of last week's column.
    Then, for each story that is complete, change the 1 to a 0.
    Next, for new stories, add a row in the appropriate place so that all the rows are sorted by importance (the newly discovered stories are often the next most important things to do).
-  
-</ul>
 
 
 At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's velocity and the current rate of discovery of new work. 
 
 There are two more things to discuss:
 
-<ul>
- 
 #### 1. How to tell when story X will be done
 Cross-team dependencies
 
 #### 2. How to stay on track when the ship date **cannot** move
 how to stay on track, how to remove items
-
-</ul>
-
 
 
 ## 5. #NoEstimates
