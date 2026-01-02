@@ -77,12 +77,12 @@ You'll note that the first entry is `#DIV/0!` because at that point the two line
 
 To use the spreadsheet, we need to distinguish two different scenarios. Pick the one appropriate for you:
 
- #### A. Your project data is held somewhere else
-  - initial setup
-    If your project is held in TFS/VSTS/AzureDevOps/Jira/etc. or similar, use your database's export facility to export a .xls/.csv file containing:  ID, stack rank, title, and whether the item is done or not (open/closed).
-    The ID is immutable, so we can sort all the data by ID, if necessary.
-    I typically temporarily import all that data to a different sheet so that I can massage it until it looks just right (e.g., I search-n-replace all the "opens" with a "1" and "closed" with a "0"; whatever's appropriate for your database).
-    Once it's all in the just right form, move it to the bar chart spreadsheet.
+#### A. Your project data is held somewhere else
+ - initial setup
+   If your project is held in TFS/VSTS/AzureDevOps/Jira/etc. or similar, use your database's export facility to export a .xls/.csv file containing:  ID, stack rank, title, and whether the item is done or not (open/closed).
+   The ID is immutable, so we can sort all the data by ID, if necessary.
+   I typically temporarily import all that data to a different sheet so that I can massage it until it looks just right (e.g., I search-n-replace all the "opens" with a "1" and "closed" with a "0"; whatever's appropriate for your database).
+   Once it's all in the just right form, move it to the bar chart spreadsheet.
 
  - ongoing
    I'm going to assume that your team updates that other database. Each week (even if your iterations are longer than that), export the same data as above and pull it into a separate sheet and massage it as necessary.
@@ -90,14 +90,14 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
    Next, copy just the formulas from last week into a **new** column for this week, just to the right of last week.  Then copy the 1s and 0s from the temporary sheet and paste them in the new column.
    Since both sheets are sorted by ID, everything will line up perfectly.
 
- #### B. Your project data is held only in the spreadsheet
-  - initial setup
-    When you (either the product owner, scrum master, project lead, team lead, whatever) create your product backlog list, for each story, add the story/synopsis/user-story/title and a "1".
+#### B. Your project data is held only in the spreadsheet
+ - initial setup
+   When you (either the product owner, scrum master, project lead, team lead, whatever) create your product backlog list, for each story, add the story/synopsis/user-story/title and a "1".
    
-  - ongoing
-    Each week (even if your iterations are longer than that), copy the entire column of last week's data, including formulas and 1s and 0s to a new column, just to the right of last week's column.
-    Then, for each story that is complete, change the 1 to a 0.
-    Next, for new stories, add a row in the appropriate place so that all the rows are sorted by importance (the newly discovered stories are often the next most important things to do).
+ - ongoing
+   Each week (even if your iterations are longer than that), copy the entire column of last week's data, including formulas and 1s and 0s to a new column, just to the right of last week's column.
+   Then, for each story that is complete, change the 1 to a 0.
+   Next, for new stories, add a row in the appropriate place so that all the rows are sorted by importance (the newly discovered stories are often the next most important things to do).
 
 
 At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's velocity and the current rate of discovery of new work. There are two more things to discuss:
