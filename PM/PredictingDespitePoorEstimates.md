@@ -109,12 +109,12 @@ There are two more things to discuss:
 So far, we know how to use the bar chart to predict when the last story will be done. But sometimes we want to know when a particular story will be done, for example for cross-team dependencies.
 First, ensure that the data is sorted by stack rank, if it isn't already. Then **temporarily** delete all the rows below story X (that is, those stories of lower priority than story X). The formula and regression lines' intersection will now show you when story X will be done. Once you have your answer, undo.
 
-#### 2. How to stay on track when the ship date **cannot** move
+#### 2. How to stay on track when the ship date *cannot* move
 There are times when the ship date absolutely, positively, definitely cannot move; e.g., marketing has promised a date, you have a booth at a conference whose date cannot move, etc. What to do when the ship date is coming in too late?
 
 The Agile way is to delete the lowest priority items. In the past, I was never entirely sure if we had removed enough or not. Now, with the spreadsheet, I can tell exactly how much we need to remove.
 
-To remove a story, I cut the entire row (ID, title, 1s) and paste it in some other spreadsheet or below the "cut" line, which is where the formulas stop, but it's for items I don't want to forget.
+To remove a story, I cut the entire row (ID, stack rank, title, and 1s) and paste it in some other spreadsheet or below the "cut" line, which is where the formulas stop, but it's for items I don't want to forget.
 
 Once the row is removed, the bars shorten a bit, which pulls in the ship date. It's as though that story never existed. Repeat until the ship date is where you need it to be.
 
