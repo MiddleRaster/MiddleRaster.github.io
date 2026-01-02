@@ -104,6 +104,7 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
 At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's velocity and the current rate of discovery of new work. 
 
 - There are two more things to discuss:
+  
    1. How to tell when story X will be done
       So far, we know how to use the bar chart to predict when the last story will be done. But sometimes we want to know when a particular story will be done, for example for cross-team dependencies.
       
