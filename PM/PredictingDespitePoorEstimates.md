@@ -80,14 +80,19 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
   
 #### A. Your project data is held somewhere else
  - initial setup
+   
    If your project is held in TFS/VSTS/AzureDevOps/Jira/etc. or similar, use your database's export facility to export a .xls/.csv file containing:  ID, stack rank, title, and whether the item is done or not (open/closed).
+   
    The ID is immutable, so we can sort all the data by ID, if necessary.
    I typically temporarily import all that data to a different sheet so that I can massage it until it looks just right (e.g., I search-n-replace all the "opens" with a "1" and "closed" with a "0"; whatever's appropriate for your database).
    Once it's all in the just right form, move it to the bar chart spreadsheet.
 
  - ongoing
+   
    I'm going to assume that your team updates that other database. Each week (even if your iterations are longer than that), export the same data as above and pull it into a separate sheet and massage it as necessary.
+   
    Then in the spreadsheet, sort all the data by ID (ascending). Any new work will have higher IDs than the last one on the list. Look on the other sheet to see if there are any. If so, copy the rows containing their IDs, stack rank and titles to the final spreadsheet.
+   
    Next, copy just the formulas from last week into a **new** column for this week, just to the right of last week.  Then copy the 1s and 0s from the temporary sheet and paste them in the new column.
    Since both sheets are sorted by ID, everything will line up perfectly.
 
