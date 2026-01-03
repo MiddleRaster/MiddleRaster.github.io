@@ -136,3 +136,22 @@ At each week's end, you'll have an updated estimate of when all the stories will
 
 ## 5. #NoEstimates
 
+I started using this kind of stacked bar chart back in 2006, when I was a lead at *StupendousCorp*, having gotten the idea from one of [Mike Cohn's books](https://www.amazon.com/Agile-Estimating-Planning-Mike-Cohn/dp/0131479415/).
+At the time he didn't have things quite right (e.g., his removal method was wrong), but he does now:  see [here](https://www.mountaingoatsoftware.com/agile/scrum/scrum-tools/release-burndown/alternative).
+
+After being a lead for a few years, I joined at team at *StupendousCorp* that did classes/training for other teams; I was their Agile guy and taught a class on estimations, which included this stacked bar chart for tracking. Back then, #NoEstimates didn't exist yet, so I was estimating with 1, 2 and 3.
+One day someone in my class asked why I was using 1, 2 and 3; what was so magical about those numbers?
+My standard answer was a little weak, that these were the first few Fibonacci numbers, which have the nice feature that the gaps get larger as the numbers increase. 
+
+So I decided to try changing all my estimates from 1:2:3 to 1:3:5. 
+Clearly, just doubling everything would have no effect on the intersection point, but slightly different ratios would or so I thought.
+In actuality, the intersection point barely moved. Interesting.
+
+A bit later, I was giving the same class (now including these two different sets of ratios) to an entire group, and their architect asked what would happen if I changed everything to a 1.
+So I tried that, too, and again, the intersection point barely moved.
+I thought about that some and here's what I came up with:  if you took all your estimates and averaged them together, you'd have some number and if you used that number for everything, the intersection point would not move at all.
+
+My conclusion is that the estimates really aren't all that important. They are swamped by the effect of newly discovered work.
+
+Don't believe me? Try it with your own data.
+
