@@ -131,7 +131,7 @@ At each week's end, you'll have an updated estimate of when all the stories will
 
       Once the row is removed, the bars shorten a bit, which pulls in the ship date. It's as though that story never existed. Repeat until the ship date is where you need it to be.
 
-      Note that once the date is where it needs to be, that doesn't mean you won't discover new (and more important) work, which will push out the ship date again. In this case, for every story you take in, something's got to go out.
+      Note that once the date is where it needs to be, that doesn't mean you won't discover new (and more important) work, which may push out the ship date again, especially if the rate of discovery increases somewhat. In such a case, repeat the removal process.
       And the spreadsheet tells you exactly how much.
 
 ## 5. #NoEstimates
