@@ -93,10 +93,13 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
 
 #### B. Your project data is held only in the spreadsheet
  - initial setup
+   
    When you (either the product owner, scrum master, project lead, team lead, whatever) create your product backlog list, for each story, add the story/synopsis/user-story/title and a "1".
    
  - ongoing
+   
    Each week (even if your iterations are longer than that), copy the entire column of last week's data, including formulas and 1s and 0s to a new column, just to the right of last week's column.
+   
    Then, for each story that is complete, change the 1 to a 0.
    Next, for new stories, add a row in the appropriate place so that all the rows are sorted by importance (the newly discovered stories are often the next most important things to do).
 
