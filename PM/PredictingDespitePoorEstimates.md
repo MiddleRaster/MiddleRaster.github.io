@@ -179,7 +179,7 @@ Here are some final thoughts:
  - In line with the above, I **post the CFD chart prominently**, such as on my door, on a wall (printed on as large a sheet of paper as possible).
 
    Another tip:  tape the next week's chart right on top of the previous week's. This allows you to track how our extrapolated ship date has changed over time.
-   In fact, I occasionally plot a chart showing exactly this:
+   In fact, I occasionally plot a chart showing exactly that:
    ![Alt text](./ConvergenceOfEstimates.jpg)
 
  - **How long does it take for the extrolated ship date to converge?** A month or two.
