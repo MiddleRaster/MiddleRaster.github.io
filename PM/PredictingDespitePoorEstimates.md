@@ -192,7 +192,7 @@ Here are some final thoughts:
    
    First, you could break them all down as best you know how at the beginning of the project, and let the software development process discover all the second order ignorance. This is what I usually do, even though it's more work upfront.
 
-   Second, you could ignore the problem. Give it an estimate of 1, just like anything else, but when it gets close, split it into multiple user stories, each with an estimate of 1.
+   Alternatively, you could ignore the problem. Give it an estimate of 1, just like anything else, but when it gets close, split it into multiple user stories, each with an estimate of 1.
    You'll get a bit of a stair-case effect, but after doing a couple epics, the regression line through the tops of the red bars will take this break-it-down-as-we-get-close process into account and the ship date will settle down.
    
  - **SOX compliance**:
