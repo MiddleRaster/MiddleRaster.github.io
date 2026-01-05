@@ -26,7 +26,7 @@ The rest of this post will be about what to do about 2nd Order Ignorance. In the
 ## 2. How to Measure 2nd Order Ignorance
 
 Now, you can't measure how many "unknown unknowns" there are (because they're invisible to us), but what you can do is measure the **_rate_** at which these new items are being discovered. 
-I do it with a simple spreadsheet that generates a stacked bar chart, something like this, also known as a 'cumulative flow diagram':
+I do it with a simple spreadsheet that generates a stacked bar chart, something like this, also known as a 'cumulative flow diagram' (CFD):
 
 ![Alt text](./BurnUpChart.png)
 
@@ -163,12 +163,44 @@ Here's [the spreadsheet I prefer](./BarChartCFD_%23NoEstimates.xlsx) without est
 
 ## Final Thoughts
 
-One of the best things about tracking a project this way is that it's really hard to argue with.
+Here are some final thoughts:
 
-I remember the very first time I used it, my manager at *StupendousCorp* was a very smart lady, with a PhD in math, but from a former Eastern Bloc, rather totalitarian country which meant that she'd get a little grumpy if things didn't go her way.
+ - One of the best things about tracking a project this way is that **it's really hard to argue with**.
+   
+   I remember the very first time I used it, my manager at *StupendousCorp* was a very smart lady, with a PhD in math, but from a former Eastern Bloc, rather totalitarian country which meant that she'd get a little grumpy if things didn't go her way.
 
-Anyway, we were in my office, estimating, etc., and when we were done, I printed the CFD bar chart, drew the lines by hand ('cuz I hadn't worked up all the formulas yet), and proudly announced, "We'll be done in 39 weeks."
-She said, "39 weeks?!  You only have 16 weeks!!" and stormed out of my office.
-A little while later, she stormed back in and said, "Ok, let's make some cuts."  Quite so.
+   Anyway, we were in my office, estimating, etc., and when we were done, I printed the CFD bar chart, drew the lines by hand ('cuz I hadn't worked up all the formulas yet), and proudly announced, "We'll be done in 39 weeks."
+   She said, "39 weeks?!  You only have 16 weeks!!" and stormed out of my office.
 
-The chart puts an end to a lot of managerial or marketing pushback to "compress the schedule" or other such nonsense. It'll make your life a whole lot easier.
+   A little while later, she stormed back in and said, "Ok, let's make some cuts."  Quite so.
+
+   The chart puts an end to a lot of managerial or marketing pushback to "compress the schedule" or other such nonsense. It'll make your life a whole lot easier.
+
+ - In line with the above, I **post the CFD chart prominently**, such as on my door, on a wall (printed on as large a sheet of paper as possible).
+
+   Another tip:  tape the next week's chart right on top of the previous week's. This allows you to track how our extrapolated ship date has changed over time.
+   In fact, I occasionally plot a chart showing exactly this:
+   ![Alt text](./ConvergenceOfEstimates.jpg)
+
+ - **How long does it take for the extrolated ship date to converge?** A month or two.
+   In the beginning is when you know the least, so the first few weeks' ship dates won't be that great.
+   But it settles down relatively quickly. The one pictured above took a bit longer than most.
+
+ - **What should you estimate?** Not tasks, but rather user stories. Slicing up user stories into small pieces is a skill the team will need to develop if it doesn't have it already. That's another future post.
+
+   What about epics? There are two ways to handle epics.
+   
+   First, you could break them all down as best you know how at the beginning of the project, and let the software development process discover all the second order ignorance. This is what I usually do, even though it's more work upfront.
+
+   Second, you could ignore the problem. Give it an estimate of 1, just like anything else, but when it gets close, split it into multiple user stories, each with an estimate of 1.
+   You'll get a bit of a stair-case effect, but after doing a couple epics, the regression line through the tops of the red bars will take this break-it-down-as-we-get-close process into account and the ship date will settle down.
+   
+ - **SOX compliance**:
+
+   I've never lived in this world, but I had a long discussion after class with a dev who did.
+   
+   When I asked what his current process was he said that he spend about 30% of the time doing upfront design, which mmeant that on a year-long project, he didn't write any code for about 4 months.
+   
+   I told him that what I would do is work the Agile way:  start coding on day 1, and call it prototyping or designing, making a "silver thread" framework that I'd gradually flesh out until I have the whole product.
+   He seemed satisfied with that, because after 4 months, you'd not only have a good estimate of when you'll be done, but you'd have 30% of the project written already.
+
