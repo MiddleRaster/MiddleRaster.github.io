@@ -39,7 +39,7 @@ A couple of things should be immediately obvious:
 
 ## 3. How to Create the Burn-up Chart
 
-I'll link a couple of spreadsheets at the very end of this note, but for now, take a look at this table/spreadsheet:
+I'll link a couple of spreadsheets at the very end of this note, but for now, take a look at this sample table/spreadsheet:
 
 |||                 week ending    | 1/21 | 1/28 | 2/4 | 2/11 | 2/18 | 2/25  | 3/3  | 3/10  | 3/17 |
 |-|-|-------------------------------:|:----:|:----:|:---:|:----:|:----:|:-----:|:----:|:-----:|:----:|
@@ -47,6 +47,7 @@ I'll link a couple of spreadsheets at the very end of this note, but for now, ta
 |||         work remaining         | 116  | 113  | 114 | 110  | 100    | 102     | 104     |       |
 |||         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
 |||         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
+|||         total product size     |      | 116  | 122 | 122  | 123    | 128     | 132     |        |
 |||         estimated ship date    |      | #DIV/0! | 12/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
 ||| **Title**                  | 
 ||| story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
@@ -56,7 +57,7 @@ I'll link a couple of spreadsheets at the very end of this note, but for now, ta
 ||| user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | 
 ||| user story there               |   |   |   | 1 | 1 | 1 | 1 | | 
 
-The first 3 rows are what will be used to create the stacked bar chart. 
+The first date, done and total product size rows are what will be used to create the stacked bar chart. 
 
 The first two columns are optional, but useful if you keep your data in TFS/VSTS/AzureDevOps/Jira/etc., and only use the spreadsheet to predict a ship date. If you only use a spreadsheet, you probably won't need ID or Rank.
 
@@ -154,4 +155,12 @@ I thought about that some and here's what I came up with:  if you took all your 
 My conclusion is that the estimates really aren't all that important. They are swamped by the effect of newly discovered work.
 
 Don't believe me? Try it with your own data.
+Here is a [sample spreadsheet with estimates](./BarChartCFDWithEstimates.xlsx) that you can populate with your data and estimates.
+Then change your estimates' ratios and see how much the prediction ship shifts. 
+In my experience, it's only by a couple percent.
+
+Here's [the spreadsheet I prefer](./BarChartCFD_#NoEstimates.xlsx) without estimates.
+
+## Final Thoughts
+
 
