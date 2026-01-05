@@ -200,6 +200,7 @@ Here are some final thoughts:
    I've never lived in this world, but I had a long discussion after class with a dev who did.
    
    When I asked what his current process was he said that he spend about 30% of the time doing upfront design, which mmeant that on a year-long project, he didn't write any code for about 4 months.
+   His problem was that even after all that big design upfront, his estimate of when he'd be done was poor (that's why he was taking my class).
    
    I told him that what I would do is work the Agile way:  start coding on day 1, and call it prototyping or designing, making a "silver thread" framework that I'd gradually flesh out until I have the whole product.
    He seemed satisfied with that, because after 4 months, you'd not only have a good estimate of when you'll be done, but you'd have 30% of the project written already.
