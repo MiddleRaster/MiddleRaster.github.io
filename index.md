@@ -24,7 +24,7 @@ including 4 completely original ideas.
 
 1. How to mock ***anything*** in C++: [Test Base Class Injection](https://github.com/MiddleRaster/tbci)
 2. A C++ [technique](/DAG/HeaderOnlyNoForwardDeclarations.html) where circular dependencies are compiler errors
-3. How to predict when a project will be done despite poor estimates
+3. How to [predict when a project will be done despite poor estimates](/PM/PredictingDespitePoorEstimates.html)
 4. ***The*** metric for software development
 
 Stay tuned for the rest.
@@ -38,6 +38,7 @@ I have a thing or two to say about [mathematics](https://middleraster.github.io/
 <!--
   Google: The TDD tutorials are a major content section.
   Google: The DAG page is a standalone technical article.
+  Google: The PM page is for project management articles.
   Google: The math musings section is a separate topic area.
 -->
 
