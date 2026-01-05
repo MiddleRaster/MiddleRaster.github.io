@@ -46,10 +46,10 @@ I'll link a couple of spreadsheets at the very end of this note, but for now, ta
 |||               done(cumulative)​​​​​ | 0    | 3    | 8   | 12   | 23     | 26      | 28      |       |
 |||         work remaining         | 116  | 113  | 114 | 110  | 100    | 102     | 104     |       |
 |||         done this Sprint       |      | 3    | 5   | 4    | 11     | 3       | 2       |        |
-|||         new requirements       |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
-|||         total product size     |      | 116  | 122 | 122  | 123    | 128     | 132     |        |
-|||         estimated ship date    |      | #DIV/0! | 12/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
-||| **Title**                  | 
+|||         new work               |      | 0    | 6   | 0    | 1      | 5       | 4       |        |
+|||         total work             |      | 116  | 122 | 122  | 123    | 128     | 132     |        |
+|||         ship date              |      | #DIV/0! | 12/4/16 | 2/14/17 | 10/14/16 | 10/14/16 | 10/30/16  |
+||| **Title**                      | 
 ||| story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
 ||| another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | 
 ||| yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | 
