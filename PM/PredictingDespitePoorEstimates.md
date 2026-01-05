@@ -53,11 +53,12 @@ I'll link a couple of spreadsheets at the very end of this note, but for now, ta
 ||| story description              | 1 | 0 | 0 | 0 | 0 | 0 | 0 | | 
 ||| another story                  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | | 
 ||| yet another story              | 1 | 1 | 1 | 0 | 0 | 0 | 0 | | 
+||| (lots of data not shown)       |   |   |   |   |   |   |   | | 
 ||| whole new story                | 1 | 1 | 1 | 1 | 1 | 0 | 0 | | 
 ||| user story here                |   | 1 | 1 | 1 | 1 | 1 | 0 | | 
 ||| user story there               |   |   |   | 1 | 1 | 1 | 1 | | 
 
-The first date, done and total product size rows are what will be used to create the stacked bar chart. 
+The date, done and total product size rows are what will be used to create the stacked bar chart. 
 
 The first two columns are optional, but useful if you keep your data in TFS/VSTS/AzureDevOps/Jira/etc., and only use the spreadsheet to predict a ship date. If you only use a spreadsheet, you probably won't need ID or Rank.
 
