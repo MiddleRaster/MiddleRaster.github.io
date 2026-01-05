@@ -167,8 +167,8 @@ One of the best things about tracking a project this way is that it's really har
 
 I remember the very first time I used it, my manager at *StupendousCorp* was a very smart lady, with a PhD in math, but from a former Eastern Bloc, rather totalitarian country which meant that she'd get a little grumpy if things didn't go her way.
 
-Anyway, we were in my office, estimating, etc., and when we were done, I printed the CFD bar chart, drew the lines by hand ('cuz I hadn't worked up all the formulas yet), and proudly announced, "We'll be done in 14 weeks."
-She said, "14 weeks?!  You only have 9 weeks!!" and stormed out of my office.
+Anyway, we were in my office, estimating, etc., and when we were done, I printed the CFD bar chart, drew the lines by hand ('cuz I hadn't worked up all the formulas yet), and proudly announced, "We'll be done in 39 weeks."
+She said, "39 weeks?!  You only have 16 weeks!!" and stormed out of my office.
 A little while later, she stormed back in and said, "Ok, let's make some cuts."  Quite so.
 
 The chart puts an end to a lot of managerial or marketing pushback to "compress the schedule" or other such nonsense. It'll make your life a whole lot easier.
