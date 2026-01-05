@@ -176,7 +176,7 @@ Here are some final thoughts:
 
    The chart puts an end to a lot of managerial or marketing pushback to "compress the schedule" or other such nonsense. It'll make your life a whole lot easier.
 
- - In line with the above, I **post the CFD chart prominently**, such as on my door, on a wall (printed on as large a sheet of paper as possible).
+ - In line with the above, I **post the CFD chart prominently**, such as on my door, on a wall (printed on as large a sheet of paper as possible):  an "information radiator."
 
    Another tip:  tape the next week's chart right on top of the previous week's. This allows you to track how our extrapolated ship date has changed over time.
    In fact, I occasionally plot a chart showing exactly that:
