@@ -26,7 +26,7 @@ The rest of this post will be about what to do about 2nd Order Ignorance. In the
 ## 2. How to Measure 2nd Order Ignorance
 
 Now, you can't measure how many "unknown unknowns" there are (because they're invisible to us), but what you *can* do is measure the **_rate_** at which these new items are being discovered. 
-I do it with a simple spreadsheet that generates a stacked bar chart, something like this, also known as a 'cumulative flow diagram' (CFD):
+I do it with a simple spreadsheet that generates a stacked bar chart, also known as a Cumulative Flow Diagram (CFD), something like this:
 
 ![Alt text](./BurnUpChart.png)
 
