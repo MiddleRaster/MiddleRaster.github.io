@@ -25,7 +25,7 @@ The rest of this post will be about what to do about 2nd Order Ignorance. In the
 
 ## 2. How to Measure 2nd Order Ignorance
 
-Now, you can't measure how many "unknown unknowns" there are (because they're invisible to us), but what you can do is measure the **_rate_** at which these new items are being discovered. 
+Now, you can't measure how many "unknown unknowns" there are (because they're invisible to us), but what you *can* do is measure the **_rate_** at which these new items are being discovered. 
 I do it with a simple spreadsheet that generates a stacked bar chart, something like this, also known as a 'cumulative flow diagram' (CFD):
 
 ![Alt text](./BurnUpChart.png)
@@ -67,7 +67,7 @@ You'll note that there are no estimates anywhere, just 0s and 1s. I'll talk abou
 
 The work remaining at the end of the current week is easy:  the formula is `=SUM(F9:F99)` (or wherever your last row is). It just sums up everything, 0s and 1s. We really only want the 1s, but the 0s don't hurt anything.
 
-The formula for newly discovered work/requirements is tricky:  `=SUMIF(E9:E99,"=",F9:F99)` which means, "add the cell in column F only if the cell in column E is **empty**.
+The formula for newly discovered work/requirements is trickier:  `=SUMIF(E9:E99,"=",F9:F99)` which means, "add the cell in column F only if the cell in column E is **empty**."
 
 Given those two things, it's easy to calculate the rest of what's needed for the chart.
 
