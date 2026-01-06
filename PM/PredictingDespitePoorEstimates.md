@@ -111,7 +111,7 @@ To use the spreadsheet, we need to distinguish two different scenarios. Pick the
    Next, for new stories, add a row in the appropriate place so that all the rows are sorted by importance (the newly discovered stories are often the next most important things to do).
 
 
-At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's velocity and the current rate of discovery of new work. 
+At each week's end, you'll have an updated estimate of when all the stories will be done, based on the team's current velocity and the current rate of discovery of new work. 
 
 - There are two more things to discuss:
   
@@ -157,7 +157,7 @@ My conclusion is that the estimates really aren't all that important. They are s
 
 Don't believe me? Try it with your own data.
 Here is a [sample spreadsheet with estimates](./BarChartCFDWithEstimates.xlsx) that you can populate with your data and estimates.
-Then change your estimates' ratios and see how much the prediction ship shifts. 
+Then change your estimates' ratios and see how much the predicted ship date shifts. 
 In my experience, it's only by a couple percent.
 
 Here's [the spreadsheet I prefer](./BarChartCFD_%23NoEstimates.xlsx) without estimates.
