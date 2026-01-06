@@ -187,7 +187,7 @@ Here are some final thoughts:
    In the beginning is when you know the least, so the first few weeks' ship dates won't be that great.
    But it settles down relatively quickly. The one pictured above took a bit longer than most.
 
- - **What should you estimate?** Not tasks, but rather user stories. Slicing up user stories into small pieces is a skill the team will need to develop if it doesn't have it already. That's another future post.
+ - **What should you track?** Not tasks, but rather user stories. Slicing up user stories into small pieces is a skill the team will need to develop if it doesn't have it already. That's another future post.
 
    What about epics? There are two ways to handle epics.
    
