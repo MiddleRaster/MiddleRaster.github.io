@@ -206,3 +206,10 @@ Here are some final thoughts:
    I told him that what I would do is work the Agile way:  start coding on day 1, and call it prototyping or designing, making a "silver thread" framework/skeleton that I'd gradually flesh out until I have the whole product.
    He seemed satisfied with that, because after 4 months, you'd not only have a good estimate of when you'll be done, but you'd have 30% of the project written already.
 
+## Summary
+Tracking this way solves lots of problems:
+- You get good predicted ship dates.
+- You can update the chart all by yourself, whether you're an IC or a manager.
+- If your team is handing out a dependency, you can tell the other team accurately when it'll be ready.
+- You get a chart that's really hard to argue with, that even non-technical managers/executives can understand.
+- It'll make your life much easier.
