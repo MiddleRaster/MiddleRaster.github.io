@@ -29,9 +29,11 @@ including 4 completely original ideas.
 
 Stay tuned for the rest.
 
-Without further ado, here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
+My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanban/KanbanThoughts.html).
 
 I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
+
+Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
 
 
 <!-- Invisible semantic section markers for Google -->
