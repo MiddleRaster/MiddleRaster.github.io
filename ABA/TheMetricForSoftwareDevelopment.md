@@ -29,10 +29,11 @@ So gather 'round and I'll tell you the perfect metric. Of course, I can't just t
 ## Metrics of a Good Codebase
 
 Much as been written on this topic (e.g., the SOLID principles, the McCabe metrics, cyclomatic complexity metrics, etc.) and I think they all miss the point.
+
 I define **a good codebase as one in which it's quick and easy to fix bugs**.
 
 Think about that for a bit. 
-
+Where would you rather fix a big, in a big ball of mud/spaghetti or an easy-to-understand all [directed-acyclic graph (DAG)](/DAG/HeaderOnlyNoForwardDeclarations.html) codebase?
 
 
 
