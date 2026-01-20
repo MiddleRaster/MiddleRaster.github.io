@@ -96,7 +96,7 @@ And he'll work really hard to try to fix those bugs, but will introduce more.
 You've got to find a way to slow that guy down, which is what my bug policy does.
 
 It's a real shame that the vast majority of dev managers don't get this right.
-For example, suppose a team is on a death march working really hard, and the dev mgr starts asking them to stay late (bringing in dinners for them) and to work weekends.
+For example, suppose a team is on a death march working really hard, and the dev mgr starts asking them to stay late, bringing in dinners for them, and to work weekends.
 
 The fast buggy guy is there, working late and on weekends: he takes on more work than he can really handle, works really hard, trying to fix his bugs - very visible.
 
