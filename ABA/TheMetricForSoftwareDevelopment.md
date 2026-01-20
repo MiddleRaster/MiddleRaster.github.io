@@ -8,7 +8,7 @@ What do we want? High quality code.
 
 When do we want it? As soon as possible.
 
-How can we tell whether we achieving both of these lofty goals?
+How can we tell whether we are achieving both of these lofty goals?
 
 What we need is the perfect metric for software development.
 
