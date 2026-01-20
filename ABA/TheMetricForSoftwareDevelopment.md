@@ -72,6 +72,42 @@ The right way has the following consequences:
 
 None of these effects happen if everyone chips in. And that's a real shame, because everywhere I've been, people do it the wrong way.
 
+I rate developers on two axes, speed and buggy-ness, which makes four kinds of devs:
+
+|              |   slow          |   fast         |
+|:------------:|:---------------:|:--------------:|
+| **bug-free** |   II            |        I       |
+| **buggy**    |  III            |       IV       |
+
+The quadrant I devs are the perfect devs, fast and bug-free. 
+Every single developer I know thinks he (or she (I'll use "he" through as it's less typing)) is one of these, which is laughable, considering how many bugs there are in the world.
+But if you really have one of these on the team, that's great.
+
+Quadrant II devs are slower, but still bug-free.
+I like these guys a lot; they're senior devs who are fire-and-forget:  you give them something to do and you know it'll get done with high quality.
+And once you learn his velocity, he's easy to schedule.
+
+Quadrant III devs are slow and buggy.
+They just get fired, so there's not much to say about them.
+
+But a quadrant IV dev (fast and buggy) is a real problem.
+If you let him loose, he'll write a ton of code, and it'll be full of bugs.
+And he'll work really hard to try to fix those bugs, but will introduce more.
+You've got to find a way to slow that guy down, which is what my bug policy does.
+
+It's a real shame that the vast majority of dev managers don't get this right.
+For example, suppose a team is on a death march working really hard, and the dev mgr starts asking them to stay late (bringing in dinners for them) and to work weekends.
+
+The fast buggy guy is there, working late and on weekends: he takes on more work than he can really handle, works really hard, trying to fix his bugs - very visible.
+
+But the slow bug-free dev takes on a reasonable amount of work and gets it done with little drama - not very visible.
+
+Finally, they ship. And then it's review time. Who gets the promo?
+Often it's the fast buggy guy, because he worked so hard.
+
+The problem is managers are confusing hard work (which is easy to see) with good work (which is not easy to see).
+My bug policy nips this problem in the bud.
+
 ## How to Do It
 
 Once at *StupendousCorp*, I was called in to help a failing team and so became their lead.
