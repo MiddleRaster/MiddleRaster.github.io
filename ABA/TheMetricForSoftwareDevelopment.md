@@ -8,36 +8,37 @@ What do we want? High quality code.
 
 When do we want it? As soon as possible.
 
-How can we tell that we achieving both of these lofty goals?
+How can we tell whether we achieving both of these lofty goals?
 
 What we need is the perfect metric for software development.
 
 - Most people think such a thing doesn't exist.
-- Others think all metrics can be gamed and are therefore useless.
-- Finally, some think that the ultimate metric is how much money the business makes after producing the software.
+- Others think all metrics can be gamed and are therefore useless or worse than useless.
+- Finally, some think that the ultimate metric is how much money the business makes after building the software.
 
-Let me address the 3rd bullet point first:  the only problem with this "ultimate" metric is that it's a ***trailing indicator***, that is, one that tells you after the fact whether you succeeded or not.
+Let me address the last bullet point first:  the only problem with this "ultimate" metric is that it's a ***trailing indicator***, that is, one that tells you after the fact whether you succeeded or not. 
+You probably know if you're out of business, but that knowledge came too late.
 
-This isn't what we want:  we want a ***leading indicator*** that will tell us in advance is we're on track to succeed, and if not, that will allow us to adjust our course as needed.
+This isn't what we want:  we want a ***leading indicator*** that will tell us in advance if we're on track to succeed, and if not, that will allow us to adjust our course as needed.
 
 For the other two bullet points, there is a lot of truth to these:  gameable metrics are worse than no metrics at all. 
 In fact, that's the conclusion reached by the excellent book, [Measuring and Managing Performance in Organizations](https://www.amazon.com/Measuring-Managing-Performance-Organizations-Robert/dp/0932633366), by Robert D. Austin.
 He also polls 20 "software industry luminaries" asking them their opinions, and most of them said there probably was one, but they didn't know what it was.
 
-So gather 'round and I'll tell you the perfect metric. Of course, I can't just tell you, because you'll reject it out-of-hand. You've got to listen to the whole spiel.
+So gather 'round and I'll tell you the perfect metric. Of course, I can't just come out and tell you, because you'll reject it out-of-hand. You've got to listen to the whole spiel.
 
 
 ## Characteristics of a Good Codebase
 
 Much as been written on this topic (e.g., the SOLID principles, the McCabe metrics, cyclomatic complexity metrics, etc.) and while there may be value in these, I think they all miss the point a little.
 
-Here's my definition:  **a good codebase as one in which it's quick and easy to fix bugs**.
+Here's my definition:  **a good codebase is one in which it's quick and easy to fix bugs**.
 
 Where would you rather fix a bug, in a big ball of mud/spaghetti, full of band-aids? Or an easy-to-understand all-[directed-acyclic graph (DAG)](/DAG/HeaderOnlyNoForwardDeclarations.html) codebase?
 
 If you have such a "good" codebase, then the following will be true:
-1. since it's quick and easy to fix bugs, most, if not all, of them have been fixed already, since it's easy to do so. So you have high quality.
-2. since it's quick and easy to fix bugs, it's easy to add new features, too. So, you have high productivity as well.
+1. if it's quick and easy to fix bugs, most, if not all, of them have been fixed already, since it's easy to do so. So you have a high quality product.
+2. if it's quick and easy to fix bugs, it's easy to add new features, too. So, you have high team productivity as well.
 
 ## Measuring a Good Codebase
 
