@@ -139,15 +139,20 @@ It was invented in the Toyota Production System (TPS) and any worker who found a
 
 Kanban is all about limiting WIP, swarming on bottlenecks and flow metrics.
 The same bad advice given to Scrum/Agile teams about putting bugs on the backlog is given to Kanban teams, too:  don't do it.
-The right way is to pull the Andon cord, which stops any upstream work. Those workers (usually devs, but it could be UX too if it's a UX bug) swarm on the bottleneck.
+Don't put a new card for the bug on the backlog; don't make an expedite swimlane.
+
+The right way is to pull the Andon cord, which stops any upstream work. 
+Those workers (usually devs, but it could be UX too if it's a UX bug) swarm on the bottleneck.
 The Kanban card stays put (rather than flowing backwards), and no new card is created.
-This mechanism minimizes [cycle time and increases throughput](Kanban/KanbanThoughts.html), whereas the other approaches have the opposite effect.
+This mechanism [minimizes cycle time and increases throughput](Kanban/KanbanThoughts.html), whereas the other approaches have the opposite effect.
 
 ## Summary
 
 I thought I'd end with a story, one I'd often trot out when I was talking to Principal-level engineering managers at *StupendousCorp*.
+
 I gave a talk on exactly this topic to such a manager, let's call him "Ed" whose team was working on some peta-scale database or other.
 They listened politely, asked the right questions, and then I heard nothing.
+
 A while later, maybe a year or so, I happened to notice that Ed's title had changed from Principal Engineering Manager to Partner Engineering Manager (which is actually quite dificult to do at *StupendousCorp*).
 So I sent him a little not in email congratulating him on his promo.
 He replied with, "It's all because of you" to which I replied, "Huh?"
