@@ -118,18 +118,37 @@ With our new approach, the project manager and I would get together and look at 
 3. A feature request:  sometimes the bug would actually be found to be a feature request. If accepted by the PO, these would be turned into stories, prioritized and put on our backlog. The bug was closed.
 Total elapsed time was usually a couple of minutes, once a week. Often the project manager could do the categorization without my input.
 
-## How to handle bugs in Scrum and Agile
+## How to Handle Bugs in Scrum and Agile
 
-How to handle bugs in Kanban
+The rationale for fixing bugs in Scrum or Agile methodologies is simple:  we are working on our backlog items in priority order.
+When a bug is found, it must be in a story that had high priority than whatever story the dev is working on now.
+He thought the story was done, but it's clearly not, because of this bug that has been found.
+So fix the bug in this higher priority story.
 
+There is just terrible advice on the web about this, such as put the bugs on the product backlog and let the Product Owner prioritize them.
+The problem here is that this gives the PO a mechanism to de-prioritize bugs, explicitly to drop quality (supposedly so the team can "go faster").
+But the PO undoubtedly doesn't realize that technical debt will make the team much slower.
 
+So, don't do it: don't put bug on the backlog. Period. Just fix them or close them.
 
+## How to Handle Bugs in Kanban
 
+The same rationale (that the bug is in a higher priority story) works with Kanban, too, but even more so:  in Kanban/Lean, there is a concept of an "Andon cord."
+It was invented in the Toyota Production System (TPS) and any worker who found a problem was able to pull a cord which stopped the line, until the problem was fixed.
 
+Kanban is all about limiting WIP, swarming on bottlenecks and flow metrics.
+The same bad advice given to Scrum/Agile teams about putting bugs on the backlog is given to Kanban teams, too:  don't do it.
+The right way is to pull the Andon cord, which stops any upstream work. Those workers (usually devs, but it could be UX too if it's a UX bug) swarm on the bottleneck.
+The Kanban card stays put (rather than flowing backwards), and no new card is created.
+This mechanism minimizes [cycle time and increases throughput](Kanban/KanbanThoughts.html), whereas the other approaches have the opposite effect.
 
+## Summary
 
-
-
-
-
+I thought I'd end with a story, one I'd often trot out when I was talking to Principal-level engineering managers at *StupendousCorp*.
+I gave a talk on exactly this topic to such a manager, let's call him "Ed" whose team was working on some peta-scale database or other.
+They listened politely, asked the right questions, and then I heard nothing.
+A while later, maybe a year or so, I happened to notice that Ed's title had changed from Principal Engineering Manager to Partner Engineering Manager (which is actually quite dificult to do at *StupendousCorp*).
+So I sent him a little not in email congratulating him on his promo.
+He replied with, "It's all because of you" to which I replied, "Huh?"
+He said, "Yeah, remember that talk you gave us? When we did that, everything changed."  Nice!
 
