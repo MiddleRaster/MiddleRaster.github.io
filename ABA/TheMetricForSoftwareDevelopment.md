@@ -46,7 +46,7 @@ If you have such a "good" codebase, then the following will be true:
 To tell if you have a good codebase, all you need to do is measure how quick and easy it is to fix bugs, and the way to do that is to measure the average age of open bugs (ABA), a.k.a., "bug cycle time."
 
 The really good news is that you're probably collecting all the data you need to calculate the ABA of your codebase.
-You take all currently open bugs, subtract their open dates from today's date, sum all those ages up and divide by the number of bugs.
+You take all currently open bugs, subtract their open dates from today's date, and take the average.
 
 (Note: a slightly more accurate thing to do is measure the total bug-days of open bugs, but I've found that people don't have as visceral an understanding of bug-days as they do of average bug age.)
 
