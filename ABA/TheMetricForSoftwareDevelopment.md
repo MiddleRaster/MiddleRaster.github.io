@@ -118,6 +118,7 @@ With our new approach, the project manager and I would get together and look at 
 1. Not a bug:  sometimes we'd get a bug report from someone who was completely confused about what the product did (though why the person was confused sometimes spurred some thinking). These were closed.
 2. An actual bug:  our bug policy kicked in, and the bug was assigned to the dev who owned that area. If that dev didn't actually write that bug, he would assign it to the dev who did. In either case, the dev reponsible would drop what he was doing and fix the bug.
 3. A feature request:  sometimes the bug would actually be found to be a feature request. If accepted by the PO, these would be turned into stories, prioritized and put on our backlog. The bug was closed.
+
 Total elapsed time was usually a couple of minutes, once a week. Often the project manager could do the categorization without my input.
 
 ## How to Handle Bugs in Scrum and Agile
