@@ -48,7 +48,7 @@ To tell if you have a good codebase, all you need to do is measure how quick and
 The really good news is that you're probably collecting all the data you need to calculate the ABA of your codebase.
 You take all currently open bugs, subtract their open dates from today's date, sum all those ages up and divide by the number of bugs.
 
-(Note: a slightly more accurate thing to do is measure the total bug-days of open bugs, but I've found that people don't have as a visceral understanding of bug-days as they do of average bug age.)
+(Note: a slightly more accurate thing to do is measure the total bug-days of open bugs, but I've found that people don't have as visceral an understanding of bug-days as they do of average bug age.)
 
 One nice things to do is to plot that ABA over time to see if your codebase is getting better or worse.
 If you do that, you may be struck by how relentless time is:  every day, any untouched open bugs age by one more day.
