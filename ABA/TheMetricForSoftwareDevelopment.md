@@ -132,7 +132,7 @@ There is just terrible advice on the web about this, such as put the bugs on the
 The problem here is that this gives the PO a mechanism to de-prioritize bugs, explicitly to drop quality (supposedly so the team can "go faster").
 But the PO undoubtedly doesn't realize that technical debt will make the team much slower.
 
-So, don't do it: don't put bug on the backlog. Period. Just fix them or close them.
+So, don't do it: don't put bug on the backlog. Period. Just fix them immediately or close them.
 
 ## How to Handle Bugs in Kanban
 
