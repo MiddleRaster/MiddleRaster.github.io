@@ -152,7 +152,7 @@ This mechanism [minimizes cycle time and increases throughput](Kanban/KanbanThou
 
 I thought I'd end with a story, one I'd often trot out when I was talking to Principal-level engineering managers at *StupendousCorp*.
 
-I gave a talk on exactly this topic to such a manager, let's call him "Ed" whose team was working on some peta-scale database or other.
+I gave a talk on exactly this topic to such a manager, let's call him "Ed," whose team was working on some peta-scale database or other.
 They listened politely, asked the right questions, and then I heard nothing.
 
 A while later, maybe a year or so, I happened to notice that Ed's title had changed from Principal Engineering Manager to Partner Engineering Manager (which is actually quite dificult to do at *StupendousCorp*).
