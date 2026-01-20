@@ -30,7 +30,7 @@ So gather 'round and I'll tell you the perfect metric. Of course, I can't just c
 
 ## Characteristics of a Good Codebase
 
-Much as been written on this topic (e.g., the SOLID principles, the McCabe metrics, cyclomatic complexity metrics, etc.) and while there may be value in these, I think they all miss the point a little.
+Much as been written on the topic of what good code looks like (e.g., the SOLID principles, the McCabe metrics, cyclomatic complexity metrics, etc.) and while there may be value in these, I think they all miss the point a little.
 
 Here's my definition:  **a good codebase is one in which it's quick and easy to fix bugs**.
 
