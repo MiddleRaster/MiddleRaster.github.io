@@ -156,7 +156,7 @@ I gave a talk on exactly this topic to such a manager, let's call him "Ed" whose
 They listened politely, asked the right questions, and then I heard nothing.
 
 A while later, maybe a year or so, I happened to notice that Ed's title had changed from Principal Engineering Manager to Partner Engineering Manager (which is actually quite dificult to do at *StupendousCorp*).
-So I sent him a little not in email congratulating him on his promo.
+So I sent him a little note in email congratulating him on his promo.
 He replied with, "It's all because of you" to which I replied, "Huh?"
 He said, "Yeah, remember that talk you gave us? When we did that, everything changed."  Nice!
 
