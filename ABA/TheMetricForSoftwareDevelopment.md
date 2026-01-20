@@ -88,7 +88,7 @@ As a team, we were about 5x faster than before.
 And I wasn't the only one who saw this; my manager starting doing similarly on all her teams.
 
 So our process became:
-1. When a tester found a bug, he would physically go to the dev who wrote the bug.
+1. When a tester found a bug, he would physically go, bug in hand, to the dev who wrote it.
 2. That dev would then drop what he was doing and they'd fix the bug together.
 
 There are some nuances. 
