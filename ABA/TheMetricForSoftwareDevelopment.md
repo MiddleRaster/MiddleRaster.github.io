@@ -35,6 +35,7 @@ Much as been written on the topic of what good code looks like (e.g., the SOLID 
 Here's my definition:  **a good codebase is one in which it's quick and easy to fix bugs**.
 
 Where would you rather fix a bug, in a big ball of mud/spaghetti, full of band-aids? Or an easy-to-understand all-[directed-acyclic graph (DAG)](/DAG/HeaderOnlyNoForwardDeclarations.html) codebase?
+Where is it quicker ot easier to fix a bug?
 
 If you have such a "good" codebase, then the following will be true:
 1. if it's quick and easy to fix bugs, most, if not all, of them have been fixed already, since it's easy to do so. So you have a high quality product.
