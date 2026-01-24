@@ -22,7 +22,7 @@ You probably know if you're out of business, but that knowledge came too late.
 This isn't what we want:  we want a ***leading indicator*** that will tell us in advance if we're on track to succeed, and if not, that will allow us to adjust our course as needed.
 
 For the other two bullet points, there is a lot of truth to these:  gameable metrics are worse than no metrics at all. 
-In fact, that's the conclusion reached by the excellent book, [Measuring and Managing Performance in Organizations](https://www.amazon.com/Measuring-Managing-Performance-Organizations-Robert/dp/0932633366), by Robert D. Austin.
+In fact, that's the conclusion reached in the excellent book, [Measuring and Managing Performance in Organizations](https://www.amazon.com/Measuring-Managing-Performance-Organizations-Robert/dp/0932633366), by Robert D. Austin.
 He also polls 20 "software industry luminaries" asking them their opinions of the ideal metric, and most of them said there probably was one, but they didn't know what it was.
 
 So gather 'round and I'll tell you the perfect metric. Of course, I can't just come out and tell you, because you'll reject it out-of-hand. You've got to listen to the whole spiel.
