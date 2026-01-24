@@ -145,7 +145,7 @@ He might misunderstand the bug report anyway, but with the tester physically goi
 So we stopped using a bug database for internally found bugs (though we still had one for externally found bugs).
 
 That surprised me, because testers typically want to keep every last thing in the bug database.
-I got push-back from (2nd-level+) test managers when I told them we stopped using a bug database and when I asked why, they said that they needed to know where the buggy areas of the codebase were, so they could provide feedback to the buggy devs.
+I got pushback from (2nd-level+) test managers when I told them we stopped using a bug database and when I asked why, they said that they needed to know where the buggy areas of the codebase were, so they could provide feedback to the buggy devs.
 I'm doubtful that their feedback had any effect whatsoever, especially if that feedback came late in the product cycle, whereas with my way, it had an immediate effect.
 
 As to externally found bugs, ones found by customers or other teams/groups/divisions, we still used a bug database for those.
