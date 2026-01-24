@@ -84,8 +84,8 @@ Every single developer I know thinks he (or she (I'll use "he" through as it's l
 But if you really have one of these on the team, that's great.
 
 Quadrant II devs are slower, but still bug-free.
-I like these guys a lot; they're senior devs who are fire-and-forget:  you give them something to do and you know it'll get done with high quality.
-And once you learn his velocity, he's easy to schedule.
+I like these guys a lot; they're solid, senior devs who are fire-and-forget:  you give them something to do and you know it'll get done with high quality.
+And once you measure his velocity, he's easy to schedule.
 
 Quadrant III devs are slow and buggy.
 They just get fired, so there's not much to say about them.
