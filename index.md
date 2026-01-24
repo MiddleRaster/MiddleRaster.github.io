@@ -27,7 +27,7 @@ I'll be discussing things I've learned in my 35-year career, including 4 complet
 4. [***The*** metric for software development](https://middleraster.github.io/ABA/TheMetricForSoftwareDevelopment.html)
 
 
-My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanban/KanbanThoughts.html).
+My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanban/index.html).
 
 I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
 
