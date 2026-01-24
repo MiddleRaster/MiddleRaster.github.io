@@ -188,6 +188,17 @@ Those workers (usually devs, but it could be UX too if it's a UX bug) swarm on t
 The Kanban card stays put (rather than flowing backwards), and no new card is created.
 This mechanism [minimizes cycle time and increases throughput](Kanban/KanbanThoughts.html), whereas the other approaches have the opposite effect.
 
+## Should ABA Become a Target?
+
+[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) says no.
+
+I haven't found a way to game the metric, but I don't doubt that some creative person might come up with one, so I wouldn't use ABA to measure individuals against each other. 
+And it makes no sense at all if the ABA is down to less than a hour (or maybe a day).
+
+On the other hand, I think ranking *managers* based on their teams' ABAs is entirely appropriate; not just teams, but groups and divisions, too.
+In fact, I'd make ABA part of the calculation of managers' reviews, right up to the CTO's direct reports.
+Note that I haven't ever done this, being a peon at *StupedousCorp*, but I did get recognition from two CVPs for my little team as being "best run team in the division."
+
 ## Summary
 
 I thought I'd end with a story, one I'd often trot out when I was talking to Principal-level engineering managers at *StupendousCorp*.
