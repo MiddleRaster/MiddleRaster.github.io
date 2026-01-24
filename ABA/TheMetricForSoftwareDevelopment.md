@@ -129,7 +129,7 @@ So our process became:
 
 There are some nuances. 
 A few months after I left that team to become a dev-instructor at *StupendousCorp*, I asked my old manager if she was still enforcing the "fix all bugs first before doing anything else" idea.
-She said No, because her teams were now working on some web-based something-or-other, and all the different browsers implemented their rendering engines slightly differently, so they ended up with a ton of "off-by-1-pixel" bugs.
+She said Not quite, because her teams were now working on some web-based something-or-other, and all the different browsers implemented their rendering engines slightly differently, so they ended up with a ton of "off-by-1-pixel" bugs.
 She decided they weren't worth fixing and closed them.
 
 So the process became "if a bug is found, it's either fixed immediately or closed." No exceptions.
