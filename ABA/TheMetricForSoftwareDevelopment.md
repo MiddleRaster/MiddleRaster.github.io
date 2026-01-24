@@ -47,16 +47,18 @@ But if you do have a "good" codebase, then the following will be true:
 
 To tell if you have a good codebase, all you need to do is measure how quick and easy it is to fix bugs, and the way to do that is to measure the average age of open bugs (ABA), a.k.a., "bug cycle time."
 
+Note that you don't measure how long the closed bugs took to close, but rather you measure how long the currently open bugs have been open.
+
 The really good news is that you're probably collecting all the data you need to calculate the ABA of your codebase.
 You take all currently open bugs, subtract their open dates from today's date, and take the average.
 
-(Note: a slightly more accurate thing to do is measure the total bug-days of open bugs, but I've found that people don't have as visceral an understanding of bug-days as they do of average bug age.)
+Note: a slightly more accurate thing to do is measure the total bug-days of open bugs, but I've found that people don't have as visceral an understanding of bug-days as they do of average bug age.
 
 One nice things to do is to plot that ABA over time to see if your codebase is getting better or worse.
 If you do that, you may be struck by how relentless time is:  every day, any untouched open bugs age by one more day.
 You can even mine your bug database for your historical ABAs and plot those over time.
 
-(A second note: if you open a whole pile of new bugs, you'll see a little dip in the ABA, but time, being relentless, will quickly reassert itself and the ABA starts going up again, and this time it's worse, since there are more bugs.)
+A third note: if you open a whole pile of new bugs, you'll see a little dip in the ABA, but time, being relentless, will quickly reassert itself and the ABA starts going up again, and this time it's worse, since there are more bugs.
 
 The only way to keep your ABA nice and low is to fix or close every single bug, and as with many things, there's a right way and a wrong way.
 
