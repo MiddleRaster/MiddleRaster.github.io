@@ -66,7 +66,7 @@ The only way to keep your ABA nice and low is to fix or close every single bug, 
 
 The wrong way to keep your ABA low is to have everyone chip in and fix everyone's bugs.
 
-The right way is to have every developer fix his own bugs first before he's allowed to write anything else.
+The right way is to **have every developer fix his own bugs first** before he's allowed to write anything else.
 
 The difference between these two approaches is stark.
 The right way has the following consequences:
