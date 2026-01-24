@@ -195,7 +195,7 @@ This mechanism [minimizes cycle time and increases throughput](Kanban/KanbanThou
 I haven't found a way to game the metric, but I don't doubt that some creative person might come up with one, so I wouldn't use ABA to measure individuals against each other. 
 And it makes no sense at all if the ABA is down to less than a hour (or maybe a day).
 
-On the other hand, I think ranking *managers* based on their teams' ABAs is entirely appropriate; not just teams, but groups and divisions, too.
+On the other hand, I think ranking *managers* based on their teams' ABAs is entirely appropriate; not just teams, but groups, orgs, and divisions, too.
 In fact, I'd make ABA part of the calculation of managers' reviews, right up to the CTO's direct reports.
 Note that I haven't ever done this, being a peon at *StupedousCorp*, but I did get recognition from two CVPs for my little team as being "best run team in the division."
 
