@@ -8,7 +8,7 @@ Welcome to the C++ Dojo. Here are a list of katas, easiest first:
 
 1. [Prime Factors](PrimeFactors/Step1.html)
 2. [Roman Numerals](RomanNumerals/Step1.html)
-3. [Bowling Game](BowlingGame/BowlingGame.html)
+3. the [Bowling Game](BowlingGame/BowlingGame.html) kata, three different ways
 4. the 8 Queens problem kata
 5. Poker Hands kata
 
