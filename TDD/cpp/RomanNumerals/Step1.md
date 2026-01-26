@@ -4066,4 +4066,4 @@ Ok, now that we're in the red state, we have some decisions to make.  In TDD, we
 
 So, let's assume we've commented out all the test data, except for ```{1   , "I" },``` which can easily be done with a C-style comment, the idea being that we'll move the ```/*``` farther and farther down as we go along. Ok, so write the code to make this test pass.  Then refactor to make it clean and clear (and maybe fast).
 
-Only then, click [Next](Step2).
+Only then, click [Next](Step2.html).
