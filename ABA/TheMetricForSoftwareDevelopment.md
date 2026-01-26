@@ -186,7 +186,7 @@ Don't put a new card for the bug on the backlog; don't make an expedite swimlane
 The right way is to pull the Andon cord, which stops any upstream work. 
 Those workers (usually devs, but it could be UX too if it's a UX bug) swarm on the bottleneck.
 The Kanban card stays put (rather than flowing backwards), and no new card is created.
-This mechanism [minimizes cycle time and increases throughput](Kanban/KanbanThoughts.html), whereas the other approaches have the opposite effect.
+This mechanism [minimizes cycle time and increases throughput](/Kanban/KanbanThoughts.html), whereas the other approaches have the opposite effect.
 
 ## Should ABA Become a Target?
 
