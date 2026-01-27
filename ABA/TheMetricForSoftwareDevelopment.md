@@ -197,7 +197,7 @@ And it makes no sense at all if the ABA is down to less than a hour (or maybe a 
 
 On the other hand, I think ranking *managers* based on their teams' ABAs is entirely appropriate; not just teams, but groups, orgs, and divisions, too.
 In fact, I'd make ABA part of the calculation of managers' reviews, right up to the CTO's direct reports.
-Note that I haven't ever done this, being a peon at *StupedousCorp*, but I did get recognition from two CVPs for my little team as being "best run team in the division."
+Note that I haven't ever done this, being a peon at *StupendousCorp*, but I did get recognition from two CVPs for my little team as being "best run team in the division."
 
 ## Summary
 
