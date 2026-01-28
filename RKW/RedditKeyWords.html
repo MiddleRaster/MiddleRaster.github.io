@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reddit Phrase Monitor</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fafafa;
+  }
+  #results {
+    margin-top: 20px;
+  }
+  .match {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border-left: 4px solid #0079d3;
+  }
+  .match a {
+    font-size: 1.1em;
+    color: #0079d3;
+    text-decoration: none;
+  }
+  .match a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<h1>Reddit Exact-Phrase Monitor</h1>
+<p>Running once. Matches will appear below.</p>
+
+<div id="results"></div>
+
+<script>
+const subreddits = ["kanban", "Kanban"];
+const phrases = [
+  "Queueing Theory",
+  "memory leak",
+  "ABI break"
+];
+
+async function fetchSubreddit(sub) {
+  const url = `https://www.reddit.com/r/${sub}/new.json?limit=100`;
+
+  try {
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json"
+      }
+    });
+    const json = await res.json();
+
+    return json.data.children.map(c => ({
+      ...c.data,
+      subreddit: sub
+    }));
+
+  } catch (err) {
+    console.error("Error fetching", sub, err);
+    return [];
+  }
+}
+
+function matchesPhrase(post, phrase) {
+  const text = (post.title + "\n" + post.selftext).toLowerCase();
+  return text.includes(phrase.toLowerCase());
+}
+
+function writeMatchToDOM(post, phrase) {
+  const container = document.getElementById("results");
+
+  const div = document.createElement("div");
+  div.className = "match";
+
+  div.innerHTML = `
+    <p><strong>Match:</strong> "${phrase}" in <strong>r/${post.subreddit}</strong></p>
+    <a href="https://www.reddit.com${post.permalink}" target="_blank">
+      ${post.title}
+    </a>
+    <p><small>${new Date(post.created_utc * 1000).toLocaleString()}</small></p>
+  `;
+
+  container.appendChild(div);
+}
+
+async function runOnce() {
+
+  debugger;
+
+  // Fetch all subreddits in parallel
+  const allResults = await Promise.all(subreddits.map(fetchSubreddit));
+
+  // Flatten into one array
+  const allPosts = allResults.flat();
+
+  // Sort newest first
+  allPosts.sort((a, b) => b.created_utc - a.created_utc);
+
+  // Scan for matches
+  for (const post of allPosts) {
+    for (const phrase of phrases) {
+      if (matchesPhrase(post, phrase)) {
+        writeMatchToDOM(post, phrase);
+      }
+    }
+  }
+}
+
+runOnce();
+</script>
+
+</body>
+</html>
