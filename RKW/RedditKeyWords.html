@@ -46,7 +46,6 @@ const phrases = [
 
 async function fetchSubreddit(sub) {
   const url = `https://www.reddit.com/r/${sub}/new.json?limit=100`;
-
   try {
     const res = await fetch(url, {
       headers: {
@@ -55,14 +54,12 @@ async function fetchSubreddit(sub) {
       }
     });
     const json = await res.json();
-
     return json.data.children.map(c => ({
       ...c.data,
       subreddit: sub
     }));
-
   } catch (err) {
-    console.error("Error fetching", sub, err);
+    console.error("fetching", sub, err);
     return [];
   }
 }
