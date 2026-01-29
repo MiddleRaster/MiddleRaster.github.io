@@ -50,6 +50,9 @@ async function fetchSubreddit(sub) {
   const url = `https://fetcher.wnhanlon-github.workers.dev/${sub}`;
 
   try {
+
+    document.getElementById("debug").textContent += `Fetching: ${url}\n`;
+    
     const res = await fetch(url, {
       headers: {
         "Accept": "application/json"
