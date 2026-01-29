@@ -108,6 +108,7 @@ async function runOnce() {
     for (const phrase of phrases) {
       if (matchesPhrase(post, phrase)) {
         writeMatchToDOM(post, phrase);
+        break;
       }
     }
   }
