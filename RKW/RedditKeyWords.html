@@ -52,7 +52,6 @@ async function fetchSubreddit(sub) {
   try {
     const res = await fetch(url, {
       headers: {
-        "User-Agent": "Mozilla/5.0",
         "Accept": "application/json"
       }
     });
