@@ -33,10 +33,10 @@
 
 <h1>Reddit Exact-Phrase Monitor</h1>
 <p>Running once. Matches will appear below.</p>
-
-<pre id="debug" style="white-space: pre-wrap; background:#fee; padding:10px; border:1px solid #c00;"></pre>
   
 <div id="results"></div>
+
+<pre id="debug" style="white-space: pre-wrap; background:#fee; padding:10px; border:1px solid #c00;"></pre>
 
 <script>
 const subreddits = ["kanban", "agile"];
@@ -51,7 +51,7 @@ async function fetchSubreddit(sub) {
 
   try {
 
-    document.getElementById("debug").textContent += `Fetching: ${url}\n`;
+    // document.getElementById("debug").textContent += `Fetching: ${url}\n`;
     
     const res = await fetch(url, {
       headers: {
