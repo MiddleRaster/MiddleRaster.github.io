@@ -40,8 +40,8 @@
 const subreddits = ["kanban", "agile"];
 const phrases = [
   "Queueing Theory",
-  "memory leak",
-  "ABI break"
+  "bug"
+  "estimation", "estimates", "estimate"
 ];
 
 async function fetchSubreddit(sub) {
@@ -68,7 +68,8 @@ async function fetchSubreddit(sub) {
 }
 
 function matchesPhrase(post, phrase) {
-  const text = (post.title + "\n" + post.selftext).toLowerCase();
+  const body = post.selftext || "";
+  const text = (post.title + "\n" + body).toLowerCase();
   return text.includes(phrase.toLowerCase());
 }
 
