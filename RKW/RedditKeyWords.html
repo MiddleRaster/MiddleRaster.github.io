@@ -34,6 +34,8 @@
 <h1>Reddit Exact-Phrase Monitor</h1>
 <p>Running once. Matches will appear below.</p>
 
+<pre id="debug" style="white-space: pre-wrap; background:#fee; padding:10px; border:1px solid #c00;"></pre>
+  
 <div id="results"></div>
 
 <script>
@@ -63,6 +65,8 @@ async function fetchSubreddit(sub) {
 
   } catch (err) {
     console.error("Error fetching", sub, err);
+    const dbg = document.getElementById("debug");
+    dbg.textContent += `\nError fetching ${sub}: ${err}\n`;
     return [];
   }
 }
