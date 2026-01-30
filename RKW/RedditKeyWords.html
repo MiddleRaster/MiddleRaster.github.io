@@ -91,7 +91,7 @@ function writeMatchToDOM(post, phrase) {
   div.className = "match";
 
   div.innerHTML = `
-    <p><strong>Match:</strong> "${phrase}" in <strong>r/${post.subreddit}</strong></p>
+    <p><strong>Match:</strong> ${phrase} in <strong>r/${post.subreddit}</strong></p>
     <a href="https://www.reddit.com${post.permalink}" target="_blank">
       ${post.title}
     </a>
