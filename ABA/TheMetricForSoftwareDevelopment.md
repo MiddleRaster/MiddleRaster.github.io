@@ -192,7 +192,7 @@ This mechanism [minimizes cycle time and increases throughput](/Kanban/KanbanTho
 
 [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) says no.
 
-I haven't found a way to game the metric, but I don't doubt that some creative person might come up with one, so I wouldn't use ABA to measure individuals against each other. 
+I haven't found a way to [game the metric](https://middleraster.github.io/mathmusings/ABA/IsABAGameable.html), but I don't doubt that some creative person might come up with one, so I wouldn't use ABA to measure individuals against each other. 
 And it makes no sense at all if the ABA is down to less than a hour (or maybe a day).
 
 On the other hand, I think ranking *managers* based on their teams' ABAs is entirely appropriate; not just teams, but groups, orgs, and divisions, too.
