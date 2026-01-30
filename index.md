@@ -10,7 +10,7 @@ permalink: /
 -->
 <!-- Invisible primary index link -->
 <nav>
-  <a href="CHANGELOG.md"
+  <a href="changelog.md"
      rel="index"
      title="Full site changelog and index of all pages"
      style="color: white; text-decoration: none; display: block; width: 100%; height: 1px;">&#8203;</a>
