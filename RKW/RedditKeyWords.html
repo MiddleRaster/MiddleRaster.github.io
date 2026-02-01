@@ -53,6 +53,41 @@ const phrases = [
   " kata"
 ];
 
+function salvageRedditListing(text) {
+  try { // Try normal parse first
+    return JSON.parse(text);
+  } catch {}
+
+  // Find the children array
+  const start = text.indexOf('"children":');
+  if (start === -1) return { data: { children: [] } };
+
+  const arrayStart = text.indexOf('[', start);
+  if (arrayStart === -1) return { data: { children: [] } };
+
+  const after = text.slice(arrayStart + 1);
+
+  // Split on "}," boundaries — each child is an object
+  const parts = after.split('},');
+  const children = [];
+
+  for (let i = 0; i < parts.length; i++) {
+    let candidate = parts[i];
+
+    // Add back the missing brace except for the last one
+    if (i < parts.length - 1) {
+      candidate = candidate + '}';
+    }
+    try {
+      const obj = JSON.parse(candidate);
+      children.push(obj);
+    } catch {
+      break; // stop at first broken object
+    }
+  }
+  return { data: { children } };
+}
+  
 async function fetchSubreddit(sub) {
   const url = `https://fetcher.wnhanlon-github.workers.dev/${sub}`;
 
@@ -65,7 +100,9 @@ async function fetchSubreddit(sub) {
         "Accept": "application/json"
       }
     });
-    const json = await res.json();
+    // const json = await res.json(); // doesn't handle partial json returned from Reddit
+    const text = await res.text();
+    const json = salvageRedditListing(text);
 
     return json.data.children.map(c => ({
       ...c.data,
