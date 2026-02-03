@@ -132,7 +132,7 @@ function writeMatchToDOM(post, phrase) {
     <a href="https://www.reddit.com${post.permalink}" target="_blank">
       ${post.title}
     </a>
-    <p><small>Posted by u/${post.author}&nbsp;${new Date(post.created_utc * 1000).toLocaleString()}</small></p>
+    <p><small>Posted by <strong>u/${post.author}</strong>&nbsp;${new Date(post.created_utc * 1000).toLocaleString()}</small></p>
   `;
 
   container.appendChild(div);
