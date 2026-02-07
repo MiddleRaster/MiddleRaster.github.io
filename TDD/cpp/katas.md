@@ -17,7 +17,7 @@ There are also some refactoring katas, to be added later:
 1. Refactor the Bowling Game bonus logic class into a state-machine
 2. The famous Gilded Rose refactoring kata
 3. Clean up some truly awful MSDN sample code
-4. Refactor an 8 Queens solution
+4. [Refactor an 8 Queens solution](RefactoringEightQueens/Step1.html)
 
 
 Finally, some links to TDD test harnesses, which I evidently write as a hobby:
