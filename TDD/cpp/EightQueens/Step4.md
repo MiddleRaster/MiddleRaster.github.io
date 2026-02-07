@@ -45,7 +45,7 @@ namespace Eight
 
 If you wrote something similar, then you'll have seen the test pass.
 
-Notice how the ```for``` loops in the ```IsSpotUnderAttack``` method is self-similar, tabular-looking; I like writing code this way because at least some class of errors would just leap off the page at me.
+Notice how the ```for``` loops in the ```IsSpotUnderAttack``` method look self-similar, tabular-looking; I like writing code this way because at least some class of errors would just leap off the page at me.
 
 Should we wrap the place and removing queens in methods? Sure, if you want. In fact, that would obviate the need for the comment, so let's do that.
 
