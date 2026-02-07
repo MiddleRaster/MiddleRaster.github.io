@@ -27,6 +27,8 @@ The next step is to make the test pass, which we do by returning the proper answ
 
 Compile and test:  passes, as expected. Nothing to refactor.
 
+### Recursive Backtracking Algorithm
+
 At this point, we might as well implement the recursive backtracking algorithm.
 They are all of similar form, something like:  (in pseudo-code)
 
