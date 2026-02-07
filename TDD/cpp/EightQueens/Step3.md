@@ -36,7 +36,7 @@ Note that we don't even have a board yet and didn't place/remove any queens, bec
 
 Build-and-test shows that it does indeed pass as expected.
 
-What next? Let's uncomment another test. 
+What next? Let's uncomment the next test for a 2x2 board. 
 Build and test. 
 That test fails, as expected. After all, we need an actual board, to place and remove queens and to see if the queen is under attack.
 
