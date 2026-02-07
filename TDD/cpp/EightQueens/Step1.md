@@ -6,7 +6,7 @@ permalink: /TDD/cpp/EightQueens/Step1.html
 
 The Eight Queens Puzzle:  place eight queens on a chessboard in such a way that no queen attacks another.
 
-The standard way to solve these kinds of problems is with a recursive backtracking algorithm.
+The standard way to solve these kinds of problems (e.g., a Sudoku solver, Knight's Tour problem, etc.) is with a recursive backtracking algorithm.
 
 A friend back at *StupendousCorp* told me that he was a big believer in TDD, but he was working on compilers which means doing a lot of recursion on abstract syntax trees, and recursion and TDD are indeed an interesting combination.
 
