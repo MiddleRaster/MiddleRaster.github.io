@@ -40,7 +40,7 @@ int somefunction(int current_level_of_recursion)
   int count = 0
   for all possibilities (in our case, possible valid moves)
     do   the thing (in our case, place a queen)
-    count += omefunction(int current_level_of_recursion + 1) // recurse
+    count += somefunction(int current_level_of_recursion + 1) // recurse
     undo the thing (in our case, remove the queen)
 
   return count
