@@ -4,13 +4,12 @@ title: "Eight Queens: Step 1"
 permalink: /TDD/cpp/EightQueens/Step1.html
 ---
 
-The Eight Queens Puzzle:  place eight queens on a chess board in such a way that no queen attacks another.
+The Eight Queens Puzzle:  place eight queens on a chessboard in such a way that no queen attacks another.
 
 The standard way to solve these kinds of problems is with a recursive backtracking algorithm.
 
-A friend back at *StupendousCorp* told me that he was a big believer in TDD, but he was working on compilers which means doing a lot of recursion on abstract syntax trees.
+A friend back at *StupendousCorp* told me that he was a big believer in TDD, but he was working on compilers which means doing a lot of recursion on abstract syntax trees, and recursion and TDD are indeed an interesting combination.
 
-Now, recursion and TDD are indeed an interesting combination.
 In TDD, we usually work in little bits, adding more and more functionality as we go along.
 With recursion however, once you add that recursive call, it goes and does the whole shebang.
 
@@ -19,7 +18,7 @@ So, we need a way to break the problem down into something small.
 For the Eight Queens Puzzle, let's start off with something simpler, like the One Queen Puzzle.
 Then we'll work our way up to the 4 queens puzzle and finally the 8 queens puzzle.
 
-Problem statement:  write code to determine how many solutions there are for N queens on an NxN chessboard.
+### Problem statement:  write code to determine how many solutions there are for N queens on an NxN chessboard.
 
 We can write all the acceptance tests upfront, because [wikipedia has the answers](https://en.wikipedia.org/wiki/Eight_queens_puzzle#Counting_solutions_for_other_sizes_n).
 
@@ -55,7 +54,8 @@ VsTest tests[] = {
 	//{"there are   95815104 solutions for a 17x17 board", []() { Assert::AreEqual(  95815104, Eight::Queens<17>().CountSolutions()); }},
 	//{"there are  666090624 solutions for a 18x18 board", []() { Assert::AreEqual( 666090624, Eight::Queens<18>().CountSolutions()); }},
 	//{"there are 4968057848 solutions for a 19x19 board", []() { Assert::AreEqual(4968057848, Eight::Queens<19>().CountSolutions()); }},
-};```
+};
+```
 
 Now, let's start TDDing.
 Write just enough code to make this test fail. Then, click [Next](Step2.html).
