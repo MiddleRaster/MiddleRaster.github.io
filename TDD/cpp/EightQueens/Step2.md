@@ -4,7 +4,7 @@ title: "Eight Queens: Step 2"
 permalink: /TDD/cpp/EightQueens/Step2.html
 ---
 
-So, writing enough code to make our single uncomment test fail means you probably wrote something like this (since I gave you the signature already):
+So, writing enough code to make our single uncommented test fail means you probably wrote something like this (since I gave you the signature already):
 
 ```cpp
 namespace Eight
