@@ -38,7 +38,7 @@ Stay tuned for more.
 
 Change Log:
 
-2026/02/06 - Added [the Eight Queens Puzzle kata](TDD/cpp/EightQueens/Step1html)
+2026/02/06 - Added [the Eight Queens Puzzle kata](TDD/cpp/EightQueens/Step1.html)
 
 <!-- Invisible semantic section markers for Google -->
 <!--
