@@ -23,7 +23,7 @@ Then we'll work our way up to the 4 queens puzzle and finally the 8 queens puzzl
 We can write all the acceptance tests upfront, because [wikipedia has the answers](https://en.wikipedia.org/wiki/Eight_queens_puzzle#Counting_solutions_for_other_sizes_n).
 
 So, let's write a few tests, but comment out all but the first one.
-(I'll be using my [module-only test harness](https://github.com/MiddleRaster/tdd20) with my [Visual Studio Test Explorer test adapter](https://github.com/MiddleRaster/Tdd20.TestAdapter) but any test harness will do)
+(I'll be using my [module-only test harness](https://github.com/MiddleRaster/tdd20) with my [Visual Studio Test Explorer test adapter](https://github.com/MiddleRaster/Tdd20.TestAdapter) but any test harness will do.)
 
 ```cpp
 import tdd20;
