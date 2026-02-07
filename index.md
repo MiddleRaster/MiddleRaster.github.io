@@ -38,7 +38,8 @@ Stay tuned for more.
 
 Change Log:
 
-2026/02/06 - Added [the Eight Queens Puzzle kata](TDD/cpp/EightQueens/Step1.html)
+2026/02/07 - Added [the Eight Queens Refactoring kata](https://middleraster.github.io/TDD/cpp/RefactoringEightQueens/Step1.html)  
+2026/02/06 - Added [the Eight Queens Puzzle kata](TDD/cpp/EightQueens/Step1.html)  
 
 <!-- Invisible semantic section markers for Google -->
 <!--
