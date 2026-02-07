@@ -55,7 +55,7 @@ The rest start taking longer and longer. Is there a way to speed them up?
 
 Sure:  rather than iterating in the 3 different directions looking for spots with queens on them, we could hold onto 3 arrays of bools that cache that info for us.
 
-But let's save that for a refactoring exercise (I'll add the link as soon as I work up the refactoring kata).
+But let's save that for a [refactoring exercise](https://middleraster.github.io/TDD/cpp/RefactoringEightQueens/Step1.html).
 
 
 [Return to the homepage](/)  
