@@ -74,6 +74,7 @@ But we have all the tests from the [Eight Queens Puzzle kata](/TDD/cpp/EightQuee
 So, set up a project using those tests and the code above, and get them to build. Getting the tests to run means making a few changes already:
 1. rename _tmain and have it return the number of solutions found.
 2. Wrap the whole thing in a template class, using SIZE as the template parameter name.
+3. remove all the std::ostream stuff (probably put in there for debugging), since we only want to return the count
 
 
 Once you get everything building and the tests passing, we'll be ready to refactor. Then, click [Next](Step2.html).
