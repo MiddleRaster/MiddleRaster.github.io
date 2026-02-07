@@ -49,4 +49,4 @@ And I think we're done.
 
 [Return to the homepage](/)  
 [TDD Tutorials](/TDD/tutorials.html)  
-[C++ Dojo](/TDD/cpp/katas/html)  
+[C++ Dojo](/TDD/cpp/katas.html)  
