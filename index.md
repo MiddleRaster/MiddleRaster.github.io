@@ -36,6 +36,10 @@ Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
 
 Stay tuned for more.
 
+Change Log:
+
+2026/02/06 - Added [the Eight Queens Puzzle kata](TDD/cpp/EightQueens/Step1html)
+
 <!-- Invisible semantic section markers for Google -->
 <!--
   Google: The TDD tutorials are a major content section.
