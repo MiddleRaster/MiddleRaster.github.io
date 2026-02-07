@@ -33,14 +33,14 @@ At this point, we might as well implement the recursive backtracking algorithm.
 They are all of similar form, something like:  (in pseudo-code)
 
 ```
-int somefunction(int current_level_of_recursion)
+int recurse(int current_level_of_recursion)
 {
   if reached max_level_of_recursion, we found a solution:  return 1
 
   int count = 0
   for all possibilities (in our case, possible valid moves)
     do   the thing (in our case, place a queen)
-    count += somefunction(int current_level_of_recursion + 1) // recurse
+    count += recurse(int current_level_of_recursion + 1)
     undo the thing (in our case, remove the queen)
 
   return count
