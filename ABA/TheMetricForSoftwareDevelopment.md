@@ -54,7 +54,7 @@ You take all currently open bugs, subtract their open dates from today's date, a
 
 Note: a slightly more accurate thing to do is measure the total bug-days of open bugs, but I've found that people don't have as visceral an understanding of bug-days as they do of average bug age.
 
-One nice things to do is to plot that ABA over time to see if your codebase is getting better or worse.
+One nice thing to do is to plot that ABA over time to see if your codebase is getting better or worse.
 If you do that, you may be struck by how relentless time is:  every day, any untouched open bugs age by one more day.
 You can even mine your bug database for your historical ABAs and plot those over time.
 
