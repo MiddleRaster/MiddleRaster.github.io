@@ -36,7 +36,7 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
     // Initialize Winsock
     iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
     if (iResult != 0) {
-        // printf("WSAStartup failed: %d\n", iResult);
+        printf("WSAStartup failed: %d\n", iResult);
         return -1;
     }
 
@@ -48,7 +48,7 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
     // Resolve the server address and port
     iResult = getaddrinfo(server, DEFAULT_PORT, &hints, &result);
     if ( iResult != 0 ) {
-        // printf("getaddrinfo failed: %d\n", iResult);
+        printf("getaddrinfo failed: %d\n", iResult);
         WSACleanup();
         return -1;
     }
@@ -60,7 +60,7 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
         ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, 
             ptr->ai_protocol);
         if (ConnectSocket == INVALID_SOCKET) {
-            // printf("Error at socket(): %ld\n", WSAGetLastError());
+            printf("Error at socket(): %ld\n", WSAGetLastError());
             freeaddrinfo(result);
             WSACleanup();
             return -1;
@@ -79,7 +79,7 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
     freeaddrinfo(result);
 
     if (ConnectSocket == INVALID_SOCKET) {
-        // printf("Unable to connect to server!\n");
+        printf("Unable to connect to server!\n");
         WSACleanup();
         return -1;
     }
@@ -87,19 +87,19 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
     // Send an initial buffer
     iResult = send( ConnectSocket, sendbuf, (int)strlen(sendbuf), 0 );
     if (iResult == SOCKET_ERROR) {
-        // printf("send failed: %d\n", WSAGetLastError());
+        printf("send failed: %d\n", WSAGetLastError());
         closesocket(ConnectSocket);
         WSACleanup();
         return -1;
     }
     int totalBytesSent = iResult; 
 
-    // printf("Bytes Sent: %ld\n", iResult);
+    printf("Bytes Sent: %ld\n", iResult);
 
     // shutdown the connection since no more data will be sent
     iResult = shutdown(ConnectSocket, SD_SEND);
     if (iResult == SOCKET_ERROR) {
-        // printf("shutdown failed: %d\n", WSAGetLastError());
+        printf("shutdown failed: %d\n", WSAGetLastError());
         closesocket(ConnectSocket);
         WSACleanup();
         return -1;
@@ -110,11 +110,11 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
 
         iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
         if ( iResult > 0 )
-			    ; // printf("Bytes received: %d\n", iResult);
+            printf("Bytes received: %d\n", iResult);
         else if ( iResult == 0 )
-            ; // printf("Connection closed\n");
+            printf("Connection closed\n");
         else
-            ; // printf("recv failed: %d\n", WSAGetLastError());
+            printf("recv failed: %d\n", WSAGetLastError());
 
     } while( iResult > 0 );
 
@@ -153,7 +153,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
     // Initialize Winsock
     iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
     if (iResult != 0) {
-        // printf("WSAStartup failed: %d\n", iResult);
+        printf("WSAStartup failed: %d\n", iResult);
         return -1;
     }
 
@@ -166,7 +166,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
     // Resolve the server address and port
     iResult = getaddrinfo(NULL, DEFAULT_PORT, &hints, &result);
     if ( iResult != 0 ) {
-        // printf("getaddrinfo failed: %d\n", iResult);
+        printf("getaddrinfo failed: %d\n", iResult);
         WSACleanup();
         return -1;
     }
@@ -174,7 +174,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
     // Create a SOCKET for connecting to server
     ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
     if (ListenSocket == INVALID_SOCKET) {
-        // printf("socket failed: %ld\n", WSAGetLastError());
+        printf("socket failed: %ld\n", WSAGetLastError());
         freeaddrinfo(result);
         WSACleanup();
         return -1;
@@ -183,7 +183,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
     // Setup the TCP listening socket
     iResult = bind( ListenSocket, result->ai_addr, (int)result->ai_addrlen);
     if (iResult == SOCKET_ERROR) {
-        // printf("bind failed: %d\n", WSAGetLastError());
+        printf("bind failed: %d\n", WSAGetLastError());
         freeaddrinfo(result);
         closesocket(ListenSocket);
         WSACleanup();
@@ -193,7 +193,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
 
     iResult = listen(ListenSocket, SOMAXCONN);
     if (iResult == SOCKET_ERROR) {
-        // printf("listen failed: %d\n", WSAGetLastError());
+        printf("listen failed: %d\n", WSAGetLastError());
         closesocket(ListenSocket);
         WSACleanup();
         return -1;
@@ -204,7 +204,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
     // Accept a client socket
     ClientSocket = accept(ListenSocket, NULL, NULL);
     if (ClientSocket == INVALID_SOCKET) {
-        // printf("accept failed: %d\n", WSAGetLastError());
+        printf("accept failed: %d\n", WSAGetLastError());
         closesocket(ListenSocket);
         WSACleanup();
         return -1;
@@ -219,23 +219,23 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
 
         iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
         if (iResult > 0) {
-            // printf("Bytes received: %d\n", iResult);
-			      totalBytesReceived += iResult;
+            printf("Bytes received: %d\n", iResult);
+            totalBytesReceived += iResult;
 
             // Echo the buffer back to the sender
             iSendResult = send( ClientSocket, recvbuf, iResult, 0 );
             if (iSendResult == SOCKET_ERROR) {
-                // printf("send failed: %d\n", WSAGetLastError());
+                printf("send failed: %d\n", WSAGetLastError());
                 closesocket(ClientSocket);
                 WSACleanup();
                 return -1;
             }
-            // printf("Bytes sent: %d\n", iSendResult);
+            printf("Bytes sent: %d\n", iSendResult);
         }
         else if (iResult == 0)
-            ; // printf("Connection closing...\n");
+            printf("Connection closing...\n");
         else  {
-            // printf("recv failed: %d\n", WSAGetLastError());
+            printf("recv failed: %d\n", WSAGetLastError());
             closesocket(ClientSocket);
             WSACleanup();
             return -1;
@@ -246,7 +246,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
     // shutdown the connection since we're done
     iResult = shutdown(ClientSocket, SD_SEND);
     if (iResult == SOCKET_ERROR) {
-        // printf("shutdown failed: %d\n", WSAGetLastError());
+        printf("shutdown failed: %d\n", WSAGetLastError());
         closesocket(ClientSocket);
         WSACleanup();
         return -1;
@@ -261,7 +261,7 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
 }
 ```
 
-I consider this truly awful code:  it looks like C code, written by a junior dev; it's got that repeated clean-up code, which is so error-prone; not a hint of RAII, etc.
+I consider this truly awful code:  it looks like C code, written by a junior dev; it's got that repeated clean-up code, which is so error-prone; printfs, not a hint of RAII, etc.
 
 My idea was that they could morph the sample code that they found into something workable for the project at hand.
 But that didn't happen:  instead, they read through the sample code, wrote their own, and when it didn't work, they came to me, looking for help.
