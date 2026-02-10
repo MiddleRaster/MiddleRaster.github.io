@@ -58,7 +58,7 @@ Ok, now what? What's the real task?
 
 The task I set my students was to get code coverage above 90%.
 
-If you don't have a code coverage tool, you can do what I call "poor man's code coverage":  set a breakpoint on every block of code, and when running under a debugger, turn each bp off when you hit it.
+If you don't have a code coverage tool, you can do what I call "poor man's code coverage":  set a breakpoint on every line of code, and when running under a debugger, turn each bp off when you hit it.
 Then count up the unhit breakpoints and divide by the lines of code.
 
 So, once that's done, you'll see that the "happy path" is nicely covered, but none of the error paths are.
