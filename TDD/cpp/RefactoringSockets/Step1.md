@@ -9,7 +9,7 @@ Most of the students were not experts at writing socket code, and since I consid
 
 This is what I found:
 
-**client side**
+**client side**:
 ```cpp
 #include <WinSock2.h>
 #include <WS2tcpip.h>
