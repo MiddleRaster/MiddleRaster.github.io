@@ -263,14 +263,14 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
 
 I consider this truly awful code:  it looks like C code, written by a junior dev; it's got that repeated clean-up code, which is so error-prone; printfs, not a hint of RAII, etc.
 
-My idea was that they could morph the sample code that they found into something workable for the project at hand.
-But that didn't happen:  instead, they read through the sample code, wrote their own, and when it didn't work, they came to me, looking for help.
+My idea was that they could morph the sample code into something workable for the project at hand.
+But that didn't happen:  instead, they read through the sample code, wrote their own, and when it didn't work, they came to me, looking for help (which I was unable to provide, not being an expert in socket code either).
 
 So, the next time I taught the class, I made it an exercise:  the first task is to write a test that uses these two samples to send a little bit of data from the client to the server (which the server would echo back).
 
 Turns out, they couldn't do it, not in the allotted time (1 hour).
 
-So, next time, I wrote the test for them and asked them to refactor the code while keeping the test passing.
+So, the next, next time, I wrote the test for them and asked them to refactor the code while keeping the test passing.
 This they could do.
 
 So, your first mission, should you choose to accept it, is to write that test.
