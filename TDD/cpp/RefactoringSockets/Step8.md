@@ -84,6 +84,6 @@ int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
 Not quite as clean as the client side, because of the messy error returns from ```bind``` and ```listen```.
 But the code coverage is 90.9%, which is just barely enough.
 
-Again, it still looks C-ish, but maybe now would be a good time to mock up ```bind``` or ```listen``` using "[Test Base Class Injection](https://github.com/MiddleRaster/tbci) so that we can cover those last couple of lines.
+Again, it still looks C-ish, but maybe now would be a good time to mock up ```bind``` or ```listen``` using "[Test Base Class Injection](https://github.com/MiddleRaster/tbci)" so that we can cover those last couple of lines. We'll need a second test for the error path when ```bind``` returns an error.
 
-So refactor using TBCI, write that second test and make sureboth tests pass; then click [Next](Step9.html).
+So refactor using TBCI, write that second test and make sure both tests pass; then click [Next](Step9.html).
