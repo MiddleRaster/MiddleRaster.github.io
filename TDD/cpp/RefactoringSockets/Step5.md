@@ -4,7 +4,7 @@ title: "Refactoring Socket Sample Code: Step 5"
 permalink: /TDD/cpp/RefactoringSockets/Step5.html
 ---
 
-After the second round of refactoring, inverting the send of the ```if``` and putting all the remaining code inside the ```if```, you'll end up with this (after moving the variable declarations down):
+After the second round of refactoring, inverting the sense of the ```if``` and putting all the remaining code inside the ```if```, you'll end up with this (after moving the variable declarations down):
 
 ```cpp
 int Client(const char* server = "localhost") // returns total bytes sent or -1 on error
