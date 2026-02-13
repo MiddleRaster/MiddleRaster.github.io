@@ -4,7 +4,7 @@ title: "Refactoring Socket Sample Code: Step 1"
 permalink: /TDD/cpp/RefactoringSockets/Step1.html
 ---
 
-Once upon a time at *StupdendousCorp*, I was teaching a week-long class on Scrum and TDD, and the project for the class had to do with networking/sockets.
+Once upon a time when I was a dev/instructor at *StupendousCorp*, I was teaching a week-long class on Scrum and TDD, and the project for the class had to do with networking/sockets.
 Most of the students were not experts at writing socket code, and since I consider the socket APIs to be some of the most poorly designed interfaces on the planet (it's very old, from the 1983's Berkeley Unix, after all), I searched MSDN for sample code.
 
 This is what I found:
