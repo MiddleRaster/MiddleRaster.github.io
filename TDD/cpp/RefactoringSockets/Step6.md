@@ -1,7 +1,7 @@
 ---
 layout: page_with_comments
 title: "Refactoring Socket Sample Code: Step 6"
-permalink: /TDD/cpp/RefactoringSockets/Step5.html
+permalink: /TDD/cpp/RefactoringSockets/Step6.html
 ---
 
 After inverting all of the ```if```s and nesting all the code deeper, you'll end up with this:
