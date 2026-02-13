@@ -117,6 +117,7 @@ namespace LegacyRefactoringTests
         int totalBytesReceived = 0;
         HANDLE hEvent{ NULL };
     public:
+       ~LegacyTests() { if (hEvent != NULL) CloseHandle(hEvent); }
         TEST_METHOD(ClientAndServerCanTalk)
         {
             int totalBytesSent = 0;
