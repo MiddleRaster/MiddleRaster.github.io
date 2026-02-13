@@ -59,8 +59,11 @@ Ok, now what? What's the real task?
 The task I set my students was to get code coverage above 90%.
 
 If you don't have a code coverage tool, you can do what I call "poor man's code coverage":  set a breakpoint on every line of code, and when running under a debugger, turn each bp off when you hit it.
-Then count up the unhit breakpoints and divide by the lines of code.
+Then count up the unhit breakpoints and divide by the lines of code, which you can get by counting semi-colons:
+```
+findstr ";" client.h | find /C /V ""
+```
 
-So, once that's done, you'll see that the "happy path" is nicely covered, but none of the error paths are.
+Once that's done, you'll see that the "happy path" is nicely covered, but none of the error paths are, with code coverage of 62.1% for server.h and 73.6% for client.h.
 
 So, what now? We need to strategize a bit.  When you have a plan, click [Next](Step3.html).
