@@ -135,7 +135,7 @@ namespace LegacyRefactoringTests
             Assert::AreEqual(21, totalBytesSent);
             Assert::AreEqual(21, totalBytesReceived);
         }
-        TEST_METHOD(WhenBindFailsNoBytesAreSentOrReceived)
+        TEST_METHOD(WhenBindFailsNoBytesAreReceived)
         {
             hEvent = ::CreateEvent(NULL, TRUE, FALSE, NULL);
 
