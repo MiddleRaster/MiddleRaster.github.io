@@ -69,7 +69,7 @@ namespace Legacy
                         totalBytesReceived = 0;
                         do {
                             const int        DefaultBufLen = 512;
-                            char recvbuf[DefaultBufLen];
+                            char recvbuf    [DefaultBufLen];
                             int recvbuflen = DefaultBufLen;
                             iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
                             if (iResult > 0) {
