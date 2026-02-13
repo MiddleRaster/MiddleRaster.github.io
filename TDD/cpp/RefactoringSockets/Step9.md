@@ -29,11 +29,11 @@ namespace Legacy
         {
             SOCKET ListenSocket = INVALID_SOCKET;
 
-            struct addrinfo hints = { 0 };
-            hints.ai_family = AF_INET;
-            hints.ai_socktype = SOCK_STREAM;
-            hints.ai_protocol = IPPROTO_TCP;
-            hints.ai_flags = AI_PASSIVE;
+            struct addrinfo hints   = {0};
+            hints.ai_family         = AF_INET;
+            hints.ai_socktype       = SOCK_STREAM;
+            hints.ai_protocol       = IPPROTO_TCP;
+            hints.ai_flags          = AI_PASSIVE;
             struct addrinfo* result = NULL;
             const char* DefaultPort = "27015";
             int iResult = getaddrinfo(NULL, DefaultPort, &hints, &result); // Resolve the server address and port
@@ -94,8 +94,6 @@ namespace Legacy
 
 And the test code needed to be modified, too, to handle a template parameter on the ```ThreadProc```, like this:
 ```cpp
-
-//#include <Windows.h>
 #include <CppUnitTest.h>
 
 #include "client.h"
