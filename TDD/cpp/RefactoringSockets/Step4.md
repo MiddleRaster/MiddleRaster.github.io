@@ -4,7 +4,7 @@ title: "Refactoring Socket Sample Code: Step 4"
 permalink: /TDD/cpp/RefactoringSockets/Step4.html
 ---
 
-After the first round of refactoring, inverting the send of the ```if``` and putting all the remaining code inside the ```if```, you'll end up with this (after a little clean-up):
+After the first round of refactoring, inverting the sense of the ```if``` and putting all the remaining code inside the ```if```, you'll end up with this (after a little clean-up):
 
 ```cpp
 #include <WinSock2.h>
