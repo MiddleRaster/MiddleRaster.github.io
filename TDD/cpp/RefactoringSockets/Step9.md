@@ -114,22 +114,19 @@ namespace LegacyRefactoringTests
             return 0;
         }
 
-        int totalBytesReceived = 0;
-        HANDLE hEvent{ NULL };
+        int totalBytesReceived{0};
+        HANDLE hEvent{::CreateEvent(NULL, TRUE, FALSE, NULL)};
     public:
        ~LegacyTests() { if (hEvent != NULL) CloseHandle(hEvent); }
         TEST_METHOD(ClientAndServerCanTalk)
         {
-            int totalBytesSent = 0;
-            hEvent = ::CreateEvent(NULL, TRUE, FALSE, NULL);
-
             HANDLE thread = ::CreateThread(NULL, 0, TemplatedThreadProc<Legacy::Empty>, reinterpret_cast<LPVOID>(this), 0, NULL);
             Assert::AreNotEqual(0ULL, (unsigned long long)thread);
 
             DWORD dw = ::WaitForSingleObject(hEvent, 1000);
             Assert::AreEqual(WAIT_OBJECT_0, dw, L"timed out?");
 
-            totalBytesSent = LegacySockets::Client();
+            int totalBytesSent = LegacySockets::Client();
             ::WaitForSingleObject(thread, 1000);
             ::CloseHandle(thread);
 
@@ -138,8 +135,6 @@ namespace LegacyRefactoringTests
         }
         TEST_METHOD(WhenBindFailsNoBytesAreReceived)
         {
-            hEvent = ::CreateEvent(NULL, TRUE, FALSE, NULL);
-
             struct TestBase
             {
                 static int bind(...) { return SOCKET_ERROR; }
