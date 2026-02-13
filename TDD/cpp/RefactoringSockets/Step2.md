@@ -23,6 +23,7 @@ namespace LegacyRefactoringTests
         int totalBytesReceived{0};
         HANDLE hEvent{NULL};
     public:
+       ~LegacyTests() { if (hEvent != NULL) CloseHandle(hEvent); }
         TEST_METHOD(ClientAndServerCanTalk)
         {
             hEvent = ::CreateEvent(NULL, TRUE, FALSE, NULL);
