@@ -44,13 +44,11 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
                 if (ConnectSocket != INVALID_SOCKET) {
                     // Connect to server.
                     iResult = connect(ConnectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);
-                    if (iResult == SOCKET_ERROR) {
-                        closesocket(ConnectSocket);
-                        ConnectSocket = INVALID_SOCKET;
-                    }
-                    continue;
+                    if (iResult != SOCKET_ERROR)
+                        break;
+                    closesocket(ConnectSocket);
+                    ConnectSocket = INVALID_SOCKET;
                 }
-                break;
             }
 
             if (ConnectSocket != INVALID_SOCKET) {
@@ -84,10 +82,7 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
 }
 ```
 
-Now there's actually a bp left on the ```break;``` inside the first ```for``` loop.
-
-The debugger is lying a little, as it's not lining up with the disassembly code.
-In any case, the code coverage for this file is now 96.6%.
+The code coverage for this file is now 100%.
 
 Are we done? Not quite: we could extract a function that does all the connecting attempts; we could get rid of those macros; we could remove or move those somewhat useless comments. 
 
