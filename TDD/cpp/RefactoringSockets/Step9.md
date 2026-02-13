@@ -156,7 +156,7 @@ namespace LegacyRefactoringTests
 
 Now the code coverage is at 100%, which is why I think "[Test Base Class Injection](https://github.com/MiddleRaster/tbci)" is so cool, even on legacy code.
 
-Are we done? I think so, though we could go farther and make these functions classes, add a real socket class that closes/cleans up after itself, etc.
+Are we done? I think so, though we could go further and make these functions classes, add a real socket class that closes/cleans up after itself, etc.
 
 Maybe I'll do that in the future, but the current task, to get the code coverage numbers nice and high on relatively bad legacy code, is complete.
 
