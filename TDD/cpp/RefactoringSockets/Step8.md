@@ -45,7 +45,7 @@ SOCKET CreateListener()
 
 int Server(HANDLE hEvent) // returns how many bytes were received or -1 on error
 {
-    int totalBytesReceived = 0;
+    int totalBytesReceived = -1;
 
     WSADATA wsaData;
     int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData); // Initialize Winsock
