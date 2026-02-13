@@ -31,13 +31,11 @@ SOCKET Connect(const char* server)
             ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol); // Create a SOCKET for connecting to server
             if (ConnectSocket != INVALID_SOCKET) {
                 iResult = connect(ConnectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);   // Connect to server.
-                if (iResult == SOCKET_ERROR) {
-                    closesocket(ConnectSocket);
-                    ConnectSocket = INVALID_SOCKET;
-                }
-                continue;
+                if (iResult != SOCKET_ERROR)
+                    break;
+                closesocket(ConnectSocket);
+                ConnectSocket = INVALID_SOCKET;
             }
-            break;
         }
         freeaddrinfo(result);
     }
@@ -76,7 +74,7 @@ int Client(const char* server = "localhost") // returns total bytes sent or -1 o
 }
 ```
 
-Ok, it still looks kind of C-ish, but at least the code coverage is much better.
+Ok, it still looks kind of C-ish, but at least the code coverage is 100%.
 We can refactor it more later.
 
 Next, let's do the same thing to the server side, still making sure that the test passes, and then click [Next](Step8.html).
