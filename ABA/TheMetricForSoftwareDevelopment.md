@@ -45,7 +45,7 @@ But if you do have a "good" codebase, then the following will be true:
 
 ## Measuring a Good Codebase
 
-To tell if you have a good codebase, all you need to do is measure how quick and easy it is to fix bugs, and the way to do that is to measure the average age of ***open*** bugs (**ABA**), a.k.a., "bug cycle time."
+To tell if you have a good codebase, all you need to do is measure how quick and easy it is to fix bugs, and the way to do that is to measure the average age of ***open*** bugs (**ABA**), a.k.a., "bug lead time."
 
 Note that you don't measure how long the closed bugs took to close, but rather you measure how long the currently open bugs have been open.
 
