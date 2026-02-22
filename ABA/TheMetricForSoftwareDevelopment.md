@@ -164,7 +164,7 @@ Total elapsed time was usually a couple of minutes, once a week. Often the proje
 ## How to Handle Bugs in Scrum and Agile
 
 The rationale for fixing bugs in Scrum or Agile methodologies is simple:  we are working on our backlog items in priority order.
-When a bug is found, it must be in a story that had high priority than whatever story the dev is working on now.
+When a bug is found, it must be in a story that had higher priority than whatever story the dev is working on now.
 He thought the story was done, but it's clearly not, because of this bug that has been found.
 So fix the bug in this higher priority story.
 
