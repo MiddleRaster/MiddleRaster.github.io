@@ -28,7 +28,7 @@ Two more things:
 1.  For the first four years, they kind of kept a handle on things (a little), as they kept their open bug count around a thousand (way too high, in my opinion), but then they completely fell off the wagon. Their bug count started going up and it's going up steeper and steeper - a classic sign that they've accumulated more technical debt than they can handle.
 2.  They clearly have never heard of the ABA metric, as right from the get-go their ABA started climbing and is showing no sign of slowing down. The average bug is still open after ~600 days, and that can't be making their customers happy.
 
-# Microsoft VS Code
+# Microsoft TypeScript
 
 ![Alt text](./MicrosoftTypeScriptAverageOpenBugAgeChart.png)
 
