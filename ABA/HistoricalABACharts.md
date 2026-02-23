@@ -5,7 +5,8 @@ permalink: /ABA/HistoricalABACharts.html
 ---
 
 What do Historical ABA Charts look like and what can we learn from them?  
-Here are some examples.
+
+I mined GitHub's issues database for several well-known projects.  Here are some examples.
 
 In each image, the blue line and axis is the average age of open bugs (ABA).  
 The orange line and axis is the number of open bugs.  
@@ -18,7 +19,7 @@ The horizontal axis is, of course, the date.
 An interesting chart: it looks like this team had aa yearly effort to reduce the number of open bugs, but they're not particularly successful.
 Over the course of 10 years, they've accumulated over 6000 open bugs, most of which are probably useless.
 
-I applaud their effort to reduce their bug count, but even the ones they did close didn't change the ABA very much.  
+I applaud their effort to reduce their bug count, but even the ones they did close didn't change the ABA very much. 
 Conclusion:  they're fixing or closing recent bugs only.
 
 And that means that their backlog of bugs is just swamped with ancient issues that will probably never get fixed; these should just be closed, as they're only noise.
@@ -40,15 +41,43 @@ That means that they were closing only recent bugs, a common refrain at Microsof
 And look at the second push:  even though their bug count dropped by almost half, their ABA held steady at 1600 days (that's over 4 years)!  
 They'll never fix those bugs and are just dragging them along for the ride.
 
+And that noise hides the signal about the amount of technical debt they have, other than to say, "Lots." 
+Because, if it were quick and easy to fix bugs, they would have fixed them all already.
+
 # Zephyr RTOS
 
 ![Alt text](./ZephyrAverageOpenBugAgeChart.png)
 
+I like this one considerably better:  their bug counts and ABA are an order of magnitude lower than the two Microsoft teams' above.
+But more importantly, their ABA isn't running away from them; rather, it's staying relatively steady at a value of about 1 year.
+
+Now, I think a year is way too long to wait for the average bug to be fixed, but at least they're fixing them all, eventually.
+For a large team (Zephyr is a linux-variant real-time OS), that's not too shabby; that is, the fixing them all part.
+
+# cURL
+
+![Alt text](./CurlAverageOpenBugAgeChart.png)
+
+Here's a team that's really on the ball and have been for the last 10 years.
+Their bug count is never over 10 or so, and their ABA for the most part is close to 0, with a couple of exceptions: their biggest spike in ABA was when they only had 1 bug open.
+
+The nice thing about GitHub's issues database is that you can drill into an issue and see what happened to it.
+In the case of the bug with the oldest age, it was opened by someone in a corporate environment and who had to get permission to try curl on some public FTP server. 
+As you might expect, it took a while to get those permissions.
+
+After about a year or so without hearing back from the user, the bug was closed, with a note that they would re-open it if it still repro'd.
+All the rest of the bugs had quite low ages, which is great.
+
+One instructive thing to note:  look at the first blue little spike/triangle shape that went up to 85.
+That slope is exactly what you get when a single bug is not addressed. 
+Each day, the average bug age goes up by 1, so when scaled appropriately, the slope is exactly 1.0.
 
 
 
 
 
 
-Back to [ABA Index](./index.html).
+
+
+Back to [ABA Index](./index.html).  
 Back to [MiddleRaster's pages](https://middleraster.github.io/).
