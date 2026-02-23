@@ -6,17 +6,17 @@ permalink: /ABA/HistoricalABACharts.html
 
 What do Historical ABA Charts look like and what can we learn from them?  
 
-I mined GitHub's issues database for several well-known projects.  Here are some examples.
+I mined GitHub's issues databases for several well-known projects.  Here are some examples.
 
-In each image, the blue line and axis is the average age of open bugs (ABA).  
-The orange line and axis is the number of open bugs.  
+In each image, the blue line and axis is the **average age** of open bugs (ABA).  
+The orange line and axis is the **number** of open bugs.  
 The horizontal axis is, of course, the date.
 
 # Microsoft VS Code
 
 ![Alt text](./MicrosoftVscodeAverageOpenBugChart.png)
 
-An interesting chart: it looks like this team had aa yearly effort to reduce the number of open bugs, but they're not particularly successful.
+An interesting chart: it looks like this team had a yearly effort to reduce the number of open bugs, but they're not particularly successful.
 Over the course of 10 years, they've accumulated over 6000 open bugs, most of which are probably useless.
 
 I applaud their effort to reduce their bug count, but even the ones they did close didn't change the ABA very much. 
@@ -25,7 +25,7 @@ Conclusion:  they're fixing or closing recent bugs only.
 And that means that their backlog of bugs is just swamped with ancient issues that will probably never get fixed; these should just be closed, as they're only noise.
 
 Two more things:
-1.  For the first four years, they kind of kept a handle on things (a litte), as they kept their open bug count around a thousand (way too high, in my opinion), but then they completely fell off the wagon. Their bug count started going up and it's going up steeper and steeper - a classic sign that they've accumulated more technical debt than they can handle.
+1.  For the first four years, they kind of kept a handle on things (a little), as they kept their open bug count around a thousand (way too high, in my opinion), but then they completely fell off the wagon. Their bug count started going up and it's going up steeper and steeper - a classic sign that they've accumulated more technical debt than they can handle.
 2.  They clearly have never heard of the ABA metric, as right from the get-go their ABA started climbing and is showing no sign of slowing down. The average bug is still open after ~600 days, and that can't be making their customers happy.
 
 # Microsoft VS Code
@@ -49,7 +49,7 @@ Because, if it were quick and easy to fix bugs, they would have fixed them all a
 ![Alt text](./ZephyrAverageOpenBugAgeChart.png)
 
 I like this one considerably better:  their bug counts and ABA are an order of magnitude lower than the two Microsoft teams' above.
-But more importantly, their ABA isn't running away from them; rather, it's staying relatively steady at a value of about 1 year.
+But more importantly, their ABA isn't running away from them; rather, it's staying relatively steady at a value of about 125 days.
 
 Now, I think a year is way too long to wait for the average bug to be fixed, but at least they're fixing them all, eventually.
 For a large team (Zephyr is a linux-variant real-time OS), that's not too shabby; that is, the fixing them all part.
@@ -58,7 +58,7 @@ For a large team (Zephyr is a linux-variant real-time OS), that's not too shabby
 
 ![Alt text](./CurlAverageOpenBugAgeChart.png)
 
-Here's a team that's really on the ball and has been for the last 10 years.
+Here's a team that's really on the ball and has been for the last 11 years.
 Their bug count is never over 10 or so, and their ABA for the most part is close to 0, with a couple of exceptions: their biggest spike in ABA was when they only had 1 bug open.
 
 The nice thing about GitHub's issues database is that you can drill into an issue and see what happened to it.
@@ -74,11 +74,11 @@ Each day, the average bug age goes up by 1, so when scaled appropriately, the sl
 
 # How did you do that?
 
-First, I wrote a little code that downloads issues from GitHub issue databases, see [GitHub ABA Crawler](https://github.com/MiddleRaster/GithubABACrawler).  
+First, I wrote a little code that downloads issues from GitHub issue databases, see my [GitHub ABA Crawler](https://github.com/MiddleRaster/GithubABACrawler).  
 Then, when I run the crawler, it outputs a .csv file, which I import into Excel.
-A little spreadsheet-fu and voila, an ABA chart (I'll upload spreadsheet when I get around to it).
+A little spreadsheet-fu and voila, an ABA chart (I'll upload the spreadsheet when I get around to it).
 
-If you'd like me to interpret your very own ABA chart, upload it to one of your GitHub repos and let me know where it is in the comments.
+If you'd like me to interpret your very own ABA chart for you, upload it to one of your GitHub repos and let me know where it is in the comments.
 
 Back to [ABA Index](./index.html).  
 Back to [MiddleRaster's pages](https://middleraster.github.io/).
