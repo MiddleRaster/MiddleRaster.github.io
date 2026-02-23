@@ -58,7 +58,7 @@ For a large team (Zephyr is a linux-variant real-time OS), that's not too shabby
 
 ![Alt text](./CurlAverageOpenBugAgeChart.png)
 
-Here's a team that's really on the ball and have been for the last 10 years.
+Here's a team that's really on the ball and has been for the last 10 years.
 Their bug count is never over 10 or so, and their ABA for the most part is close to 0, with a couple of exceptions: their biggest spike in ABA was when they only had 1 bug open.
 
 The nice thing about GitHub's issues database is that you can drill into an issue and see what happened to it.
@@ -72,12 +72,13 @@ One instructive thing to note:  look at the first blue little spike/triangle sha
 That slope is exactly what you get when a single bug is not addressed. 
 Each day, the average bug age goes up by 1, so when scaled appropriately, the slope is exactly 1.0.
 
+# How did you do that?
 
+First, I wrote a little code that downloads issues from GitHub issue databases, see [GitHub ABA Crawler](https://github.com/MiddleRaster/GithubABACrawler).  
+Then, when I run the crawler, it outputs a .csv file, which I import into Excel.
+A little spreadsheet-fu and voila, an ABA chart (I'll upload spreadsheet when I get around to it).
 
-
-
-
-
+If you'd like me to interpret your very own ABA chart, upload it to one of your GitHub repos and let me know where it is in the comments.
 
 Back to [ABA Index](./index.html).  
 Back to [MiddleRaster's pages](https://middleraster.github.io/).
