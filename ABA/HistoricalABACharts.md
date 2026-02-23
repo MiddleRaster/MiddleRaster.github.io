@@ -8,7 +8,7 @@ What do Historical ABA Charts look like and what can we learn from them?
 
 Here are some examples.
 
-## Microsoft VScode
+# Microsoft VS Code
 
 ![Alt text](./MicrosoftVscodeAverageOpenBugChart.png)
 
