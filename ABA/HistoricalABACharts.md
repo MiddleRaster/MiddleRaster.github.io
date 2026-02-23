@@ -51,7 +51,7 @@ Because, if it were quick and easy to fix bugs, they would have fixed them all a
 I like this one considerably better:  their bug counts and ABA are an order of magnitude lower than the two Microsoft teams' above.
 But more importantly, their ABA isn't running away from them; rather, it's staying relatively steady at a value of about 125 days.
 
-Now, I think a year is way too long to wait for the average bug to be fixed, but at least they're fixing them all, eventually.
+Now, I think 125 days is way too long to wait for the average bug to be fixed, but at least they're fixing them all, eventually.
 For a large team (Zephyr is a linux-variant real-time OS), that's not too shabby; that is, the fixing them all part.
 
 # cURL
