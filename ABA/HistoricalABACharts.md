@@ -66,7 +66,7 @@ In the case of the bug with the oldest age, it was opened by someone in a corpor
 As you might expect, it took a while to get those permissions.
 
 After about a year or so without hearing back from the user, the bug was closed, with a note that they would re-open it if it still repro'd.
-Most of the rest of the bugs had quite low ages, which is great.
+Most of the rest of the bugs had relatively low-ish ages, which is great.
 
 One instructive thing to note:  look at the first blue little spike/triangle shape that went up to 85.
 That slope is exactly what you get when a single bug is not addressed. 
