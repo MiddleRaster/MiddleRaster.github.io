@@ -17,7 +17,7 @@ The horizontal axis is, of course, the date.
 ![Alt text](./MicrosoftVscodeAverageOpenBugChart.png)
 
 An interesting chart: it looks like this team had a yearly effort to reduce the number of open bugs, but they're not particularly successful.
-Over the course of 10 years, they've accumulated over 6000 open bugs, most of which are probably useless.
+Over the course of 10 years, they've accumulated over 5000 open bugs, most of which are probably useless.
 
 I applaud their effort to reduce their bug count, but even the ones they did close didn't change the ABA very much. 
 Conclusion:  they're fixing or closing recent bugs only.
