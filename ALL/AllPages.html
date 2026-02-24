@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Streaming Pages</title>
+  <style>
+    #copyBtn {
+      margin-bottom: 20px;
+      padding: 8px 14px;
+      font-size: 16px;
+    }
+    #index {
+      margin-bottom: 30px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      background: #f7f7f7;
+    }
+    #index a {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+    .wrapper {
+      margin-bottom: 2em;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .title-link {
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<button id="copyBtn">Copy All (HTML)</button>
+
+<div id="index"></div>
+
+<div id="output"></div>
+
+<script>
+  const urls = [
+    "https://MiddleRaster.github.io/index.html"
+  ];
+
+  async function streamBodies() {
+    const output = document.getElementById("output");
+    const index = document.getElementById("index");
+
+    for (const url of urls) {
+
+      // Create a stable anchor ID for this section
+      const anchorId = "section-" + btoa(url).replace(/=/g, "");
+
+      // Add link to index
+      const indexLink = document.createElement("a");
+      indexLink.href = "#" + anchorId;
+      indexLink.textContent = url;
+      index.appendChild(indexLink);
+
+      // Create wrapper div FIRST so it always appears
+      const wrapper = document.createElement("div");
+      wrapper.className = "wrapper";
+      wrapper.id = anchorId;  // anchor target
+
+      // Add clickable title link
+      const title = document.createElement("a");
+      title.href = url;
+      title.textContent = url;
+      title.className = "title-link";
+      wrapper.appendChild(title);
+
+      // Create content container
+      const content = document.createElement("div");
+      wrapper.appendChild(content);
+
+      // Append wrapper immediately
+      output.appendChild(wrapper);
+
+      try {
+        const res = await fetch(url);
+        const html = await res.text();
+
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const bodyContent = doc.body ? doc.body.innerHTML : "";
+
+        content.innerHTML = bodyContent;
+
+      } catch (err) {
+        content.textContent = `Error loading ${url}: ${err}`;
+      }
+    }
+  }
+
+  // Copy All button — copies HTML, not plain text
+  document.getElementById("copyBtn").addEventListener("click", async () => {
+    const outputHTML = document.getElementById("output").innerHTML;
+
+    try {
+      await navigator.clipboard.writeText(outputHTML);
+      alert("HTML copied to clipboard");
+    } catch (err) {
+      alert("Copy failed: " + err);
+    }
+  });
+
+  streamBodies();
+</script>
+
+</body>
+</html>
