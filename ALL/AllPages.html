@@ -35,7 +35,7 @@
 </head>
 <body>
 
-<button id="copyBtn">Copy All (HTML)</button>
+<button id="copyBtn">Copy All)</button>
 
 <div id="index"></div>
 
@@ -114,11 +114,10 @@
 
   // Copy All button — copies HTML, not plain text
   document.getElementById("copyBtn").addEventListener("click", async () => {
-    const outputHTML = document.getElementById("output").innerHTML;
-
+    const outputText = document.getElementById("output").innerText;
     try {
-      await navigator.clipboard.writeText(outputHTML);
-      alert("HTML copied to clipboard");
+      await navigator.clipboard.writeText(outputText);
+      alert("Text copied to clipboard");
     } catch (err) {
       alert("Copy failed: " + err);
     }
