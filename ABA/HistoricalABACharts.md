@@ -80,5 +80,5 @@ A little spreadsheet-fu and voila, an ABA chart (I'll upload the spreadsheet whe
 
 If you'd like me to interpret your very own ABA chart for you, upload it to one of your GitHub repos and let me know where it is in the comments.
 
-Back to [ABA Index](./index.html).  
+Back to [ABA Index](/ABA/index.html).  
 Back to [MiddleRaster's pages](https://middleraster.github.io/).
