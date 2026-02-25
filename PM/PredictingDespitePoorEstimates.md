@@ -156,11 +156,11 @@ I thought about that some and here's what I came up with:  if you took all your 
 My conclusion is that the estimates really aren't all that important. They are swamped by the effect of newly discovered work.
 
 Don't believe me? Try it with your own data.
-Here is a [sample spreadsheet with estimates](./BarChartCFDWithEstimates.xlsx) that you can populate with your data and estimates.
+Here is a [sample spreadsheet with estimates](/PM/BarChartCFDWithEstimates.xlsx) that you can populate with your data and estimates.
 Then change your estimates' ratios and see how much the predicted ship date shifts. 
 In my experience, it's only by a couple percent.
 
-Here's [the spreadsheet I prefer](./BarChartCFD_%23NoEstimates.xlsx) without estimates.
+Here's [the spreadsheet I prefer](/PM/BarChartCFD_%23NoEstimates.xlsx) without estimates.
 
 ## Final Thoughts
 
