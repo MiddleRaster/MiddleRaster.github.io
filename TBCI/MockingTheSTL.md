@@ -12,7 +12,7 @@ Similarly, silly macro tricks are out, as are linker tricks which are mostly not
 
 But "Test Base Class Injection" can handle it. If you haven't read about that yet, please do so now:  [TBCI](https://github.com/MiddleRaster/tbci)
 
-## Problem Statement:  write tests for legacy Monte Carlo Integration code
+## Problem Statement:  write tests for legacy code
 
 Suppose you have this simple Monte Carlo class:
 
@@ -61,12 +61,18 @@ public:
 }
 ```
 
+What we'd like is to write unit tests, but they have to be deterministic, so mocking std::mt19937 is our goal.
+But there are some constraints:
+1. Touch the code as lightly as possible
+2. No macros
+3. No wrappers
+4. No virtual methods
+5. No funky build or linker tricks
+6. No adding to the std namespace (which is undefined behavior)
 
+Clearly, we're going to use TBCI, but how?
 
-
-
-
-
+If you'd like to think about it for a bit, go ahead; when you're ready, click [Next](/TBCI/Step1.html).
 
 Back to [TBCI landing page](https://middleraster.github.io/TBCI/index.html)  
 Back to [MiddleRaster's pages](https://middleraster.github.io/)
