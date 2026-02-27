@@ -14,7 +14,7 @@ But "Test Base Class Injection" can handle it. If you haven't read about that ye
 
 ## Problem Statement:  write tests for legacy code
 
-Suppose you have this simple Monte Carlo class:
+Suppose you have this simple D-dimensional Monte Carlo class:
 
 ```cpp
 
@@ -23,6 +23,7 @@ Suppose you have this simple Monte Carlo class:
 
 namespace Monte
 {
+template <int D>
 class Carlo
 {
     std::mt19937 rng;
