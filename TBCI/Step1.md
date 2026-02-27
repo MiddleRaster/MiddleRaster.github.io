@@ -20,7 +20,7 @@ namespace MonteCarloTests
 
     TEST_CLASS(MonteCarloDemoTests)
     {
-        TEST_METHOD(OriginalCode)
+        TEST_METHOD(VolumeOfASphere)
         {
             std::array<double,3> lo, hi;
             lo.fill(-1.0);
@@ -113,7 +113,8 @@ struct Empty
 };
 ```
 
-We can't put a ```namespace``` inside our struct, but we *can* put a struct of the same name. This is called shadowing.  
+We can't put a ```namespace``` inside our struct, but we *can* put a struct of the same name. This is called shadowing.
+
 You can easily imagine what the mocked version will look like:  
 ```cpp
 template<typename T=double>
