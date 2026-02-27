@@ -5,7 +5,8 @@ permalink: /TBCI/Step1.html
 ---
 
 In TBCI, we refactor the code into a template where the class derives from the template parameter.
-In this case, we'd like to put a new definition of ```std::uniform_real_distribution<>``` in the test version of the base class, while putting an alias of the real ```std::uniform_real_distribution<>``` in the production code's base class.
+
+In this case, we'd like to put a new definition of ```std::uniform_real_distribution<>``` (alternatively we could mock ```std::mt19937```: either will do) in the **test** version of the base class, while putting an alias of the real ```std::uniform_real_distribution<>``` in the production code's base class.
 
 But, first things first. Let's write a test, two actually:
 
@@ -135,7 +136,7 @@ class CarloT : private Base
 ```
 
 Now, wouldn't it be great if we were done at this point?
-Life is rarely that nice, and in this case, since we're telling the class that all the ```std``` types and functions now live in ```Empty```'s ```struct std```, it'll start looking for them there, and since it can't find them, it'll fail with compiler errors.
+Life is rarely that nice, and in this case, since we're telling the class that all the ```std``` types and functions now live in ```Empty```'s ```struct std```, it'll start looking for them there, and since it can't find them all there, it'll fail with compiler errors.
 
 So, now we've got a bunch of clean-up to do: put enough ```using``` statements or forwarding machinery so that our code will compile.
 
