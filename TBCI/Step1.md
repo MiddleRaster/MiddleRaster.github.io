@@ -5,7 +5,7 @@ permalink: /TBCI/Step1.html
 ---
 
 In TBCI, we refactor the code into a template where the class derives from the template parameter.
-In this case, we'd like to put a new definition of ```std::mt19937``` in the test version of the base class, while putting an alias of the real ```std::mt19937``` in the production code's base class.
+In this case, we'd like to put a new definition of ```std::uniform_real_distribution<>``` in the test version of the base class, while putting an alias of the real ```std::uniform_real_distribution<>``` in the production code's base class.
 
 But, first things first. Let's write a test, two actually:
 
@@ -27,7 +27,8 @@ namespace MonteCarloTests
 
             Monte::Carlo<3> mc3(lo, hi); // 3-dimensional sphere
             double estimate = mc3.run(1'000'000, [](const std::array<double,3>& point)  {   double r = 0.0;
-                                                                                            for (double v : point) r += v*v; // distance formula (squared)
+                                                                                            for (double v : point)
+                                                                                                r += v*v; // distance formula (squared)
                                                                                             return (r <= 1.0) ? 1.0 : 0.0;
                                                                                         });
             auto error = std::fabs(estimate - 4.0*3.14159/3.0);
@@ -47,17 +48,95 @@ The first test runs the Monte Carlo integration on a sphere and then checks that
 The second test exercises the error path where the bounding box is backwards.
 
 
-Now that we have that, the next step is to refactor:
+Now that we have that in place, the next step is to refactor towards TBCI:
 
 ```cpp
+struct Empty {};
 
+template <int D, typename Base>
+class CarloT : private Base
+{
+    std::mt19937 rng;
+    std::uniform_real_distribution<> U01;
+    std::array<double, D> lo, hi;
+
+public:
+    CarloT(const std::array<double, D>& lo, const std::array<double, D>& hi, uint32_t seed = 12345)
+         : rng(seed), U01(0.0, 1.0), lo(lo), hi(hi)
+    {
+        for (int d=0; d<D; ++d) {
+            if (hi[d] <= lo[d]) {
+                std::string msg = "Invalid bounding box: hi[" + std::to_string(d) + "] <= lo[" + std::to_string(d) + "]";
+                throw std::invalid_argument(msg);
+            }
+        }
+    }
+
+    template<typename F>
+    double run(int n, F payoff)
+    {
+        std::array<double, D> point{};
+        double sum = 0.0;
+        for (int i=0; i<n; ++i)
+        {
+            for (int d=0; d<D; ++d)
+                point[d] = lo[d] + (hi[d] - lo[d])*U01(rng);
+            sum += payoff(point);
+        }
+        double volumeOfBoundingBox = 1.0;
+        for (int d=0; d<D; ++d)
+            volumeOfBoundingBox *= (hi[d] - lo[d]);
+        return volumeOfBoundingBox*(sum/n);
+    }
+};
+
+template<int D> using Carlo = CarloT<D, Empty>;
+```
+So far we've done the standard TBCI refactorings:
+1. Added a template parameter, ```Base```, which we'll use to inject our mock (in the test code) or nothing (in the production code).
+2. Renamed ```Carlo``` to ```CarloT```.
+3. Created ```struct Empty```, where we'll define our mock.
+4. Added a ```using``` statement with ```struct Empty``` so that all our existing code will continue to compile.
+
+So, how do we write the mock and write an alias for ```std::uniform_real_distribution<>```?
+
+### The big idea
+
+```cpp
+struct Empty
+{
+    struct std
+    {
+        template<class D=double> using uniform_real_distribution = ::std::uniform_real_distribution<D>;
+    };
+};
 ```
 
+We can't put a ```namespace``` inside our struct, but we *can* put a struct of the same name. This is called shadowing.  
+You can easily imagine what the mocked version will look like:  
+```cpp
+template<typename T=double>
+struct uniform_real_distribution
+{
+    uniform_real_distribution(double, double) {}
+    template <class Engine> double operator()(Engine&) const
+    {
+        return 0.0;
+    }
+};
+```
 
+Now, to make our class pick up the new definitions, we'll need this line in our class:
+```cpp
+template <int D, typename Base>
+class CarloT : private Base
+{
+    using std = typename Base::std;
+```
 
+Now, wouldn't it be great if we were done at this point?
+Life is rarely that nice, and in this case, since we're telling the class that all the ```std``` types and functions now live in ```Empty```'s ```struct std```, it'll start looking for them there, and since it can't find them, it'll fail with compiler errors.
 
+So, now we've got a bunch of clean-up to do: put enough ```using``` statements or forwarding machinery so that our code will compile.
 
-If you'd like to think about it for a bit, go ahead; when you're ready, click [Next](/TBCI/Step2.html).
-
-Back to [TBCI landing page](https://middleraster.github.io/TBCI/index.html)  
-Back to [MiddleRaster's pages](https://middleraster.github.io/)
+If you'd like to give that a try yourself, go ahead; when you're ready, click [Next](/TBCI/Step2.html).
