@@ -21,7 +21,7 @@ Welcome to my pages.
 
 I'll be discussing things I've learned in my 35-year career, including 4 completely original ideas:
 
-1. How to mock ***anything*** in C++: [Test Base Class Injection](https://github.com/MiddleRaster/tbci)
+1. How to mock ***anything*** in C++: [Test Base Class Injection](/TBCI/index.html)
 2. A C++ [technique](/DAG/HeaderOnlyNoForwardDeclarations.html) where circular dependencies are compiler errors
 3. How to [predict when a project will be done despite poor estimates](/PM/PredictingDespitePoorEstimates.html)
 4. [***The*** metric for software development](https://middleraster.github.io/ABA/index.html)
