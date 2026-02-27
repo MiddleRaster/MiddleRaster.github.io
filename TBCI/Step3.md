@@ -4,7 +4,7 @@ title: "Mocking the Standard Template Library: Step 3"
 permalink: /TBCI/Step3.html
 ---
 
-Writing the actual mock is straight-forward:
+Writing the actual mock is straightforward:
 ```cpp
 
         struct TestBase
