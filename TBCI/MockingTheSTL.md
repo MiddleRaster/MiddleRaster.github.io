@@ -7,7 +7,7 @@ permalink: /TBCI/MockingTheSTL.html
 It's well-known that it's difficult to write test doubles/fakes/mocks/stubs for the STL.
 But there are plenty of reasons to do so:  for example, writing unit tests where you're using std::chrono::system_clock::now(), or std::mt19937 (or other random number generator) or std::ofstream (might be slow), etc.
 
-Ideally, we want to touch the legacy code as lightly as possible, so wrapping up stl types in our own types and replacing every instance with our types is out.
+Ideally, we want to touch the legacy code as lightly as possible, so wrapping up STL types in our own types and replacing every instance with our types is out.
 Similarly, silly macro tricks are out, as are linker tricks which are mostly not portable.
 
 But "Test Base Class Injection" can handle it. If you haven't read about that yet, please do so now:  [TBCI](https://github.com/MiddleRaster/tbci)
@@ -62,7 +62,7 @@ public:
 }
 ```
 
-What we'd like is to write unit tests, but they have to be deterministic, so mocking std::mt19937 is our goal.
+What we'd like is to write unit tests, but they have to be deterministic, so mocking std::mt19937 or std::uniform_real_distribution<> is our goal.
 But there are some constraints:
 1. Touch the code as lightly as possible
 2. No macros
