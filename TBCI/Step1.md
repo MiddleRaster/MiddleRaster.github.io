@@ -115,18 +115,6 @@ struct Empty
 
 We can't put a ```namespace``` inside our struct, but we *can* put a struct of the same name. This is called shadowing.
 
-You can easily imagine what the mocked version will look like:  
-```cpp
-template<typename T=double>
-struct uniform_real_distribution
-{
-    uniform_real_distribution(double, double) {}
-    template <class Engine> double operator()(Engine&) const
-    {
-        return 0.0;
-    }
-};
-```
 
 Now, to make our class pick up the new definitions, we'll need this line in our class:
 ```cpp
