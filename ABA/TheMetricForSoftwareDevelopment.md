@@ -4,7 +4,7 @@ title: "The Metric for Software Development"
 permalink: /ABA/TheMetricForSoftwareDevelopment.html
 ---
 
-What do we want? High quality code.
+What do we want? Lots of high quality code.
 
 When do we want it? As soon as possible.
 
