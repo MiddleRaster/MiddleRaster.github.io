@@ -19,7 +19,7 @@ The compiler errors fall into several categories:
    (MSVC's compiler is very helpful here with its compiler message: ```error C7510: 'string': use of dependent type name must be prefixed with 'typename'```.
    The fix is again simple: put a ```typename``` in front.
    
-4. Third, we have missing functions, like ```std::to_string()```. You can either write a forwarding function by hand (good for function templates), or use the MOCKABLE_FUNCTION macro (good for C APIs in the global namespace), or use the ```Callable``` template.
+4. Third, we have missing functions, like ```std::to_string()```. You can either write a forwarding function by hand (good for function templates), or use the MOCKABLE_FUNCTION macro (good for C APIs in the global namespace), or use the [```Callable```](https://github.com/MiddleRaster/tbci/blob/main/MockableFunction.h) template.
    In this case, since it's an overloaded function, you can use the last option, like this:  ```inline static Callable<static_cast<std::string(*)(int)>(&::std::to_string)> to_string; // an overload requires cast```.
    Note that the last option creates a data-member that is a callable object, and it needs to be ```static``` (so that we don't need an instance of ```std``` to call it), and ```inline``` so that we don't get ODR violations.
 
