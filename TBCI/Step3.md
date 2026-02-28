@@ -41,8 +41,8 @@ TEST_METHOD(AlwaysInsideBoundary)
     Assert::AreEqual(4.0, area);
 }
 ```
-Since the "random" point is now always exactly in the middle of the circle, the area reported wiill be the entire bounding box, or 4.0.
-(You could of course easily write a second test were the point is always outside the circle (point (1,1), for an area of 0.0.)
+Since the "random" point is now always exactly in the middle of the circle, the area reported will be the entire bounding box, or 4.0.
+(You could of course easily write a second test where the point is always outside the circle (point (1,1), for an area of 0.0.)
 
 And that's how it's done: we've mocked only one type out of the STL.
 
