@@ -116,7 +116,7 @@ struct Empty
 We can't put a ```namespace``` inside our struct, but we *can* put a struct of the same name. This is called shadowing.
 
 
-Now, to make our class pick up the new definitions, we'll need this line in our class:
+Now, to make our class pick up the new definition, we'll need this line in our class:
 ```cpp
 template <int D, typename Base>
 class CarloT : private Base
