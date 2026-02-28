@@ -10,7 +10,7 @@ But there are plenty of reasons to do so:  for example, writing unit tests where
 Ideally, we want to touch the legacy code as lightly as possible, so wrapping up STL types in our own types and replacing every instance with our types is out.
 Similarly, silly macro tricks are out, as are linker tricks which are mostly not portable.
 
-But "Test Base Class Injection" can handle it. If you haven't read about that yet, please do so now:  [TBCI](https://github.com/MiddleRaster/tbci)
+But "Test Base Class Injection" can handle it. If you haven't read about that yet, you can do so here:  [TBCI](https://github.com/MiddleRaster/tbci)
 
 ## Problem Statement:  write tests for legacy code
 
