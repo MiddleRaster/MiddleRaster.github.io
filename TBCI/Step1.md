@@ -137,7 +137,7 @@ class CarloT : private Base
 ```
 
 Now, wouldn't it be great if we were done at this point?
-Life is rarely that nice, and in this case, since we're telling the class that all the ```std``` types and functions now live in ```Empty```'s ```struct std```, it'll start looking for them there, and since it can't find them all there, it'll fail with compiler errors.
+Life is rarely that nice, and in this case, since we're telling the class that *all* the ```std``` types and functions now live in ```Empty```'s ```struct std```, it'll start looking for them there, and since it can't find them all there, it'll fail with compiler errors.
 
 So, now we've got a bunch of clean-up to do: put enough ```using``` statements or forwarding machinery so that our code will compile.
 
