@@ -41,7 +41,7 @@ A "3" was 3 weeks for us back then (I hadn't figured out #NoEstimates yet). I to
 That's more than a 5x improvement. I attribute it to following the two rules because it made the code dendritic and simple to understand and modify.
 
 C++ is the only language I know that has "declare before use" semantics (there are probably others, but I don't know them). For other languages, like C#, you'd have to write a tool, using reflection, to run through the code looking for cycles. So I did this, too,
-and ran it against all the code in my division that I could get my hands on.  At the time at *StupendousCorp* there were two teams writing essentially the same code with identical iterfaces, but for different platforms. One team was doing TDD, the other did not.
+and ran it against all the code in my division that I could get my hands on.  At the time at *StupendousCorp* there were two teams writing essentially the same code with identical interfaces, but for different platforms. One team was doing TDD, the other did not.
 When I ran my tool against the TDDing team, I found 10 cycles; when I ran it against the non-TDDing team, I found 200 cycles. That's more than an order of magnitude difference. Conclusion: doing TDD discourages people from putting in dependency cycles
 and that makes sense: it would feel very odd to have to create a whole slew of objects, just to unit test one. Guess which team had all the bugs? Bugs come about through carelessness or more often misunderstanding your own code.
 My rules make the code way easier to understand and that's a very Good Thing (tm).
