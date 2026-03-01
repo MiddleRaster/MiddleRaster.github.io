@@ -30,7 +30,7 @@ So gather 'round and I'll tell you the perfect metric. Of course, I can't just c
 
 ## Characteristics of a Good Codebase
 
-Much as been written on the topic of what good code looks like (e.g., the SOLID principles, the McCabe metrics, cyclomatic complexity metrics, etc.) and while there may be value in these, I think they all miss the point a little.
+Much has been written on the topic of what good code looks like (e.g., the SOLID principles, the McCabe metrics, cyclomatic complexity metrics, etc.) and while there may be value in these, I think they all miss the point a little.
 
 Here's my definition:  **a good codebase is one in which it's quick and easy to fix bugs**.
 
@@ -72,7 +72,7 @@ The difference between these two approaches is stark.
 The right way has the following consequences:
 1. The amount of damage a bug-prone developer can do is limited, because he's spending most of his time fixing up his own errors.
 2. On the other hand, the good (bug-free) devs write the vast majority of the code.
-3. Buggy devs have incentive to learn now to write bug-free code, because no one likes being in bug-fixing mode all the time.
+3. Buggy devs have incentive to learn how to write bug-free code, because no one likes being in bug-fixing mode all the time.
 
 None of these effects happen if everyone chips in. And that's a real shame, because everywhere I've been, people do it the wrong way.
 
