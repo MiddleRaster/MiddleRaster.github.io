@@ -4,7 +4,7 @@ title: "C++ Dojo"
 permalink: /TDD/cpp/katas.html
 ---
 
-Welcome to the C++ Dojo. Here are a list of katas, easiest first:
+Welcome to the C++ Dojo. Here is a list of katas, easiest first:
 
 1. [Prime Factors](/TDD/cpp/PrimeFactors/Step1.html)
 2. [Roman Numerals](/TDD/cpp/RomanNumerals/Step1.html)
