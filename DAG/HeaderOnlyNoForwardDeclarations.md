@@ -12,7 +12,7 @@ You would have to turn both knobs simultaneously at just the right rates (plural
 but turn right or left to change the temperature:  not coupled.
 
 That was all great, but I had real difficulties trying to apply Suh's Axiomatic Design to software. I still do, even after Corey's team members explained it to me. But it got me thinking heavily about coupling.
-In particular, cyclic coupling (there are other kinds of coupling, notably temporal couplling, but that's a topic for another day). Here are some definitions:
+In particular, cyclic coupling (there are other kinds of coupling, notably temporal coupling, but that's a topic for another day). Here are some definitions:
 1. **uncoupled** code:  class A knows nothing about class B, and class B knows nothing about class A.
 2. **decoupled** code:  class A uses class B in some way (data-member, argument, base, etc.), but class B knows nothing about A.
 3. **fully coupled** code:  class A knows about class B and B knows about A.  Or worse, A -> B -> C -> ... -> X -> Y -> Z -> A:  a really big cycle.
