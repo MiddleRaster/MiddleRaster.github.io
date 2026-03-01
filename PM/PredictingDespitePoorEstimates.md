@@ -183,7 +183,7 @@ Here are some final thoughts:
    In fact, I occasionally plot a chart showing exactly that:
    ![Alt text](./ConvergenceOfEstimates.jpg)
 
- - **How long does it take for the extrolated ship date to converge?** A month or two.
+ - **How long does it take for the extrapolated ship date to converge?** A month or two.
    In the beginning is when you know the least, so the first few weeks' ship dates won't be that great.
    But it settles down relatively quickly. The one pictured above took a bit longer than most.
 
