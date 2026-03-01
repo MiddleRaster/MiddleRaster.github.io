@@ -71,7 +71,7 @@ Q. Won't rule number 1 implicitly inline every method?
 
 A. Yes. The compiler is really good at this and can make better decisions at compile- or link-time than humans can. Think of boost or STL or other large header-only libraries. We use them without a second thought.
 <br><br><br>
-Q. Above you said, "No" to "Can your write all code like this?" When can you not?
+Q. Above you said, "No" to "Can you write all code like this?" When can you not?
 
 A. There are times where A must know about B and B must know about A. An example is edges and vertices in graphing. When you have a large cycle, get your architects involved. Try to shrink it down to as small as possible. 
 Note that my intent is to protect against introducing **accidental** cycles. If you *have* to design one in, think hard about not doing so; talk to more experienced devs. But if it's unavoidable, then do it but try to put it all in one class or file, if possible.
