@@ -71,7 +71,7 @@ The right way is to **have every developer fix his own bugs first** before he's 
 The difference between these two approaches is stark.
 The right way has the following consequences:
 1. The amount of damage a bug-prone developer can do is limited, because he's spending most of his time fixing up his own errors.
-2. On the other hand, the good (bug-free) devs write the vast majoritiy of the code.
+2. On the other hand, the good (bug-free) devs write the vast majority of the code.
 3. Buggy devs have incentive to learn now to write bug-free code, because no one likes being in bug-fixing mode all the time.
 
 None of these effects happen if everyone chips in. And that's a real shame, because everywhere I've been, people do it the wrong way.
