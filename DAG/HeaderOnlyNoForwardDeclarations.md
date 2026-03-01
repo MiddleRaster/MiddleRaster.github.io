@@ -5,7 +5,7 @@ permalink: /DAG/HeaderOnlyNoForwardDeclarations.html
 ---
 
 Once upon a time, back when I was an IC at *StupendousCorp*, I was reading a book recommended to me by Corey Ladas, one of the co-co-co-inventors of Kanban.
-It was called "Axiomatic Design: Advances and Applications" by Nam Pyo Suh. It's by a mechanical engineering professor at MIT, and since one of my degrees in in chemical engineering,
+It was called "Axiomatic Design: Advances and Applications" by Nam Pyo Suh. It's by a mechanical engineering professor at MIT, and since one of my degrees is in chemical engineering,
 I didn't have any difficulty understanding the book:  it's all about coupling in the functional requirements and design parameters. For example, think of a faucet with a single spout and two knobs.
 Suppose you have the water coming out at just the right temperature, but you want to increase the flow rate. If you turn up the cold spigot only, the flow rate increases but the temperature drops; turning the hot spigot does similarly but the temperature increases.
 You would have to turn both knobs simultaneously at just the right rates (plural!) to keep the temperature the same while increasing flow rate. So something is coupled in there. On the other hand, my kitchen faucet has a lever that I push up to increase the flow rate,
