@@ -4,7 +4,7 @@ title: "Refactoring Socket Sample Code: Step 9"
 permalink: /TDD/cpp/RefactoringSockets/Step9.html
 ---
 
-To do "[Test Base Class Injection](https://github.com/MiddleRaster/tbci)", we need to wrap up these two functions in a class template, make an empty ```struct``` to use as a base class, add some ```using``` statement, etc., resulting in this:
+To do "[Test Base Class Injection](https://github.com/MiddleRaster/tbci)", we need to wrap up these two functions in a class template, make an empty ```struct``` to use as a base class, add some ```using``` statements, etc., resulting in this:
 
 ```cpp
 #include <winsock2.h>
