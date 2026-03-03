@@ -33,7 +33,7 @@ namespace MonteCarloTests
                                                                                             return (r <= 1.0) ? 1.0 : 0.0;
                                                                                         });
             auto error = std::fabs(estimate - 4.0*3.14159/3.0);
-            Assert::IsTrue(error<.005, (std::wstring(L"should be close to 4/3*pi, but error was ") + std::to_wstring(error)  ).c_str());
+            Assert::IsTrue(error<.005, (std::wstring(L"should be close to 4/3*pi, but error was ") + std::to_wstring(error)).c_str());
         }
         TEST_METHOD(InvalidBoundingBoxThrows)
         {
