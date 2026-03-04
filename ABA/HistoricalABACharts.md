@@ -75,8 +75,8 @@ Each day, the average bug age goes up by 1, so when scaled appropriately, the sl
 # How did you do that?
 
 First, I wrote a little code that downloads issues from GitHub issue databases (see my [GitHub ABA Crawler](https://github.com/MiddleRaster/GithubABACrawler)).  
-Then, when I run the crawler, it outputs a .csv file, which I import into Excel.
-A little spreadsheet-fu and voila, an ABA chart (I'll upload the spreadsheet when I get around to it).
+Then, when I run the crawler, it outputs a .csv file, which I use as input to another little bit of code I wrote [CSVtoABA](https://github.com/MiddleRaster/CSVtoABA).  
+Then I take the output of that and paste it into a spreadsheet that creates the chart. You can find that [in this folder](https://github.com/MiddleRaster/CSVtoABA/tree/main/xlsx/).
 
 If you'd like me to interpret your very own ABA chart for you, upload it to one of your GitHub repos and let me know where it is in the comments.
 
