@@ -38,6 +38,7 @@ Stay tuned for more.
 
 Change Log:
 
+2026/03/04 - Added a little bit of [retirement math](/mathmusings/RetirementMath.html)  
 2026/02/27 - Added landing page for [TBCI](/TBCI/index.md) with samples, and showed [how to mock the STL](/TBCI/MockingTheSTL.html)  
 2026/02/22 - Added a few [real-life ABA charts](https://middleraster.github.io/ABA/HistoricalABACharts.html)  
 2026/02/12 - Added a kata to [refactor some awful MSDN sample code](https://middleraster.github.io/TDD/cpp/RefactoringSockets/Step1.html), including using [TBCI](https://github.com/MiddleRaster/tbci)  
