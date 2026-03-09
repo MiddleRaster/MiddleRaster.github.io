@@ -18,6 +18,8 @@ namespace Legacy
     struct Empty
     {
         static int bind(_In_ SOCKET s, _In_reads_bytes_(namelen) const struct sockaddr FAR* name, _In_ int namelen) { return ::bind(s, name, namelen); }
+        // or, if you #include "MockableFunction.h"
+        // inline static constexpr Callable<::bind> bind;
     };
 
     template <typename Base>
