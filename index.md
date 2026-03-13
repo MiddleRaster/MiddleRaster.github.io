@@ -28,11 +28,9 @@ I'll be discussing things I've learned in my 35-year career, including 4 complet
 
 
 
-My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanban/index.html).
-
-I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.
-
-Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).
+My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanban/index.html).  
+I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.  
+Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).  
 
 Stay tuned for more.
 
@@ -44,6 +42,26 @@ Change Log:
 2026/02/12 - Added a kata to [refactor some awful MSDN sample code](https://middleraster.github.io/TDD/cpp/RefactoringSockets/Step1.html), including using [TBCI](https://github.com/MiddleRaster/tbci)  
 2026/02/07 - Added [the Eight Queens Refactoring kata](https://middleraster.github.io/TDD/cpp/RefactoringEightQueens/Step1.html)  
 2026/02/06 - Added [the Eight Queens Puzzle kata](/TDD/cpp/EightQueens/Step1.html)  
+2026-01-30 - added [some math on whether ABA is gameable](/mathmusings/ABA/IsABAGameable.html)  
+2026-01-19 - added [an essay on THE metric for software development](/ABA/TheMetricForSoftwareDevelopment.html)  
+2026-01-13 - added [thoughts on Kanban](/Kanban/KanbanThoughts.html)  
+2026-01-12 - added a [Kanban Simulator](/Kanban/KanbanSimulator.html)  
+2026-01-12 - added [an essay on how low WIP lilmits can go](/Kanban/HowLowCanWIPLimitsGo.html)  
+2025-12-30 - added [an essay on Forecasting Good Ship Dates Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html)  
+2025-12-25 - added [an easy-to-remember proof of Fermat's Little Theorem](/mathmusings/FermatLittleTheorem.html)  
+2025-11-20 - added [the Bowling Game kata: state machine using std::variant](/TDD/cpp/BowlingGame/StateMachine/StdVariant/Step11.html)  
+2025-11-13 - added math article on [the integral of 1/x](/mathmusings/TheIntegralOfOneOverX.html)  
+2025-10-27 - added [a C++ technique where circular dependencies are compiler errors](/DAG/HeaderOnlyNoForwardDeclarations.html)  
+2025-10-10 - added [the Bowling Game kata: state machine using std::unique_ptr](/TDD/cpp/BowlingGame/StateMachine/UniquePtr/Step11.html)  
+2025-10-09 - added [the Bowling Game kata: array of frames](/TDD/cpp/BowlingGame/ArrayOfFrames/Step1.html)  
+2025-10-07 - added [the Bowling Game kata: array of ints](/TDD/cpp/BowlingGame/ArrayOfInts/Step1.html)  
+2025-10-02 - added [Roman Numerals kata](/TDD/cpp/RomanNumerals/Step1.html)  
+2025-10-02 - added [Prime Factors kata](/TDD/cpp/PrimeFactors/Step1.html)  
+2025-10-02 - started [c++ katas](/TDD/cpp/katas.html)  
+2025-10-02 - added [TDD Tutorial](/TDD/tutorials.html)  
+
+
+
 
 <!-- Invisible semantic section markers for Google -->
 <!--
