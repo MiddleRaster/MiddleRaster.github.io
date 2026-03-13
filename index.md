@@ -25,6 +25,7 @@ I'll be discussing things I've learned in my 35-year career, including 4 complet
 2. A C++ [technique](/DAG/HeaderOnlyNoForwardDeclarations.html) where circular dependencies are compiler errors
 3. How to [predict when a project will be done despite poor estimates](/PM/PredictingDespitePoorEstimates.html)
 4. [***The*** metric for software development](https://middleraster.github.io/ABA/index.html)
+<br>
 
 
 
@@ -33,6 +34,8 @@ I have a thing or two to say about [mathematics](https://middleraster.github.io/
 Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).  
 
 Stay tuned for more.
+<br>
+<br>
 
 Change Log:
 
