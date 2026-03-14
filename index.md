@@ -50,7 +50,7 @@ Change Log:
 2026-01-13 - added [thoughts on Kanban](/Kanban/KanbanThoughts.html)  
 2026-01-12 - added a [Kanban Simulator](/Kanban/KanbanSimulator.html)  
 2026-01-12 - added [an essay on how low WIP lilmits can go](/Kanban/HowLowCanWIPLimitsGo.html)  
-2025-12-30 - added [an essay on Forecasting Good Ship Dates Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html)  
+2025-12-30 - added [an essay on forecasting good ship dates despite poor estimates](/PM/PredictingDespitePoorEstimates.html)  
 2025-12-25 - added [an easy-to-remember proof of Fermat's Little Theorem](/mathmusings/FermatLittleTheorem.html)  
 2025-11-20 - added [the Bowling Game kata: state machine using std::variant](/TDD/cpp/BowlingGame/StateMachine/StdVariant/Step11.html)  
 2025-11-13 - added math article on [the integral of 1/x](/mathmusings/TheIntegralOfOneOverX.html)  
