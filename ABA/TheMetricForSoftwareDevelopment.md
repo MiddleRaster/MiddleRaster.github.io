@@ -114,7 +114,7 @@ My bug policy nips this problem in the bud.
 
 ## How to Do It
 
-Once at *StupendousCorp*, I was called in to help a failing team and so became their lead.
+Once at *StupendousCorp*, my boss and I were called in to help a failing team and so became their lead.
 Initially, I didn't make any huge waves, but we were missing our deadlines, our incoming bug-rate was through the roof, and I spent one or two days a week working until the wee hours of the morning, fixing up everyone else's bugs.
 I hated it.
 
