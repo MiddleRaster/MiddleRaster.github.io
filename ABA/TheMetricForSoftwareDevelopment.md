@@ -64,7 +64,7 @@ The only way to keep your ABA nice and low is to fix or close every single bug, 
 
 ## Bug Policy
 
-The wrong way to keep your ABA low is to have everyone chip in and fix everyone's bugs.
+The wrong way to keep your ABA low is to have everyone chip in and fix everyone else's bugs.
 
 The right way is to **have every developer fix his own bugs first** before he's allowed to write anything else.
 
