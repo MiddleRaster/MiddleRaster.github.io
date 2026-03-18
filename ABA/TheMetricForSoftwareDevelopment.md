@@ -41,7 +41,7 @@ You can tell if you're not in such a codebase if there are files you're afraid t
 
 But if you do have a "good" codebase, then the following will be true:
 1. if it's quick and easy to fix bugs, most, if not all, of them will have been fixed already, since it's easy to do so. So you have a high quality product.
-2. if it's quick and easy to fix bugs, it's easy to add new features, too. So, you have high team productivity as well.
+2. if it's quick and easy to fix bugs, it's easy to add new features, too. So you have high team productivity as well.
 
 ## Measuring a Good Codebase
 
