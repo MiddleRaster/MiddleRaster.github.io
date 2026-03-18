@@ -56,7 +56,7 @@ Note: a slightly more accurate thing to do is measure the total bug-days of open
 
 One nice thing to do is to plot that ABA over time to see if your codebase is getting better or worse.
 If you do that, you may be struck by how relentless time is:  every day, any untouched open bugs age by one more day.
-You can even mine your bug database for your historical ABAs and plot those over time.
+You can even mine your bug database for your [historical ABAs](/ABA/HistoricalABACharts.html) and plot those over time.
 
 A third note: if you open a whole pile of new bugs, you'll see a little dip in the ABA, but time, being relentless, will quickly reassert itself and the ABA starts going up again, and this time it's worse, since there are more bugs.
 
