@@ -36,7 +36,7 @@ static const std::string ToRoman(int n)
 }
 ```
 
-That special handling for "IV" is now gone and so is the early return. And I'll bet the "IX" case will works similarly.
+That special handling for "IV" is now gone and so is the early return. And I'll bet the "IX" case will work similarly.
 
 I'm expecting 15 through 18 to work and they do. But 19 fails with  ```Assert failed. Expected:<XIX> Actual:<IX>```, as expected. It's an easy fix, just like last time.
 
