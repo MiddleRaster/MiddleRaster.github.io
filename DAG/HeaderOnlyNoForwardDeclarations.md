@@ -4,14 +4,14 @@ title: "Header-Only, No Forward Declarations"
 permalink: /DAG/HeaderOnlyNoForwardDeclarations.html
 ---
 
-Once upon a time, back when I was an IC at *StupendousCorp*, I was reading a book recommended to me by Corey Ladas, one of the co-co-co-inventors of Kanban.
+Once upon a time (in 2003), back when I was an IC at *StupendousCorp*, I was reading a book recommended to me by Corey Ladas, one of the co-co-co-inventors of Kanban.
 It was called "Axiomatic Design: Advances and Applications" by Nam Pyo Suh. It's by a mechanical engineering professor at MIT, and since one of my degrees is in chemical engineering,
 I didn't have any difficulty understanding the book:  it's all about coupling in the functional requirements and design parameters. For example, think of a faucet with a single spout and two knobs.
 Suppose you have the water coming out at just the right temperature, but you want to increase the flow rate. If you turn up the cold spigot only, the flow rate increases but the temperature drops; turning the hot spigot does similarly but the temperature increases.
 You would have to turn both knobs simultaneously at just the right rates (plural!) to keep the temperature the same while increasing flow rate. So something is coupled in there. On the other hand, my kitchen faucet has a lever that I push up to increase the flow rate,
 but turn right or left to change the temperature:  not coupled.
 
-That was all great, but I had real difficulties trying to apply Suh's Axiomatic Design to software. I still do, even after Corey's team members explained it to me. But it got me thinking heavily about coupling.
+That was all great, but I had real difficulties trying to apply Suh's Axiomatic Design to software. I still do, even after Corey's team members tried to explain it to me. But it got me thinking heavily about coupling.
 In particular, cyclic coupling (there are other kinds of coupling, notably temporal coupling, but that's a topic for another day). Here are some definitions:
 1. **uncoupled** code:  class A knows nothing about class B, and class B knows nothing about class A.
 2. **decoupled** code:  class A uses class B in some way (data-member, argument, base, etc.), but class B knows nothing about A.
@@ -85,7 +85,7 @@ Q. Do you never use .cpp files?
 A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that #includes the headers I use.
 Ditto for a .dll. However, since I TDD all my code, I have lots of unit tests and they all live in .cpp files. 
 Build times are usually blazingly fast, since I usually only have to build a single .cpp file, the one that
-corresponds to the change I'm making in the header. Very occasionally, I'll change a leaf-most node and
+corresponds to the change I'm making in the header. Very occasionally, I'll change a root-most node and
 many .cpp files will have to be rebuilt, but it happens quite rarely, as it's like changing your string class:  hopefully not something you do very often.
 <br>
 
