@@ -82,8 +82,10 @@ A. This is the "(well, hardly ever)" part from rule 2. In this case, you pull al
 <br><br><br>
 Q. Do you never use .cpp files?
 
-A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that #includes the headers I use.
-Ditto for a .dll. However, since I TDD all my code, I have lots of unit tests and they all live in .cpp files. 
+A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that #includes the headers I use.  Ditto for a .dll. 
+For the actual production binary, I use a **single** TU, so the header files are parsed exactly once. Therefore there is no build-time explosion that comes from re-reading the header-only code for multiple TUs.  
+Not only that, but I build the production code quite rarely compared to the test binaries which I build constantly.
+For those, I have tons of TDD/unit tests and they all live in .cpp files. 
 Build times are usually blazingly fast, since I usually only have to build a single .cpp file, the one that
 corresponds to the change I'm making in the header. Very occasionally, I'll change a root-most node and
 many .cpp files will have to be rebuilt, but it happens quite rarely, as it's like changing your string class:  hopefully not something you do very often.
