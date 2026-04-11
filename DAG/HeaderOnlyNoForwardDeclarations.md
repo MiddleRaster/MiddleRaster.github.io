@@ -80,9 +80,9 @@ Q. I'm shipping a .dll. If I put all code in my headers, I'll have to ship them.
 
 A. This is the "(well, hardly ever)" part from rule 2. In this case, you pull all your header code into a single .cpp file, with a DllMain function, as well as any exported functions, and wrap the calls to your headers using the PImpl idiom. C++20's modules might help here, too (though I haven't tried it yet).
 <br><br><br>
-Q. Do you never use .cpp files?
+Q. Do you never use .cpp files? And what about build times?
 
-A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that #includes the headers I use.  Ditto for a .dll. 
+A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that ```#include```s the headers I use.  Ditto for a .dll. 
 For the actual production binary, I use a **single** TU, so the header files are parsed exactly once. Therefore there is no build-time explosion that comes from re-reading the header-only code for multiple TUs.  
 Not only that, but I build the production code quite rarely compared to the test binaries which I build constantly.
 For those, I have tons of TDD/unit tests and they all live in .cpp files. 
