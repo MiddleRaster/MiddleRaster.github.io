@@ -57,10 +57,19 @@ A. This is what you get when you only pay attention to the first rule, but not t
 Q. B-b-but John Lakos in his book, "Large-Scale C++ Software Design" says never to include a header when a forward declaration will do.
 
 A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their excellent book, "C++ Coding Standards: 101 Rules, Guidelines, and Best Practices". They're wrong. Lakos's advice was correct at the time, because back when he wrote it (1996), computers and
-compilers were much slower than they are today; nowadays compilers are really good at templates and they're header-only. 
-<br><br><br>
-Q. I like seeing my prototypes and interfaces in one file and the implementations in another.
+compilers were much slower than they are today; nowadays compilers are really good at templates and they're header-only.  
 
+In his newer book, "Large-Scale C++:  Process and Architecture - Volume 1" (2020), Lakos has clarified his stance and now says (on page 293),
+> **2.2.24 No Cyclic Physical Dependencies!**
+>
+> Design Imperative:  Allowed (explicitly stated) dependencies among physical aggregates must be acyclic.
+> 
+> Cyclic physical dependencies among any physical entities — ***irrespective of the level of physical aggregation*** — do not scale and are always undesirable. Such cyclically interdependent architectures are not only harder to build, they are also ***much, much harder to comprehend***, test, and maintain than their acyclic counterparts. In fact, ***to help improve human cognition, we almost always structure our source code to avoid forward references to logical entities even within the same component***. Whenever the physical specification of a design would allow cyclic dependencies among architecturally significant physical aggregates, we assert that the design is unacceptably flawed.  
+> [**emphasis mine**]
+
+<br>
+Q. I like seeing my prototypes and interfaces in one file and the implementations in another.  
+<br><br>
 A. This is only because that's what you're used to. C# and Java people are used to not having separate files.
 In fact, I would argue that if you can't see all your code at a glance in one screenful, your classes are too big.
 The vast majority of people react badly when they first hear my rules. One exception was Bob Jervis of Turbo C fame.
@@ -68,20 +77,20 @@ He was at Google when I told him of my idea and he immediately said,
 "You are making good use of a quirk of ANSI C to enforce very fine layering." Exactly right.
 <br><br><br>
 Q. Won't rule number 1 implicitly inline every method?
-
+<br><br>
 A. Yes. The compiler is really good at this and can make better decisions at compile- or link-time than humans can. Think of boost or STL or other large header-only libraries. We use them without a second thought.
 <br><br><br>
 Q. Above you said, "No" to "Can you write all code like this?" When can you not?
-
+<br><br>
 A. There are times where A must know about B and B must know about A. An example is edges and vertices in graphing. When you have a large cycle, get your architects involved. Try to shrink it down to as small as possible. 
 Note that my intent is to protect against introducing **accidental** cycles. If you *have* to design one in, think hard about not doing so; talk to more experienced devs. But if it's unavoidable, then do it but try to put it all in one class or file, if possible.
 <br><br><br>
 Q. I'm shipping a .dll. If I put all code in my headers, I'll have to ship them.
-
+<br><br>
 A. This is the "(well, hardly ever)" part from rule 2. In this case, you pull all your header code into a single .cpp file, with a DllMain function, as well as any exported functions, and wrap the calls to your headers using the PImpl idiom. C++20's modules might help here, too (though I haven't tried it yet).
 <br><br><br>
 Q. Do you never use .cpp files? And what about build times?
-
+<br><br>
 A. For an executable, I have a single .cpp file with ```main``` or ```WinMain``` that ```#include```s the headers I use.  Ditto for a .dll. 
 For the actual production binary, I use a **single** TU, so the header files are parsed exactly once. Therefore there is no build-time explosion that comes from re-reading the header-only code for multiple TUs.  
 Not only that, but I build the production code quite rarely compared to the test binaries which I build constantly.
