@@ -69,7 +69,7 @@ In his newer book, "Large-Scale C++:  Process and Architecture - Volume 1" (2020
 
 <br>
 Q. I like seeing my prototypes and interfaces in one file and the implementations in another.  
-<br><br>
+  
 A. This is only because that's what you're used to. C# and Java people are used to not having separate files.
 In fact, I would argue that if you can't see all your code at a glance in one screenful, your classes are too big.
 The vast majority of people react badly when they first hear my rules. One exception was Bob Jervis of Turbo C fame.
