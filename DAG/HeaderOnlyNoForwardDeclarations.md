@@ -60,7 +60,7 @@ A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their
 compilers were much slower than they are today; nowadays compilers are really good at templates and they're header-only.  
 
 In his newer book, "Large-Scale C++:  Process and Architecture - Volume 1" (2020), Lakos has clarified his stance and now says (on page 293),
-> **2.2.24 No Cyclic Physical Dependencies!**
+> 2.2.24 No Cyclic Physical Dependencies!
 >
 > Design Imperative:  Allowed (explicitly stated) dependencies among physical aggregates must be acyclic.
 > 
