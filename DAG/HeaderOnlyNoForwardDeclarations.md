@@ -65,7 +65,7 @@ In his newer book, "Large-Scale C++:  Process and Architecture - Volume 1" (2020
 > Design Imperative:  Allowed (explicitly stated) dependencies among physical aggregates must be acyclic.
 > 
 > Cyclic physical dependencies among any physical entities — ***irrespective of the level of physical aggregation*** — do not scale and are always undesirable. Such cyclically interdependent architectures are not only harder to build, they are also ***much, much harder to comprehend***, test, and maintain than their acyclic counterparts. In fact, ***to help improve human cognition, we almost always structure our source code to avoid forward references to logical entities even within the same component***. Whenever the physical specification of a design would allow cyclic dependencies among architecturally significant physical aggregates, we assert that the design is unacceptably flawed.  
-> [**emphasis mine**]
+> [emphasis mine]
 
 <br>
 Q. I like seeing my prototypes and interfaces in one file and the implementations in another.  
