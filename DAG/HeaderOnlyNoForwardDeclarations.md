@@ -56,17 +56,16 @@ A. This is what you get when you only pay attention to the first rule, but not t
 <br><br><br>
 Q. B-b-but John Lakos in his book, "Large-Scale C++ Software Design" says never to include a header when a forward declaration will do.
 
-A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their excellent book, "C++ Coding Standards: 101 Rules, Guidelines, and Best Practices". They're wrong. Lakos's advice was correct at the time, because back when he wrote it (1996), computers and
-compilers were much slower than they are today; nowadays compilers are really good at templates and they're header-only.
-
+A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their excellent book, "C++ Coding Standards: 101 Rules, Guidelines, and Best Practices". They're wrong.
+Lakos's advice was correct at the time, because back when he wrote it (1996), computers and compilers were much slower than they are today; nowadays compilers are really good at templates and they're header-only.
 
 In his newer book, "Large-Scale C++:  Process and Architecture - Volume 1" (2020), Lakos has clarified his stance and now says (on page 293),
-> 2.2.24 No Cyclic Physical Dependencies!
+> **2.2.24 No Cyclic Physical Dependencies!**
 >
 > Design Imperative:  Allowed (explicitly stated) dependencies among physical aggregates must be acyclic.
 > 
-> Cyclic physical dependencies among any physical entities — irrespective of the level of physical aggregation — do not scale and are always undesirable. Such cyclically interdependent architectures are not only harder to build, they are also much, much harder to comprehend, test, and maintain than their acyclic counterparts. In fact, to help improve human cognition, we almost always structure our source code to avoid forward references to logical entities even within the same component. Whenever the physical specification of a design would allow cyclic dependencies among architecturally significant physical aggregates, we assert that the design is unacceptably flawed.
->   
+> Cyclic physical dependencies among any physical entities — ***irrespective of the level of physical aggregation*** — do not scale and are always undesirable. Such cyclically interdependent architectures are not only harder to build, they are also ***much, much harder to comprehend***, test, and maintain than their acyclic counterparts. In fact, ***to help improve human cognition, we almost always structure our source code to avoid forward references to logical entities even within the same component***. Whenever the physical specification of a design would allow cyclic dependencies among architecturally significant physical aggregates, we assert that the design is unacceptably flawed.
+> 
 
 <br>
 Q. I like seeing my prototypes and interfaces in one file and the implementations in another.  
