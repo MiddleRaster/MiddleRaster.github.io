@@ -56,8 +56,8 @@ A. This is what you get when you only pay attention to the first rule, but not t
 <br><br><br>
 Q. B-b-but John Lakos in his book, "Large-Scale C++ Software Design" says never to include a header when a forward declaration will do.
 
-A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their book, "C++ Coding Standards: 101 Rules, Guidelines, and Best Practices". They're wrong. Lakos's advice was correct at the time, because back when he wrote it (1996), computers and
-compilers were much slower than they are today; nowadays compilers are really good at templates  and they're header-only. Lakos has changed his tune and instead now says, "Strive for header-only code".
+A. This is true. Herb Sutter and Andrei Alexandrescu say the same thing in their excellent book, "C++ Coding Standards: 101 Rules, Guidelines, and Best Practices". They're wrong. Lakos's advice was correct at the time, because back when he wrote it (1996), computers and
+compilers were much slower than they are today; nowadays compilers are really good at templates and they're header-only. 
 <br><br><br>
 Q. I like seeing my prototypes and interfaces in one file and the implementations in another.
 
