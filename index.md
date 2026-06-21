@@ -37,7 +37,7 @@ Stay tuned for more.
 <br>
 <br>
 A bunch (eventually) of repos that I've been working:  
-[OdrCop2](/Readmes/OdrCop2.html) - a tools to detect ODR violations on Windows
+[OdrCop2](/Readmes/OdrCop2.html) - a tool to detect ODR violations on Windows, using LLVM/Clang's AST parser
 <br>
 <br>
 
