@@ -23,7 +23,7 @@
 <div>go to <a href="https://github.com/MiddleRaster/tdd20">tdd20</a></div>
 
 <script>
-  fetch("https://raw.githubusercontent.com/MiddleRaster/tdd20/main/README.md")
+  fetch("https://raw.githubusercontent.com/MiddleRaster/tdd20/master/README.md")
     .then(response => response.text())
     .then(md => {
       document.getElementById("readme").innerHTML = marked.parse(md);
