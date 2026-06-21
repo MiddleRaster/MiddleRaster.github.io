@@ -37,8 +37,8 @@ Stay tuned for more.
 <br>
 <br>
 A bunch (eventually) of repos that I've been working:  
-[OdrCop2](/Readmes/OdrCop2.html) - a tool to detect ODR violations on Windows, using LLVM/Clang's AST parser
-[TBCI](/Readmes/TBCI.html) - my favorite mocking technique
+[OdrCop2](/Readmes/OdrCop2.html) - a tool to detect ODR violations on Windows, using LLVM/Clang's AST parser  
+[TBCI](/Readmes/TBCI.html) - my favorite mocking technique  
 <br>
 <br>
 
