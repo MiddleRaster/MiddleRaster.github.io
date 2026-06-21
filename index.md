@@ -33,7 +33,11 @@ My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanba
 I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.  
 Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).  
 
-Stay tuned for more.
+Stay tuned for more.  
+<br>
+<br>
+A bunch (eventually) of repos that I've been working:  
+[OdrCop2](/Readmes/OdrCop2.html) - a tools to detect ODR violations on Windows
 <br>
 <br>
 
