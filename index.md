@@ -43,6 +43,7 @@ A bunch (eventually) of repos that I’ve been working:
 | [OdrCop2](/Readmes/OdrCop2.html) | a tool to detect ODR violations on Windows, using LLVM/Clang’s AST parser |
 | [TBCI](/Readmes/TBCI.html) | Test Base Class Injection: my favorite mocking technique |
 | [tdd20](/Readmes/tdd20.html) | a teeny-tiny, macro-free, module-only TDD/unit testing harness. My daily driver |
+| [notepad--](/Readmes/Notepad--.html) | I didn't like Win11's notepad, so I wrote the old one |
 
 <br>
 <br>
