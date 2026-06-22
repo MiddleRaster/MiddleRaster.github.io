@@ -44,6 +44,7 @@ A bunch (eventually) of repos that I’ve been working:
 | [TBCI](/Readmes/TBCI.html) | Test Base Class Injection: my favorite mocking technique |
 | [tdd20](/Readmes/tdd20.html) | a teeny-tiny, macro-free, module-only TDD/unit testing harness. My daily driver |
 | [notepad--](/Readmes/Notepad--.html) | I didn't like Win11's notepad, so I wrote the old one |
+| [LinkValidator](/Readmes/LinkValidator.html) | Validates recursively that links on a webpage are valid |
 
 <br>
 <br>
