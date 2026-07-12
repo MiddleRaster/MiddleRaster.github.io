@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OdrCop3 README</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://gc.zgo.at/count.js" data-goatcounter="https://middleraster.goatcounter.com/count" async></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .markdown-body {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="readme" class="markdown-body">Loading README…</div>
+<div>go to <a href="https://github.com/MiddleRaster/OdrCop3">OdrCop3</a> repo</div>
+
+<script>
+  fetch("https://raw.githubusercontent.com/MiddleRaster/OdrCop3/main/README.md")
+    .then(response => response.text())
+    .then(md => {
+      document.getElementById("readme").innerHTML = marked.parse(md);
+    })
+    .catch(err => {
+      document.getElementById("readme").innerHTML = "Failed to load README.";
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>
