@@ -84,7 +84,7 @@ I rate developers on two axes, speed and buggy-ness, which makes four kinds of d
 | **buggy**    |  III            |       IV       |
 
 The quadrant I devs are the perfect devs, fast and bug-free. 
-Every single developer I know thinks he (or she (I'll use "he" through as it's less typing)) is one of these, which is laughable, considering how many bugs there are in the world.
+Every single developer I know thinks he (or she (I'll use "he" throughout as it's less typing)) is one of these, which is laughable, considering how many bugs there are in the world.
 But if you really have one of these on the team, that's great.
 
 Quadrant II devs are slower, but still bug-free.
