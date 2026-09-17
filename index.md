@@ -51,6 +51,7 @@ A bunch (eventually) of repos that I’ve been working:
 
 Change Log:
 
+2026-09-17 - Added a bit more retirement math regarding if/when to invest in a [Roth IRA](/mathmusings/ToRothOrNot.html)  
 2026-03-04 - Added a little bit of [retirement math](/mathmusings/RetirementMath.html)  
 2026-02-27 - Added landing page for [TBCI](/TBCI/index.md) with samples, and showed [how to mock the STL](/TBCI/MockingTheSTL.html)  
 2026-02-22 - Added a few [real-life ABA charts](https://middleraster.github.io/ABA/HistoricalABACharts.html)  
