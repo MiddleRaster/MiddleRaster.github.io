@@ -42,7 +42,7 @@ However, it suffers from a more-or-less fatal flaw:  it relies on people’s est
 
 Wouldn't it be awesome if we could predict when each story will be completed so that we can tell if our plans are any good, or if we have dependency problems, or if one team is "long pole" (that is, the team that's hold everybody up)?  
 
-We have just such a technique, and if you haven't you can read about it here:  [Good Predictions Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html).
+We have just such a technique, and if you haven't yet, you can read about it here:  [Good Predictions Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html).
 
 The key idea is that estimating isn't the thing that throws off our predictions of when a story will be done; rather is "Second Order Ignorance" (2OI), the "unknown unknowns" that we can't even see because they're completely invisible to us.  
 
