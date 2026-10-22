@@ -52,7 +52,7 @@ And here's the important bit:  where those two lines intersect is when you'll sh
 
 Note that the two lines can be parallel or worse, diverge; in both of these cases, you'll never ship.
 
-Using the same technique, I can tell when **any** individual story will be done, and that's the "enhanced" part of the "Enhanced Portfolio Alignment Wall" (ePAW).  It's a read-only dynamic view of the current state and the predicted state of all backlogs.
+Using the same technique, I can tell when **any** individual story will be done, and that's the "enhanced" part of the "Enhanced Portfolio Alignment Wall" (ePAW).  It's a read-only, dynamic view of the current state and the predicted state of all backlogs.
 
 The ePAW looks like this:
 
