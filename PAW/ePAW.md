@@ -28,7 +28,7 @@ But you must also keep an eye on technical debt.  If you haven't already, read m
 If you have no technical debt, have great, flexible architecture, if you have all-DAG code, then fixing bugs is quick and easy, and most of them are fixed already, since it's easy to do so.  
 If you're in this state, you have little technical debt and that's what ABA measures.
 
-One detail that almost every organization gets wrong:  it's **crucial** that developers fix their own bugs first, before being allowed to write any new code.  See [this section in the aforementioned post](ABA/TheMetricForSoftwareDevelopment.html#bug-policy) for a discussion of the 4 kinds of developers.  
+One detail that almost every organization gets wrong:  it's **crucial** that developers fix their own bugs first, before being allowed to write any new code.  See [this section in the aforementioned post](/ABA/TheMetricForSoftwareDevelopment.html#bug-policy) for a discussion of the 4 kinds of developers.  
 
 If you get this bug policy right, the team will speed up dramatically. If you get it wrong, it won't.
 
