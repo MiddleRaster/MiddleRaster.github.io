@@ -12,7 +12,7 @@ Your CEO says to the company, "I'm not going to tell you when we're going to shi
 
 What would you do? How would you arrange your work?
 
-If you're just a single team, it's not too hard:  just make sure you're in a shippable state at all times. That means having close to no known bugs at all times, what we used to call ZBB ("Zero Bug Bounce") at *StupendousCorp*.  
+If you're just a single team, it's not too hard:  just make sure you're in a shippable state at all times. That means having close to no known bugs all the time, what we used to call ZBB ("Zero Bug Bounce") at *StupendousCorp*.  
 
 But what if your company is 100s of teams, thousands of engineers?  
 There are several ways of "scaling up Scrum" and I hate them all - they put more and rigid process into place, require lots of coaching and have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
