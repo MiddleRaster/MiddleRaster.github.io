@@ -67,9 +67,9 @@ And it’s based on reality: how much work is left, how fast new work is being f
 
 The ePAW looks something like this:
 
+{% assign today = "now" | date: "%Y-%m-%d" %}
 
-
-|Team Name|ABA (days)| iter n-2 | iter n-1 |...|Today|  1/1 |  1/2 | 1/3  | 1/4  | 
+|Team Name|ABA (days)| iter n-2 | iter n-1 |...| {{ today }} |  1/1 |  1/2 | 1/3  | 1/4  | 
 |:-------:|:----:|:-----------:|:-------------:|---|:---:|:----:|:----:|:----:|:----:|
 | Team A  |   94 | id1, id2    | id6, id9      |...| id12|      | id20 |      | id31 | 
 | Team B  |    7 | id3, id4    | id5, id8      |...|     | id13 |      | id17 | id16 |
