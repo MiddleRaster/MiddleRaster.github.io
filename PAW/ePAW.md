@@ -194,7 +194,7 @@ Here are the pieces for, say, a CLI app:
 6. Write the web page that consumes the generated output from the CLI app
 
 
-Initially, I would privately watch how the organization executes.
+Initially, I would privately watch how the organization executes to get a baseline.
 - What are the teams’ ABAs and are they getting worse?
 - Is there an obviously overloaded team?
 - Are they working on NTH items while Core items remain unfinished?
