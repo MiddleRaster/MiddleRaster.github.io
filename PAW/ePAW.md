@@ -141,7 +141,7 @@ To address the missing dependency links, I suggest the following procedures:
 1. The consuming team creates their story card just like they do now.
 2. If it’s determined that it depends on another team’s work, a card is created **by the consuming team’s PO** ***in the supplying team’s backlog*** and a link is created from one card to the other team’s card.
 3. The supplying team’s PO sets the card’s priority and sizing as he sees fit. He’ll probably link it to one of his team’s existing stories.
-4. The ePAW will show in red if there’s a conflict and your normal negotiation or escalation procedure kicks in.
+4. The ePAW will show in red if there’s a conflict and if so, your normal negotiation or escalation procedure kicks in.
 
 
 ## CEO / CTO Proof of Concept
