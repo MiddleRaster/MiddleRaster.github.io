@@ -23,7 +23,7 @@ If you're just a single team, it's not too hard:  just make sure you're in a shi
 
 But what if your company is hundreds of teams, with thousands of engineers?
 There are several ways of "scaling up Scrum" but I have found most large-scale Scrum frameworks to be process-heavy and expensive:
-They put more process and *rigid* process in place, require lots of coaches, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
+they put more process and *rigid* process in place, require lots of coaches, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
 They try to plan and coordinate work at a larger scale, but do so in a heavy-handed way.
 A pilot rollout costs millions of dollars and success is not guaranteed (or likely, even measured).
 
