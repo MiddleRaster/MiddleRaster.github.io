@@ -148,7 +148,7 @@ To address the missing dependency links, I suggest the following procedures:
 
 ## CEO / CTO Proof of Concept
 
-So we’ve got a notion of what to build that answers the four questions that managers need answered in order to ship at a large scale.  
+So we’ve got a notion of what to build that answers the four questions that execs and managers need answered in order to ship at a large scale.  
 Is an ePAW plus a proper bug policy (checked by ABA) enough to replace something like SAFe? 
 
 Maybe; it depends on what your org’s deficits are.
