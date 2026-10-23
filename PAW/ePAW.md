@@ -110,7 +110,7 @@ If only there were a way to see these cross-team dependency conflicts ahead of t
 If they were identified earlier and addressed, the schedule would not be impacted.  
 
 To make that happen, we need to identify those cards that depend on other cards.
-All the backlog tracking apps (Jira, Azure DevOps, etc.) have this capability built-in.
+All the backlog management tools I know (Jira, Azure DevOps, etc.) have this capability built-in.
 But there are problems:  finding the right story in another team’s backlog isn’t trivial and is a real pain point.
 So often, the link to the supplying team’s card is missing entirely, though the consuming team’s card is annotated in some way.  
 
