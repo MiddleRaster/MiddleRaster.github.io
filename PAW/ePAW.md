@@ -208,7 +208,7 @@ If on the other hand, you see problems, I would recommend the following:
     1. You’ll initially probably see lots of red, hopefully way ahead of time where the issues can be addressed early before they cause scheduling problems
     2. You’ll want to display the automatically updating web page prominently somewhere (“an information radiator”) and to give out the URL so anyone can see the ePAW
 
-The value of an ePAW pilot compared to its cost is compelling to any CEO/CTO, in my opinion, especially when compared to a pilot of SAFe or similar frameworks.
+The value of an ePAW pilot compared to its cost is compelling to any CEO/CTO, in my opinion, especially when compared to a pilot of SAFe or similar framework.
 
 ## Conclusion 
 
