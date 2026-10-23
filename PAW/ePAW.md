@@ -4,14 +4,14 @@ title: "The Enhanced Portfolio Alignment Wall"
 permalink: /PAW/ePAW.html
 ---
 
-Things execs want to know:  
+Things execs and managers want to know:  
 1. have we built enough features that we could release a product?
 2. is quality high enough to ship?
 3. is one team the “long pole” that’s holding everybody up?
 4. are there any cross-team dependency commitments that will not be met?
 
 
-## The Monday Surprise
+## A Thought Experiment
 
 Image this thought experiment, which I call **"the Monday Surprise"**:  
 
@@ -80,6 +80,18 @@ You can’t tell from story counts or estimates, because some teams slice thinne
 But the ePAW looks at completion rates (and discovery rates) in each team’s units and displays predicted completion dates.
 Now you have a far more realistic view of which team is the “long pole.” 
 
+So far, the ePAW has answered one of the questions execs and managers need answered.
+
+## Core and NTH
+
+Let’s answer another:  have we built enough to ship?  
+
+To answer this question, we need to distinguish between features that are essential to the next release versus merely “nice to have”.
+I call the former, Core (or MVP - Minimum Viable Product) and the latter, NTH.  
+Each story must be marked as one or the other. Teams are very probably doing this already, via Pri1 (and maybe Pri2 as well), or similar mechanisms.
+
+Then, the ePAW needs a filtered view that shows only the Core items.  
+If all the Core stories are to the left of “today,” you have built enough product to ship. Voilà.
 
 
 
