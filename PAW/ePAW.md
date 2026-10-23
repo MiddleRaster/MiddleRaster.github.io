@@ -53,7 +53,7 @@ Wouldn't it be awesome if we could predict when each story will be completed so 
 
 We have just such a technique, and if you haven't yet, you can read about it here:  [Good Predictions Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html).
 
-The key idea is that estimating isn't the thing that throws off our predictions of when a story will be done; rather is "Second Order Ignorance" (2OI), the "unknown unknowns" that we can't even see because they're completely invisible to us.  
+The key idea is that poor estimating isn't the thing that throws off our predictions of when a story will be done; rather is "Second Order Ignorance" (2OI), the "unknown unknowns" that we can't even see because they're completely invisible to us.  
 
 But what we **can** do is track how quickly those 2OI items are showing up (and often they're the most important next thing).  
 So we have **two** velocities, two trend lines:  how fast the team is getting work done and how fast the team is discovering new work.  
