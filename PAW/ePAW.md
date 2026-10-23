@@ -63,7 +63,7 @@ Using the same technique, I can tell when **any** individual story will be done,
 And it’s based on reality: how much work is left, how fast new work is being found and how fast work is being completed; not on people’s guesses or wishful thinking.
 
 
-The ePAW looks like this:
+The ePAW looks something like this:
 
 
 
@@ -73,6 +73,15 @@ The ePAW looks like this:
 | Team B  |    7 | id3, id4    | id5, id8      |...|     | id13 |      | id17 | id16 |
 | Team C  |   20 | id7         | id10, id11    |...| id18| id19 | id21 |      | id27 |
 |    ⋮    |   ⋮   |      ⋮      |       ⋮        |...|  ⋮  |   ⋮  |   ⋮   |   ⋮  |   ⋮  | 
+
+
+The ePAW solves a real problem:  is one team overloaded?
+You can’t tell from story counts or estimates, because some teams slice thinner than others.
+But the ePAW looks at completion rates (and discovery rates) in each team’s units and displays predicted completion dates.
+Now you have a far more realistic view of which team is the “long pole.” 
+
+
+
 
 
 
