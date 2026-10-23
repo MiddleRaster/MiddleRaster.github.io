@@ -179,7 +179,7 @@ Here are the pieces for, say, a CLI app:
     2. but as a first cut, you could manually export from your backlog management tool and your bug database as CSV, xml/json, etc., files and read them in.
     3. Do it programmatically later
 2. The ABA calculation engine
-3. The CFD/burn-up calculator to come up with a predicted completion date for each undone story
+3. The CFD/burn-up calculator to come up with a predicted completion date for each unfinished story
 4. The filtering of Core vs NTH
     1. This could be done at the export level, above, initially.
     2. Later, make it a command-line argument and do the display filtering yourself
