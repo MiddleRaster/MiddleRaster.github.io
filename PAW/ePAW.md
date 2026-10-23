@@ -147,4 +147,55 @@ To address the missing dependency links, I suggest the following procedures:
 
 
 ## CEO / CTO Proof of Concept
-## Components
+
+So we’ve got a notion of what to build that answers the four questions that managers need answered in order to ship at a large scale?  
+Is an ePAW plus a proper bug policy (checked by ABA) enough to replace something like SAFe? 
+
+Maybe; it depends on what your org’s deficits are.
+If your org has a planning deficit, then maybe ePAW is not for you, though in my experience, companies can plan all over the place. That’s not usually the problem.  
+
+More often, there is an execution deficit, often around quality, or a visibility problem.
+In those cases ePAW can very likely help.  
+
+So what should a CEO or CTO do?
+If I were the CEO, I’d run a pilot, a trial of ePAW and that means building a proof of concept.
+How long will that take?
+I estimate a senior or principal dev, working for the CEO/CTO/Chief of Staff, could create a PoC in a week or two.  
+
+Here are the pieces for, say, a CLI app:
+1. Ingestion of the work backlog and bug database
+    1. this is very likely the hardest part, but as a first cut, you could manually export from your backlog management tool and your bug database as CSV, xml/json, etc., files and read them in.
+    2. Do it programmatically later
+2. The ABA calculation engine
+3. The CFD/burn-up calculator to come up with a predicted completion date for each undone story
+4. The filtering of Core vs NTH
+    1. This could be done at the export level, above, initially.
+    2. Later, make it a command-line argument and do the display filtering yourself
+5. Output as:
+    1. first as text, piped into a file, viewed in notepad
+    2. or perhaps markdown; view in an appropriate viewer (e.g., Visual Studio)
+    3. or CSV and view in Excel
+    4. and finally, json or xml, to be consumed by a web page
+6. Write the webpage that consumes the generated output from the CLI app
+
+
+Initially, I would privately watch how the organization executes.
+What are the teams’ ABAs and are they getting worse?
+Is there an obviously overloaded team?
+Are there any as yet unobserved (and unannounced and ubaddressed) dependency conflicts?
+
+If the answers to all these questions are No and you decide to abandon ePAW, the cost of failure is a dev salary for a week or two.
+
+If on the other hand, you see problems, I would recommend the following:
+1. Collect baseline data for as long as you see fit before making any policy changes
+2. Implement a proper bug policy where each developer is required to fix immediately (or close immediately) any of his own bugs before he us allowed to write new code.
+    1. You should see the ABA and bug counts drop significantly.
+    2. But more interestingly, you should see the **density** of completed stories increase to the left of “today.”
+3. Implement the missing dependency link process (piloted with just a few select teams)
+    1. You’ll initially probably see lots of red, hopefully way ahead of time where they can be addressed early before they cause scheduling problems
+    2. You’ll want either to display the automatically updating web page prominently somewhere (“an information radiator”) and to give out the URL so anyone can see the ePAW
+
+
+
+
+
