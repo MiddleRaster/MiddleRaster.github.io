@@ -148,7 +148,7 @@ To address the missing dependency links, I suggest the following procedures:
 
 ## CEO / CTO Proof of Concept
 
-So we’ve got a notion of what to build that answers the four questions that managers need answered in order to ship at a large scale?  
+So we’ve got a notion of what to build that answers the four questions that managers need answered in order to ship at a large scale.  
 Is an ePAW plus a proper bug policy (checked by ABA) enough to replace something like SAFe? 
 
 Maybe; it depends on what your org’s deficits are.
@@ -164,8 +164,9 @@ I estimate a senior or principal dev, working for the CEO/CTO/Chief of Staff, co
 
 Here are the pieces for, say, a CLI app:
 1. Ingestion of the work backlog and bug database
-    1. this is very likely the hardest part, but as a first cut, you could manually export from your backlog management tool and your bug database as CSV, xml/json, etc., files and read them in.
-    2. Do it programmatically later
+    1. this is very likely the hardest part,
+    2. but as a first cut, you could manually export from your backlog management tool and your bug database as CSV, xml/json, etc., files and read them in.
+    3. Do it programmatically later
 2. The ABA calculation engine
 3. The CFD/burn-up calculator to come up with a predicted completion date for each undone story
 4. The filtering of Core vs NTH
@@ -182,6 +183,7 @@ Here are the pieces for, say, a CLI app:
 Initially, I would privately watch how the organization executes.
 What are the teams’ ABAs and are they getting worse?
 Is there an obviously overloaded team?
+Are they working on NTH items while Core items are unfinished?
 Are there any as yet unobserved (and unannounced and ubaddressed) dependency conflicts?
 
 If the answers to all these questions are No and you decide to abandon ePAW, the cost of failure is a dev salary for a week or two.
@@ -190,10 +192,10 @@ If on the other hand, you see problems, I would recommend the following:
 1. Collect baseline data for as long as you see fit before making any policy changes
 2. Implement a proper bug policy where each developer is required to fix immediately (or close immediately) any of his own bugs before he us allowed to write new code.
     1. You should see the ABA and bug counts drop significantly.
-    2. But more interestingly, you should see the **density** of completed stories increase to the left of “today.”
-3. Implement the missing dependency link process (piloted with just a few select teams)
+    2. But more interestingly, you should see the **density** of completed stories increase (to the left of “today”).
+3. Implement the missing dependency link process (piloted at first with just a few select teams)
     1. You’ll initially probably see lots of red, hopefully way ahead of time where they can be addressed early before they cause scheduling problems
-    2. You’ll want either to display the automatically updating web page prominently somewhere (“an information radiator”) and to give out the URL so anyone can see the ePAW
+    2. You’ll want to display the automatically updating web page prominently somewhere (“an information radiator”) and to give out the URL so anyone can see the ePAW
 
 
 
