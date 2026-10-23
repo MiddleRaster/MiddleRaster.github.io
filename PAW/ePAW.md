@@ -13,7 +13,7 @@ Things execs and managers want to know:
 
 ## A Thought Experiment
 
-Image this thought experiment, which I call **"the Monday Surprise"**:  
+Imagine this thought experiment, which I call **"the Monday Surprise"**:  
 
 Your CEO says to the company, "I'm not going to tell you when we're going to ship. I'll just come in on a Monday of my choice and say, 'We have enough for a product. We're shipping on Friday. Anyone who cannot ship will be fired.' Arrange your work to make this happen."  
 
@@ -24,7 +24,7 @@ If you're just a single team, it's not too hard:  just make sure you're in a shi
 But what if your company is hundreds of teams, with thousands of engineers?
 There are several ways of "scaling up Scrum" but I have found most large-scale Scrum frameworks to be process-heavy and expensive:
 They put more process and *rigid* process in place, require lots of coaches, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
-They try to plan and coordinate work at a larger scale, do so but in a heavy-handed way.
+They try to plan and coordinate work at a larger scale, but do so in a heavy-handed way.
 A pilot rollout costs millions of dollars and success is not guaranteed (or likely, even measured).
 
 What I want is a light-weight mechanism to coordinate work, one that gives me the flexibility to work as I choose:  Agile, Scrum, Lean, Kanban, XP, etc. with iteration lengths of my choice.
