@@ -132,8 +132,11 @@ Let’s assume for now that the dependency links do exist and we’ll address th
 
 What we need is for the ePAW to display in vivid red if a supplying team’s card is predicted to be done after the consuming team’s card.
 In fact, the consuming team needs some time to work on it, so the dependency should be done, say, 1 iteration before the consumer needs it.
-If that is not the case, highlight both cards in red and draw a red arrowed line from the consuming card to the supplying card.  
+If that is not the case, highlight both cards in red and draw a red arrowed line from the consuming card to the supplying card. 
 
+To be clear, “red” means we have a predicted scheduling conflict.
+“Green” means “doable” in the sense that there is no scheduling conflict detected.
+It does ***not*** mean “done”; cards to the left of the “today” column are done.
 
 What should teams do if this situation is detected?  Whatever you’re doing now, but it typically includes:  
 - raise the priority of the supplying card
