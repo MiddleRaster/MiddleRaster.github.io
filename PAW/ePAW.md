@@ -75,7 +75,7 @@ The ePAW looks something like this:
 {% assign d3    = now_s | plus: 259200 | date: "%b %-d" %}
 {% assign d4    = now_s | plus: 345600 | date: "%b %-d" %}
 
-|Team Name|ABA (days)| iter n-2 | iter n-1 |...| {{ d0 }} |  {{ d1 }} | {{ d2 }} | {{ d3 }} | {{ d4 }}  | 
+|Team Name|ABA (days)| iter n-2 | iter n-1 |...| today {{ d0 }} |  {{ d1 }} | {{ d2 }} | {{ d3 }} | {{ d4 }}  | 
 |:-------:|:----:|:-----------:|:-------------:|---|:---:|:----:|:----:|:----:|:----:|
 | Team A  |   94 | id1, id2    | id6, id9      |...| id12|      | id20 |      | id31 | 
 | Team B  |    7 | id3, id4    | id5, id8      |...|     | id13 |      | id17 | id16 |
