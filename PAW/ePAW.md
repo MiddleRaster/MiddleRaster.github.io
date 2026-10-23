@@ -24,7 +24,7 @@ If you're just a single team, it's not too hard:  just make sure you're in a shi
 But what if your company is 100s of teams, thousands of engineers?  
 There are several ways of "scaling up Scrum" and I hate them all - they put more and rigid process into place, require lots of coaching, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
 
-What I want is a light-weight mechanism to coordinate work, one that gives me the flexibility to work as I choose:  Agile, Scrum, Lean, Kanban, XP, etc. with iteration lengths of my choice, etc.
+What I want is a light-weight mechanism to coordinate work, one that gives me the flexibility to work as I choose:  Agile, Scrum, Lean, Kanban, XP, etc. with iteration lengths of my choice.
 
 
 ## Bug Policy
