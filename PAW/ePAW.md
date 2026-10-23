@@ -136,7 +136,7 @@ What should teams do if this situation is detected?  Whatever you’re doing now
 
 Up until now, we haven’t changed anything about how the teams are working now.
 The ePAW is a read-only view into the state and the predicted state of all backlogs.
-And the ePAW will always be read-only:  it’s **an execution monitoring system**. Teams can work however they like: Scrum, Agile, XP, Lean, Kanban, waterfall or cowboy coding.  
+And the ePAW will always be read-only:  it’s **an execution-monitoring system**. Teams can work however they like: Scrum, Agile, XP, Lean, Kanban, waterfall or cowboy coding.  
 
 
 To address the missing dependency links, I suggest the following procedures:
