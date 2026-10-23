@@ -32,7 +32,7 @@ What I want is a light-weight mechanism to coordinate work, one that gives me th
 
 ## Bug Policy
 
-The notion of staying at close to zero bugs at all times is a good one. For each team, keep an eye on their bugs counts.  
+The notion of staying at close to zero bugs at all times is a good one. For each team, keep an eye on their bug counts.  
 
 But you must also keep an eye on technical debt.  If you haven't already, read my post on [the Average Age of Open Bugs (ABA)](/ABA/TheMetricForSoftwareDevelopment.html).  
 If you have no technical debt, have great, flexible architecture, if you have all-DAG code, then fixing bugs is quick and easy, and most of them are fixed already, since it's easy to do so.  
