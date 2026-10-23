@@ -191,7 +191,7 @@ Here are the pieces for, say, a CLI app:
     2. or perhaps markdown; view in an appropriate viewer (e.g., Visual Studio)
     3. or CSV and view in Excel
     4. and finally, json or xml, to be consumed by a web page
-6. Write the webpage that consumes the generated output from the CLI app
+6. Write the web page that consumes the generated output from the CLI app
 
 
 Initially, I would privately watch how the organization executes.
