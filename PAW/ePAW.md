@@ -5,10 +5,10 @@ permalink: /PAW/ePAW.html
 ---
 
 Things execs and managers want to know:  
-1. have we built enough features that we could release a product?
-2. is quality high enough to ship?
-3. is one team the “long pole” that’s holding everybody up?
-4. are there any cross-team dependency commitments that will not be met?
+1. Have we built enough features that we could release a product?
+2. Is quality high enough to ship?
+3. Is one team the “long pole” that’s holding everybody up?
+4. Are there any cross-team dependency commitments that will not be met?
 
 
 ## A Thought Experiment
