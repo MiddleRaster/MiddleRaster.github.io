@@ -184,7 +184,7 @@ Initially, I would privately watch how the organization executes.
 What are the teams’ ABAs and are they getting worse?
 Is there an obviously overloaded team?
 Are they working on NTH items while Core items are unfinished?
-Are there any as yet unobserved (and unannounced and ubaddressed) dependency conflicts?
+Are there any as yet unobserved (and unannounced and unaddressed) dependency conflicts?
 
 If the answers to all these questions are No and you decide to abandon ePAW, the cost of failure is a dev salary for a week or two.
 
