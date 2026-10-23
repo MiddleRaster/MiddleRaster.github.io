@@ -47,7 +47,7 @@ If, instead, you have everyone chip in on bugs, you won't see a speed up at all;
 A Portfolio Alignment Wall (PAW) is a well-known but underutilized technique for visualizing work.  
 However, it suffers from a more-or-less fatal flaw:  it relies on people’s estimates or judgments as to where the work is or will be in the future.  
 
-Wouldn't it be awesome if we could predict when each story will be completed so that we can tell if our plans are any good, or if we have dependency problems, or if one team is "long pole" (that is, the team that's hold everybody up)?  
+Wouldn't it be awesome if we could predict when each story will be completed so that we can tell if our plans are any good, or if we have dependency problems, or if one team is "long pole" (that is, the team that's holding everybody up)?  
 
 We have just such a technique, and if you haven't yet, you can read about it here:  [Good Predictions Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html).
 
