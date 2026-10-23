@@ -146,7 +146,7 @@ To address the missing dependency links, I suggest the following procedures:
 4. The ePAW will show in red if there’s a conflict and if so, your normal negotiation or escalation procedure kicks in.
 
 
-## CEO / CTO Proof of Concept
+## Proof of Concept for CEO/CTO
 
 So we’ve got a notion of what to build that answers the four questions that execs and managers need answered in order to ship at a large scale.  
 Is an ePAW plus a proper bug policy (checked by ABA) enough to replace something like SAFe? 
@@ -181,10 +181,10 @@ Here are the pieces for, say, a CLI app:
 
 
 Initially, I would privately watch how the organization executes.
-What are the teams’ ABAs and are they getting worse?
-Is there an obviously overloaded team?
-Are they working on NTH items while Core items are unfinished?
-Are there any as yet unobserved (and unannounced and unaddressed) dependency conflicts?
+- What are the teams’ ABAs and are they getting worse?
+- Is there an obviously overloaded team?
+- Are they working on NTH items while Core items remain unfinished?
+- Are there any as yet unobserved (and unannounced and unaddressed) dependency conflicts?
 
 If the answers to all these questions are No and you decide to abandon ePAW, the cost of failure is a dev salary for a week or two.
 
