@@ -208,7 +208,12 @@ If on the other hand, you see problems, I would recommend the following:
     1. You’ll initially probably see lots of red, hopefully way ahead of time where they can be addressed early before they cause scheduling problems
     2. You’ll want to display the automatically updating web page prominently somewhere (“an information radiator”) and to give out the URL so anyone can see the ePAW
 
+The value of an ePAW pilot compared to its cost is compelling to any CEO/CTO, in my opinion, especially when compared to a pilot of SAFe or similar frameworks.
 
+## Conclusion 
 
+Traditional portfolio management attempts to improve execution through more planning.
+ePAW instead focuses on visibility into execution itself.
+If teams maintain quality through low ABA, forecast completion dates through observed throughput and discovery rates, and expose cross-team dependency conflicts early, executives gain a real-time view of release readiness without imposing additional process on engineering teams.
 
 
