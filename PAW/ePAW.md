@@ -99,7 +99,7 @@ So far, we have addressed three of the four questions execs and managers need to
 
 Suppose one team, the “consuming” team, needs something from a “supplying” team:  an API, a component, a screen or the code behind a screen, etc.
 If the supplying team isn’t ready with the dependency by the time the consuming team needs it, they’re blocked.
-And that could cause scheduling delays, stalled workers and so forth.
+And that could cause stalled workers, scheduling delays and so forth.
 This is a significant problem because one team’s priorities set by their PO may not match another team’s, set by *their* PO.  
 
 What typically happens? The problem isn’t found until the consuming team starts work on their integration story, finding that there’s nothing ready to integrate yet.
@@ -130,7 +130,19 @@ What should teams do if this situation is detected?  Whatever you’re doing now
 - the nuclear option:  temporarily combine the two teams
 
 
+## Missing Dependency Links
+
+Up until now, we haven’t changed anything about how the teams are working now.
+The ePAW is a read-only view into the state and the predicted state of all backlogs.
+And the ePAW will always be read-only:  it’s **an execution monitoring system**. Teams can work however they like: Scrum, Agile, XP, Lean, Kanban, waterfall or cowboy coding.  
 
 
+To address the missing dependency links, I suggest the following:
+1. The consuming team creates their story card just like they do now.
+2. If it’s determined that it depends on another team’s work, a card is created **by the consuming team’s PO in the supplying team’s backlog** and a link is created from one card to the other team’s card.
+3. The supplying team’s PO sets the card’s priority and sizing as he sees fit. He’ll probably link it to one of his team’s existing stories.
+4. The ePAW will show in red if there’s a conflict and your normal negotiation or escalation procedure kicks in.
 
 
+## CEO / CTO Proof of Concept
+## Components
