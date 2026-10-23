@@ -46,7 +46,7 @@ If, instead, you have everyone chip in on bugs, you won't see a speed up at all;
 
 ## Enhanced Portfolio Alignment Wall
 
-A Portfolio Alignment Wall (PAW) is a well-known but underutilized technique for visualizing work.  
+A Portfolio Alignment Wall (PAW) is a well-known but underutilized technique for visualizing work.
 However, it suffers from a more-or-less fatal flaw:  it relies on people’s estimates or judgments as to where the work is or will be in the future.  
 
 Wouldn't it be awesome if we could predict when each story will be completed so that we can tell if our plans are any good, or if we have dependency problems, or if one team is "long pole" (that is, the team that's holding everybody up)?  
@@ -59,7 +59,7 @@ But what we **can** do is track how quickly those 2OI items are showing up (and 
 So we have **two** velocities, two trend lines:  how fast the team is getting work done and how fast the team is discovering new work.  
 And here's the important bit:  where those two lines intersect is when you'll ship.
 
-Note that the two lines can be parallel or worse, diverge; in both of these cases, you'll never ship.
+Note that the two lines can be parallel or, worse, diverge; in both of these cases, you'll never ship.
 
 Using the same technique, I can tell when **any** individual story will be done, and that's the "enhanced" part of the "Enhanced Portfolio Alignment Wall" (ePAW).  It's a read-only, dynamic view of the current state and the predicted state of all backlogs.  
 And it’s based on reality: how much work is left, how fast new work is being found and how fast work is being completed; not on people’s guesses or wishful thinking.
