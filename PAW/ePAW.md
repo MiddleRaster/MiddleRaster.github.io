@@ -190,7 +190,7 @@ If the answers to all these questions are No and you decide to abandon ePAW, the
 
 If on the other hand, you see problems, I would recommend the following:
 1. Collect baseline data for as long as you see fit before making any policy changes
-2. Implement a proper bug policy where each developer is required to fix immediately (or close immediately) any of his own bugs before he us allowed to write new code.
+2. Implement a proper bug policy where each developer is required to fix immediately (or close immediately) any of his own bugs before he is allowed to write new code.
     1. You should see the ABA and bug counts drop significantly.
     2. But more interestingly, you should see the **density** of completed stories increase (to the left of “today”).
 3. Implement the missing dependency link process (piloted at first with just a few select teams)
