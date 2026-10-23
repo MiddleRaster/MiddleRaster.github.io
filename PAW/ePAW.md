@@ -4,6 +4,13 @@ title: "The Enhanced Portfolio Alignment Wall"
 permalink: /PAW/ePAW.html
 ---
 
+Things execs want to know:  
+1. have we built enough features that we could release a product?
+2. is quality high enough to ship?
+3. is one team the “long pole” that’s holding everybody up?
+4. are there any cross-team dependency commitments that will not be met?
+
+
 ## The Monday Surprise
 
 Image this thought experiment, which I call **"the Monday Surprise"**:  
