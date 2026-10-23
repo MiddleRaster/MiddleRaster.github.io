@@ -21,8 +21,10 @@ What would you do? How would you arrange your work?
 
 If you're just a single team, it's not too hard:  just make sure you're in a shippable state at all times. That means having close to no known bugs all the time, what we used to call ZBB ("Zero Bug Bounce") at *StupendousCorp*.  
 
-But what if your company is 100s of teams, thousands of engineers?  
-There are several ways of "scaling up Scrum" and I hate them all - they put more process and *rigid* process into place, require lots of coaching, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc. They try to plan and coordinate work at a larger scale, but in a heavy-handed way.
+But what if your company is hundreds of teams, with thousands of engineers?
+There are several ways of "scaling up Scrum" and I hate them all - they put more process and *rigid* process in place, require lots of coaches, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
+They try to plan and coordinate work at a larger scale, do so but in a heavy-handed way.
+A pilot rollout costs millions of dollars and success is not guaranteed (or likely, even measured).
 
 What I want is a light-weight mechanism to coordinate work, one that gives me the flexibility to work as I choose:  Agile, Scrum, Lean, Kanban, XP, etc. with iteration lengths of my choice.
 
