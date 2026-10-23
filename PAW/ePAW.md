@@ -87,12 +87,47 @@ So far, the ePAW has answered one of the questions execs and managers need answe
 Let’s answer another:  have we built enough to ship?  
 
 To answer this question, we need to distinguish between features that are essential to the next release versus merely “nice to have”.
-I call the former, Core (or MVP - Minimum Viable Product) and the latter, NTH.  
+I call the former, Core (a.k.a, MVP - Minimum Viable Product) and the latter, NTH.  
 Each story must be marked as one or the other. Teams are very probably doing this already, via Pri1 (and maybe Pri2 as well), or similar mechanisms.
 
 Then, the ePAW needs a filtered view that shows only the Core items.  
 If all the Core stories are to the left of “today,” you have built enough product to ship. Voilà.
 
+So far, we have addressed three of the four questions execs and managers need to have answered. On to the final one.
+
+## Cross-Team Dependencies
+
+Suppose one team, the “consuming” team, needs something from a “supplying” team:  an API, a component, a screen or the code behind a screen, etc.
+If the supplying team isn’t ready with the dependency by the time the consuming team needs it, they’re blocked.
+And that could cause scheduling delays, stalled workers and so forth.
+This is a significant problem because one team’s priorities set by their PO may not match another team’s, set by *their* PO.  
+
+What typically happens? The problem isn’t found until the consuming team starts work on their integration story, finding that there’s nothing ready to integrate yet.
+And then after some ad hoc negotiation and possibly escalation, the supplying team promises to deliver at some future date.
+This could be unfortunate if the CEO is trying to ship in a hurry.  
+
+If only there were a way to see these cross-team dependency conflicts ahead of time.
+If they were identified earlier and addressed, the schedule would not be impacted.  
+
+To make that happen, we need to identify those cards that depend on other cards.
+All the backlog tracking apps (Jira, Azure DevOps, etc.) all have this capability built-in.
+But there are problems:  finding the right story in another team’s backlog isn’t trivial and is a real pain point.
+So often, the link to the supplying team’s card is missing entirely, though the consuming team’s card is annotated in some way.  
+
+Let’s assume for now that the dependency links do exist and we’ll address the missing links in just a bit.  
+
+
+What we need is for the ePAW to display in vivid red if a supplying team’s card is predicted to be done after the consuming team’s card.
+In fact, the consuming team needs some time to work on it, so the dependency should be done, say, 1 iteration before the consumer needs it.
+If that is not the case, highlight both cards in red and draw a red arrowed line from the consuming card to the supplying card.  
+
+
+What should teams do if this situation is detected?  Whatever you’re doing now, but it typically includes:  
+- raise the priority of the supplying card
+- lower the priority of the consuming card
+- escalate to management if the POs cannot agree
+- loan some team members from the consuming team to the supplying team
+- the nuclear option:  temporarily combine the two teams
 
 
 
