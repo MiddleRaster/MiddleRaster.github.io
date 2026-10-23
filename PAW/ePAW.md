@@ -22,7 +22,8 @@ What would you do? How would you arrange your work?
 If you're just a single team, it's not too hard:  just make sure you're in a shippable state at all times. That means having close to no known bugs all the time, what we used to call ZBB ("Zero Bug Bounce") at *StupendousCorp*.  
 
 But what if your company is hundreds of teams, with thousands of engineers?
-There are several ways of "scaling up Scrum" and I hate them all - they put more process and *rigid* process in place, require lots of coaches, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
+There are several ways of "scaling up Scrum" but I have found most large-scale Scrum frameworks to be process-heavy and expensive:
+They put more process and *rigid* process in place, require lots of coaches, have spawned yet another cottage industry of certifications, require hiring for newly created roles, etc.
 They try to plan and coordinate work at a larger scale, do so but in a heavy-handed way.
 A pilot rollout costs millions of dollars and success is not guaranteed (or likely, even measured).
 
@@ -51,9 +52,9 @@ However, it suffers from a more-or-less fatal flaw:  it relies on people’s est
 
 Wouldn't it be awesome if we could predict when each story will be completed so that we can tell if our plans are any good, or if we have dependency problems, or if one team is "long pole" (that is, the team that's holding everybody up)?  
 
-We have just such a technique, and if you haven't yet, you can read about it here:  [Good Predictions Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html).
+We have just such a technique, and if you haven't yet, you can read about it here:  [Good Predictions Despite Poor Estimates](/PM/PredictingDespitePoorEstimates.html).  
 
-The key idea is that poor estimating isn't the thing that throws off our predictions of when a story will be done; rather it’s "Second Order Ignorance" (2OI), the "unknown unknowns" that we can't even see because they're completely invisible to us.  
+The key idea is that poor estimating isn't what throws off our predictions of when a story will be done; rather it’s "Second Order Ignorance" (2OI), the "unknown unknowns" that we can't even see because they're completely invisible to us.  
 
 But what we **can** do is track how quickly those 2OI items are showing up (and often they're the most important next thing).  
 So we have **two** velocities, two trend lines:  how fast the team is getting work done and how fast the team is discovering new work.  
@@ -61,7 +62,11 @@ And here's the important bit:  where those two lines intersect is when you'll sh
 
 Note that the two lines can be parallel or, worse, diverge; in both of these cases, you'll never ship.
 
-Using the same technique, I can tell when **any** individual story will be done, and that's the "enhanced" part of the "Enhanced Portfolio Alignment Wall" (ePAW).  It's a read-only, dynamic view of the current state and the predicted state of all backlogs.  
+The prediction engine is not estimate-based.
+It uses historical completion rates and historical discovery rates.
+For the purposes of this article, assume that each story can be assigned a statistically-derived forecast completion date.
+
+Using this technique, I can display when any individual story will be done, and that's the "enhanced" part of the "Enhanced Portfolio Alignment Wall" (ePAW).  It's a read-only, dynamic view of the current state and the predicted state of all backlogs.  
 And it’s based on reality: how much work is left, how fast new work is being found and how fast work is being completed; not on people’s guesses or wishful thinking.
 
 
