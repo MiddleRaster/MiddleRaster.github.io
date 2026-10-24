@@ -29,6 +29,7 @@ I'll be discussing things I've learned in my 35-year career, including 4 complet
 
 
 
+What you get when combining ideas 3 & 4:  [an enhanced Portfolio Alignment Wall](/PAW/ePAW.html).  
 My thoughts on [Kanban and Queueing Theory](https://middleraster.github.io/Kanban/index.html).  
 I have a thing or two to say about [mathematics](https://middleraster.github.io/mathmusings/), too.  
 Here are my [test-driven development (TDD) tutorials](/TDD/tutorials.html).  
@@ -51,6 +52,7 @@ A bunch (eventually) of repos that I’ve been working:
 
 Change Log:
 
+2026-10-24 - Added essay about [an enhanced Portfolio Alignment Wall](/PAW/ePAW.html)  
 2026-09-17 - Added a bit more retirement math regarding if/when to invest in a [Roth IRA](/mathmusings/ToRothOrNot.html)  
 2026-03-04 - Added a little bit of [retirement math](/mathmusings/RetirementMath.html)  
 2026-02-27 - Added landing page for [TBCI](/TBCI/index.md) with samples, and showed [how to mock the STL](/TBCI/MockingTheSTL.html)  
