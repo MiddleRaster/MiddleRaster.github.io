@@ -125,7 +125,7 @@ If they were identified earlier and addressed, the schedule would not be impacte
 To make that happen, we need to identify those cards that depend on other cards.
 All the backlog management tools I know (Jira, Azure DevOps, etc.) have this capability built-in.
 But there are problems:  finding the right story in another team’s backlog isn’t trivial and is a real pain point.
-So often, the link to the supplying team’s card is missing entirely, though the consuming team’s card is annotated in some way.  
+So, often the link to the supplying team’s card is missing entirely, though the consuming team’s card is annotated in some way.  
 
 Let’s assume for now that the dependency links do exist and we’ll address the missing links in just a bit.  
 
