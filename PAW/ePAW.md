@@ -99,7 +99,7 @@ So far, the ePAW has answered one of the questions execs and managers need answe
 
 Let’s answer another:  have we built enough to ship?  
 
-To answer this question, we need to distinguish between features that are essential to the next release versus merely “nice to have”.
+To answer this question, we need to distinguish between features that are essential to the next release versus merely “nice to have.”
 I call the former, Core (a.k.a, MVP - Minimum Viable Product) and the latter, NTH.  
 Each story must be marked as one or the other. Teams are very probably doing this already, via Pri1 (and maybe Pri2 as well), or similar mechanisms.
 
