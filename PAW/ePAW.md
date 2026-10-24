@@ -148,7 +148,7 @@ What should teams do if a conflict is detected?  Whatever you’re doing now, bu
 
 ## Missing Dependency Links
 
-Up until now, ePAW hasn’t changed anything about how the teams are currently working.
+Up until now, the ePAW hasn’t changed anything about how the teams are currently working.
 The ePAW is a read-only view into the state and the predicted state of all backlogs.
 And the ePAW will always be read-only:  it’s **an execution-monitoring system**. Teams can work however they like: Scrum, Agile, XP, Lean, Kanban, waterfall or cowboy coding.  
 
