@@ -220,3 +220,4 @@ ePAW instead focuses on visibility into execution itself.
 If teams maintain quality through low ABA, forecast completion dates through observed throughput and discovery rates, and expose cross-team dependency conflicts early, executives gain a real-time view of release readiness without imposing additional process on engineering teams.
 
 
+Back to [MiddleRaster's pages](https://middleraster.github.io/).
