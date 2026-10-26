@@ -74,11 +74,11 @@ The ePAW looks something like this:
 
 
 {% assign now_s = "now" | date: "%s" %}
-{% assign d0    = now_s                | date: "%b %-d" %}
-{% assign d1    = now_s | plus: 86400  | date: "%b %-d" %}
-{% assign d2    = now_s | plus: 172800 | date: "%b %-d" %}
-{% assign d3    = now_s | plus: 259200 | date: "%b %-d" %}
-{% assign d4    = now_s | plus: 345600 | date: "%b %-d" %}
+{% assign d0    = now_s                | date: "%b %-d" %}  
+{% assign d1    = now_s | plus: 86400  | date: "%b %-d" %}  
+{% assign d2    = now_s | plus: 172800 | date: "%b %-d" %}  
+{% assign d3    = now_s | plus: 259200 | date: "%b %-d" %}  
+{% assign d4    = now_s | plus: 345600 | date: "%b %-d" %}  
 
 |Team Name|ABA (days)| iter n-2 | iter n-1 |...| today {{ d0 }} |  {{ d1 }} | {{ d2 }} | {{ d3 }} | {{ d4 }}  | 
 |:-------:|:----:|:-----------:|:-------------:|---|:---:|:----:|:----:|:----:|:----:|
