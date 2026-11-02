@@ -52,7 +52,7 @@ A bunch (eventually) of repos that I’ve been working:
 
 Change Log:  
 
-| &nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp; | Description |  
+| &nbsp; &nbsp; &nbsp; &nbsp; Date &nbsp; &nbsp; &nbsp; &nbsp; | Description |  
 |:---------------|:-------------|  
 | 2026-10-24 | Added essay about [an enhanced Portfolio Alignment Wall](/PAW/ePAW.html)  |
 | 2026-09-17 | Added a bit more retirement math regarding if/when to invest in a [Roth IRA](/mathmusings/ToRothOrNot.html)  |
