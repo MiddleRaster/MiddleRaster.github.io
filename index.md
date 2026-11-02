@@ -51,8 +51,9 @@ A bunch (eventually) of repos that I’ve been working:
 <br>
 
 Change Log:  
-| Project | Description |
-|---------|-------------|
+
+| Date | Description |  
+|------|-------------|  
 | 2026-10-24 | Added essay about [an enhanced Portfolio Alignment Wall](/PAW/ePAW.html)  |
 | 2026-09-17 | Added a bit more retirement math regarding if/when to invest in a [Roth IRA](/mathmusings/ToRothOrNot.html)  |
 | 2026-03-04 | Added a little bit of [retirement math](/mathmusings/RetirementMath.html)  |
