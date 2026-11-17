@@ -54,6 +54,7 @@ Change Log:
 
 | &nbsp; &nbsp; &nbsp; &nbsp; Date &nbsp; &nbsp; &nbsp; &nbsp; | Description |  
 |:---------------|:-------------|  
+| 2026-11-16 | Added the [wobbly table theorem](/mathmusings/WobblyTableTheorem.html) |
 | 2026-11-01 | Added 3 different BDD variations (Given/When/Then, Describe/Context/It and Best of Both Worlds) to my [tdd20 test harness](https://github.com/MiddleRaster/tdd20) in the Client Extensions folder |
 | 2026-10-24 | Added essay about [an enhanced Portfolio Alignment Wall](/PAW/ePAW.html)  |
 | 2026-09-17 | Added a bit more retirement math regarding if/when to invest in a [Roth IRA](/mathmusings/ToRothOrNot.html)  |
